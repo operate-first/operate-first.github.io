@@ -7,21 +7,40 @@ import { AboutFeatures } from "../components/homepage/About";
 import { InterestedField } from "../components/homepage/Interest";
 import { FaqSimple } from "../components/homepage/Faq";
 import { ContactSection } from "../components/homepage/Contact";
+import { Nav } from "../components/homepage/Navbar";
 
 const IndexPage = () => {
   const child = <Skeleton height={140} radius="md" animate={false} />;
 
-
+  const navItems = [
+      {
+        "link": "/about",
+        "label": "Our Purpose"
+      },
+      {
+        "link": "/pricing",
+        "label": "Community"
+      },
+      {
+        "link": "/learn",
+        "label": "Docs & Training"
+      },
+      {
+        "link": "/community",
+        "label": "Op1st Community Cloud"
+      }
+    ]
 
   return (
     <main>
-    <style jsx global>{`
+      <style jsx global>{`
       body {
         margin: 0px;
         padding: 0px;
       }
     `}</style>
-      <HomeContent/>
+      <Nav links={navItems}/>
+      <HomeContent />
       <AboutFeatures />
       <Group mx="0" position="center" my="sm" py="md" style={{ backgroundImage: 'url(https://wallpaperaccess.com/full/1567666.png)' }}>
         <Group style={{ width: 500 }}>
@@ -36,7 +55,7 @@ const IndexPage = () => {
             This means developers and operators collaborate to apply a product's operational considerations right back into the code itself.
           </Text>
         </Group>
-        <Grid mx="md" style={{ width: 500}}>
+        <Grid mx="md" style={{ width: 500 }}>
           <Grid.Col xs={4}>{child}</Grid.Col>
           <Grid.Col xs={6}>{child}</Grid.Col>
           <Grid.Col xs={6}>{child}</Grid.Col>

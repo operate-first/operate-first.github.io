@@ -13,17 +13,17 @@ const useStyles = createStyles((theme) => ({
   },
 
   container: {
-    height: 700,
+    height: 500,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingBottom: theme.spacing.xl * 6,
+    paddingBottom: theme.spacing.xl * 8,
     zIndex: 1,
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 500,
+      height: 400,
       paddingBottom: theme.spacing.xl * 5,
       marginLeft: 20
     },
