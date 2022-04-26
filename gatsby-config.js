@@ -3,5 +3,5 @@ module.exports = {
     title: `Operate First`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-mantine'],
 }
