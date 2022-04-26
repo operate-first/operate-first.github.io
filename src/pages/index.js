@@ -11,8 +11,16 @@ import { ContactSection } from "../components/homepage/Contact";
 const IndexPage = () => {
   const child = <Skeleton height={140} radius="md" animate={false} />;
 
+
+
   return (
     <main>
+    <style jsx global>{`
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    `}</style>
       <HomeContent/>
       <AboutFeatures />
       <Group mx="0" position="center" my="sm" py="md" style={{ backgroundImage: 'url(https://wallpaperaccess.com/full/1567666.png)' }}>
