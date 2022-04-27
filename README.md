@@ -1,54 +1,39 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Operate First Website
 
-## 🚀 Quick start
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
+[![Deploy Operate First GH Pages](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml/badge.svg)](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml)
 
-1.  **Create a Gatsby site.**
+This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [GitHub Pages](https://pages.github.com/).
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Local Development
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+You can run the app locally to preview your changes.
+In terminal:
 
-2.  **Start developing.**
+```sh
+npm install
+npm run develop
+```
 
-    Navigate into your new site’s directory and start it up.
+In case of stale cache or errors, please try:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```sh
+npm run clean
+```
 
-3.  **Open the code and start customizing!**
+### Previewing your changes on GitHub pages
 
-    Your site is now running at http://localhost:8000!
+We use Netlify to preview PR changes. Each PR will show a Netlify check that can be used to access a dynamically generated build and deployment of that PR.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Manual Site Deployment (Production GitHub Pages)
 
-4.  **Learn more**
+CI will deploy to GitHub pages automatically on every push to default branch as well on daily schedule. You can trigger a new build manually if you have _write_ permissions on this repo by simply clicking **Run workflow** button on the [CI workflow details screen here](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml).
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+![Manual CI trigger](misc/manual_ci_trigger.png)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Fully manual build is possible by issuing following commands (requires _write_ access to the repo):
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```sh
+npm install
+npm deploy
+```
