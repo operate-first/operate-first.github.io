@@ -1,4 +1,4 @@
-name: Deploy Operate First GH Pages
+name: Deploy Operate First Blog
 on:
   push:
     branches:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: "12"
+          node-version: "17"
 
       - name: Dependencies
         uses: actions/cache@v2
