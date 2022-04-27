@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Text, Title, TextInput, Button, Image, Center, Group } from '@mantine/core';
+import { createStyles, Text, Title, TextInput, Button, Center, Group } from '@mantine/core';
 import { BrandSlack, Calendar } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({

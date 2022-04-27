@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
-import icon from '../../images/opf-logo.png'
 import { BrandGithub, BrandSlack, BrandTwitter, BrandYoutube } from 'tabler-icons-react';
+import icon from '../../images/opf-logo.png'
 
 const HEADER_HEIGHT = 60;
 
@@ -94,13 +95,13 @@ export function Nav({ links }) {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <img src={icon} width="150px"/>
+        <img src={icon} width="150px" alt="opf-logo" />
         <Group spacing={5} className={classes.links}>
           {items}
-          <BrandGithub color="white"/>
-          <BrandSlack color="white"/>
-          <BrandYoutube color="white"/>
-          <BrandTwitter color="white"/>
+          <BrandGithub color="white" />
+          <BrandSlack color="white" />
+          <BrandYoutube color="white" />
+          <BrandTwitter color="white" />
         </Group>
 
         <Burger
@@ -120,4 +121,8 @@ export function Nav({ links }) {
       </Container>
     </Header>
   );
+}
+
+Nav.propTypes = {
+  links: PropTypes.object,
 }
