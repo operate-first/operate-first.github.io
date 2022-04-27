@@ -26,6 +26,8 @@
     "tabler-icons-react": "^1.46.0"
   },
   "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^3.2.3"
   }
 }

@@ -1,6 +1,6 @@
-import * as React from "react"
+import * as React from "react";
 // Mantine imports
-import { Title, Text, Grid, Group, Skeleton } from '@mantine/core'
+import { Title, Text, Grid, Group, Skeleton } from "@mantine/core";
 // Component imports
 import { HomeContent } from "../components/homepage/HomePage";
 import { AboutFeatures } from "../components/homepage/About";
@@ -13,23 +13,23 @@ const IndexPage = () => {
   const child = <Skeleton height={140} radius="md" animate={false} />;
 
   const navItems = [
-      {
-        "link": "/about",
-        "label": "Our Purpose"
-      },
-      {
-        "link": "/pricing",
-        "label": "Community"
-      },
-      {
-        "link": "/learn",
-        "label": "Docs & Training"
-      },
-      {
-        "link": "/community",
-        "label": "Op1st Community Cloud"
-      }
-    ]
+    {
+      "link": "/about",
+      "label": "Our Purpose"
+    },
+    {
+      "link": "/pricing",
+      "label": "Community"
+    },
+    {
+      "link": "/learn",
+      "label": "Docs & Training"
+    },
+    {
+      "link": "/community",
+      "label": "Op1st Community Cloud"
+    }
+  ]
 
   return (
     <main>
@@ -39,20 +39,20 @@ const IndexPage = () => {
         padding: 0px;
       }
     `}</style>
-      <Nav links={navItems}/>
+      <Nav links={navItems} />
       <HomeContent />
       <AboutFeatures />
-      <Group mx="0" position="center" my="sm" py="md" style={{ backgroundImage: 'url(https://wallpaperaccess.com/full/1567666.png)' }}>
+      <Group mx="0" position="center" my="sm" py="md" style={{ backgroundImage: "url(https://wallpaperaccess.com/full/1567666.png)" }}>
         <Group style={{ width: 500 }}>
           <Title align='center'
             sx={(theme) => ({
               color: `linear-gradient(45deg, #f3ec78, #af4261)`,
             })}
-            style={{ color: 'white' }}
+            style={{ color: "white" }}
           >Why Operate First?</Title>
-          <Text my="xl" size="lg" style={{ color: 'white' }}>
+          <Text my="xl" size="lg" style={{ color: "white" }}>
             Open source software is widely available, but it faces an operations barrier to entry into production environments. Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
-            This means developers and operators collaborate to apply a product's operational considerations right back into the code itself.
+            This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself.
           </Text>
         </Group>
         <Grid mx="md" style={{ width: 500 }}>
@@ -71,4 +71,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default IndexPage;
