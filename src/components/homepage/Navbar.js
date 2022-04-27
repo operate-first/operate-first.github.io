@@ -94,7 +94,7 @@ export function Nav({ links }) {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <img src={icon} width="150px"/>
+        <img src={icon} width="150px" alt="opf-logo"/>
         <Group spacing={5} className={classes.links}>
           {items}
           <BrandGithub color="white"/>

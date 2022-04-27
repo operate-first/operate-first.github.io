@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Title, Text, Button, Container, Center, useMantineTheme } from '@mantine/core';
+import { createStyles, Title, Text, Button, Container, Center } from '@mantine/core';
 import { Book, QuestionMark  } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -8,10 +8,7 @@ const useStyles = createStyles((theme) => ({
     margin: 0,
     paddingTop: 120,
     paddingBottom: 80,
-    backgroundColor: 'white',
     border: 'none',
-    // backgroundImage:
-    //   'url(https://wallpaperaccess.com/full/1567666.png)',
     backgroundColor: '#ffffff',
 
     '@media (max-width: 755px)': {
@@ -24,20 +21,6 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
     zIndex: 1,
   },
-
-  // dots: {
-  //   position: 'absolute',
-  //   color: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
-
-  //   '@media (max-width: 755px)': {
-  //     display: 'none',
-  //   },
-  // },
-
-  // dotsLeft: {
-  //   left: 0,
-  //   top: 0,
-  // },
 
   title: {
     textAlign: 'center',
@@ -92,7 +75,6 @@ const useStyles = createStyles((theme) => ({
 
 export function InterestedField() {
   const { classes } = useStyles();
-  const theme = useMantineTheme();
 
   return (
     <Center className={classes.wrapper} size="lg">

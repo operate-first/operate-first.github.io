@@ -1,7 +1,5 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Text, Image, Group } from '@mantine/core';
-
-
+import { createStyles, Overlay, Container, Title, Button, Image, Group } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -64,14 +62,6 @@ const useStyles = createStyles((theme) => ({
       fontSize: theme.fontSizes.md,
     },
   },
-
-  // opfImage: {
-  //   width: 420,
-  //   height: 100,
-  //   [theme.fn.smallerThan('sm')]: {
-  //     width: "50%"
-  //   },
-  // }
 }));
 
 export function HomeContent() {
@@ -85,7 +75,7 @@ export function HomeContent() {
         zIndex={0}
       />
       <Container className={classes.container}>
-          <Image 
+          <Image
             src="https://www.operate-first.cloud/static/8d56de4f3d3afae74daab76e9e11c4aa/fcda8/logo.png"
             width={"50%"}
             height={"50%"}
