@@ -8,11 +8,9 @@ const useStyles = createStyles((theme, _params, getRef) => {
   return {
     wrapper: {
       paddingTop: theme.spacing.xl * 2,
-      minHeight: 780,
-      backgroundImage:
-        'url(https://wallpaperaccess.com/full/1567666.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
+      minHeight: 700,
+      background: 'rgb(0,38,79)',
+      background: 'linear-gradient(185deg, rgba(0,38,79,1) 0%, rgba(0,25,51,1) 50%, rgba(0,16,33,1) 100%)',
       position: 'relative',
     },
 

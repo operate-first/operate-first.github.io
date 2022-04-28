@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createStyles, Text, SimpleGrid, Container } from '@mantine/core';
+import { createStyles, Text, SimpleGrid, Container, Group, Title } from '@mantine/core';
 import { Cloud, Send, Database } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -35,6 +35,12 @@ const useStyles = createStyles((theme) => ({
   title: {
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
   },
+
+  abouttext: {
+    [theme.fn.smallerThan('sm')]: {
+      padding: 10,
+    },
+  }
 }));
 
 const mockdata = [
@@ -87,11 +93,19 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
 
 
 export function AboutFeatures() {
+  const {classes} = useStyles();
   const items = mockdata.map((item) => <Feature {...item} key={item.title} />);
 
   return (
     <Container mt={30} mb={30} size="lg" py="lg">
-      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50}>
+      <Title order={1} align="center" sx={(theme) => ({color: theme.colors.blue[7]})}>
+        Why Operate First?
+      </Title>
+      <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
+          Open source software is widely available, but it faces an operations barrier to entry into production environments. Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
+          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself.
+        </Text>
+      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
         {items}
       </SimpleGrid>
     </Container>
