@@ -56,15 +56,16 @@ const useStyles = createStyles((theme) => ({
     padding: '8px 12px',
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
-    color: theme.colorScheme === 'light' ? theme.colors.dark[0] : theme.colors.gray[7],
+    color: theme.colors.dark[0],
     fontSize: theme.fontSizes.sm,
     fontWeight: 600,
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'light' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colors.dark[6]
     },
 
     [theme.fn.smallerThan('sm')]: {
+      color: 'black',
       borderRadius: 0,
       padding: theme.spacing.md,
     },
@@ -96,12 +97,20 @@ export function Nav({ links }) {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <img src={icon} width="150px" alt="opf-logo" />
-        <Group spacing={5} className={classes.links}>
+        <Group spacing={7} className={classes.links}>
           {items}
-          <BrandGithub color="white" />
-          <BrandSlack color="white" />
-          <BrandYoutube color="white" />
-          <BrandTwitter color="white" />
+          <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
+            <BrandGithub color="white" />
+          </a>
+          <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" target="_blank" rel="noreferrer">
+            <BrandSlack color="white" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg" alt="youtube" target="_blank" rel="noreferrer">
+            <BrandYoutube color="white" />
+          </a>
+          <a href="https://twitter.com/OperateFirst" alt="twitter" target="_blank" rel="noreferrer">
+            <BrandTwitter color="white" />
+          </a>
         </Group>
 
         <Burger
@@ -109,12 +118,27 @@ export function Nav({ links }) {
           onClick={() => toggleOpened()}
           className={classes.burger}
           size="sm"
+          color='gray'
         />
 
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
               {items}
+              <Group spacing='xl' px='sm'>
+                <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
+                  <BrandGithub color="black" />
+                </a>
+                <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" target="_blank" rel="noreferrer">
+                  <BrandSlack color="black" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg" alt="youtube" target="_blank" rel="noreferrer">
+                  <BrandYoutube color="black" />
+                </a>
+                <a href="https://twitter.com/OperateFirst" alt="twitter" target="_blank" rel="noreferrer">
+                  <BrandTwitter color="black" />
+                </a>
+              </Group>
             </Paper>
           )}
         </Transition>
