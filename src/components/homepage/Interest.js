@@ -1,16 +1,16 @@
 import React from 'react';
-import { createStyles, Title, Text, Button, Container, Center } from '@mantine/core';
-import { Book, QuestionMark  } from 'tabler-icons-react';
+import { createStyles, Group, Title, Text, TextInput, Button, Container, Center } from '@mantine/core';
+import { Book, QuestionMark, BrandSlack, Calendar, BrandGithub } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
     margin: 0,
-    paddingTop: 120,
+    paddingTop: 50,
     paddingBottom: 80,
     border: 'none',
-    backgroundColor: '#ffffff',
-
+    background: 'rgb(0,25,51)',
+    background: 'linear-gradient(62deg, rgba(0,25,51,1) 0%, rgba(0,44,92,1) 51%, rgba(0,52,107,1) 100%)',
     '@media (max-width: 755px)': {
       paddingTop: 80,
       paddingBottom: 60,
@@ -27,21 +27,20 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 800,
     fontSize: 40,
     letterSpacing: -1,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    color: theme.colorScheme === 'light' ? theme.white : theme.black,
     marginBottom: theme.spacing.xs,
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
     '@media (max-width: 520px)': {
       fontSize: 28,
-      textAlign: 'left',
     },
   },
 
   description: {
+    color: 'white',
     textAlign: 'center',
 
     '@media (max-width: 520px)': {
-      textAlign: 'left',
       fontSize: theme.fontSizes.md,
     },
   },
@@ -53,6 +52,8 @@ const useStyles = createStyles((theme) => ({
 
     '@media (max-width: 520px)': {
       flexDirection: 'column',
+      width: 360,
+      marginLeft: theme.spacing.xl,
     },
   },
 
@@ -70,6 +71,27 @@ const useStyles = createStyles((theme) => ({
         marginLeft: 0,
       },
     },
+  },
+
+  btncontrol: {
+    borderTopLeftRadius: 0,
+    borderBottomLeftRadius: 0,
+    '@media (max-width: 520px)': {
+      fontSize: theme.fontSizes.md,
+      width: 360,
+      marginLeft: theme.spacing.xl,
+    },
+  },
+
+  inputWrapper: {
+    width: '100%',
+    flex: '1',
+  },
+
+  input: {
+    borderTopRightRadius: 0,
+    borderBottomRightRadius: 0,
+    borderRight: 0,
   },
 }));
 
@@ -101,6 +123,23 @@ export function InterestedField() {
             Operate First Support
           </Button>
         </div>
+        <Title align="center" style={{ color: 'white', marginTop: 40 }} className={classes.title}>Want to get involved?</Title>
+        <Container p={0} size={600}>
+          <Text size="lg" color="dimmed" className={classes.description}>
+            Find our code on GitHub, meet the community on slack, and join our mailing list
+          </Text>
+        </Container>
+        <Group style={{ marginTop: "20px" }}>
+          <Button leftIcon={<BrandGithub />} className={classes.btncontrol} size="lg" variant="default" color="gray">
+            Our GitHub
+          </Button>
+          <Button leftIcon={<BrandSlack />} className={classes.btncontrol} size="lg" variant="default" color="gray">
+            Join our Slack
+          </Button>
+          <Button leftIcon={<Calendar />} className={classes.btncontrol} size="lg">
+            Join our calender
+          </Button>
+        </Group>
       </div>
     </Center>
   );

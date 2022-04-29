@@ -79,7 +79,6 @@ export function HomeContent() {
             src="https://www.operate-first.cloud/static/8d56de4f3d3afae74daab76e9e11c4aa/fcda8/logo.png"
             width={"50%"}
             height={"50%"}
-            // className={classes.opfImage}
             />
         <Title className={classes.title}>a concept to incorporate operational experience into software projects</Title>
         {/* <Text className={classes.description} size="xl" mt="xl">
