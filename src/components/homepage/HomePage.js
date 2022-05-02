@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Image, Group } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Button, Image, Group, Center } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -17,7 +17,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
     paddingBottom: theme.spacing.xl * 8,
-    zIndex: 1,
+    zIndex: 0,
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
@@ -36,6 +36,7 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       fontSize: 40,
       lineHeight: 1.2,
+      marginBottom: theme.spacing.md * 1,
     },
 
     [theme.fn.smallerThan('xs')]: {
@@ -58,9 +59,16 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.xl * 1.5,
 
     [theme.fn.smallerThan('sm')]: {
-      width: '47%',
-      fontSize: theme.fontSizes.md,
+      marginTop: theme.spacing.sm * 0.2,
+      width: 250,
+      fontSize: theme.fontSizes.md * 1.1,
+      marginLeft: theme.spacing.lg * 2,
     },
+
+    '&:hover': {
+      color: 'black',
+      backgroundColor: 'white'
+    }
   },
 }));
 
@@ -75,23 +83,23 @@ export function HomeContent() {
         zIndex={0}
       />
       <Container className={classes.container}>
-          <Image
-            src="https://www.operate-first.cloud/static/8d56de4f3d3afae74daab76e9e11c4aa/fcda8/logo.png"
-            width={"50%"}
-            height={"50%"}
-            />
+        <Image
+          src="https://www.operate-first.cloud/static/8d56de4f3d3afae74daab76e9e11c4aa/fcda8/logo.png"
+          width={"50%"}
+          height={"50%"}
+        />
         <Title className={classes.title}>a concept to incorporate operational experience into software projects</Title>
         {/* <Text className={classes.description} size="xl" mt="xl">
         a concept to incorporate operational experience into software projects
         </Text> */}
 
         <Group>
-        <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
-          Get started
-        </Button>
-        <Button variant="outline" color="white" size="xl" radius="xl" className={classes.control}>
-          Learn More
-        </Button>
+          <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
+            Get started
+          </Button>
+          <Button variant="outline" color="white" size="lg" radius="xl" className={classes.control}>
+            Learn More
+          </Button>
         </Group>
       </Container>
     </div>
