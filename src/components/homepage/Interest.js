@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStyles, Group, Title, Text, TextInput, Button, Container, Center } from '@mantine/core';
-import { Book, QuestionMark, BrandSlack, Calendar, BrandGithub } from 'tabler-icons-react';
+import { Book, QuestionMark, BrandSlack, Mail, BrandGithub } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -119,9 +119,11 @@ export function InterestedField() {
           <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
             Data Science Learning Pathway
           </Button>
-          <Button leftIcon={<QuestionMark />} className={classes.control} size="lg">
-            Operate First Support
-          </Button>
+          <a href="https://github.com/operate-first/support">
+            <Button leftIcon={<QuestionMark />} className={classes.control} size="lg">
+              Operate First Support
+            </Button>
+          </a>
         </div>
         <Title align="center" style={{ color: 'white', marginTop: 40 }} className={classes.title}>Want to get involved?</Title>
         <Container p={0} size={600}>
@@ -130,15 +132,21 @@ export function InterestedField() {
           </Text>
         </Container>
         <Group style={{ marginTop: "20px" }}>
-          <Button leftIcon={<BrandGithub />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-            Our GitHub
-          </Button>
-          <Button leftIcon={<BrandSlack />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-            Join our Slack
-          </Button>
-          <Button leftIcon={<Calendar />} className={classes.btncontrol} size="lg">
-            Join our calender
-          </Button>
+          <a href="https://github.com/operate-first">
+            <Button leftIcon={<BrandGithub />} className={classes.btncontrol} size="lg" variant="default" color="gray">
+              Our GitHub
+            </Button>
+          </a>
+          <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww">
+            <Button leftIcon={<BrandSlack />} className={classes.btncontrol} size="lg" variant="default" color="gray">
+              Join our Slack
+            </Button>
+          </a>
+          <a href="https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/">
+            <Button leftIcon={<Mail />} className={classes.btncontrol} size="lg">
+              Join our Mailing list
+            </Button>
+          </a>
         </Group>
       </div>
     </Center>

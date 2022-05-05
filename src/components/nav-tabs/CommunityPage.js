@@ -21,7 +21,9 @@ export function CommunityContent() {
             <Title order={2} my="md">Community Resources</Title>
             <Group style={{ marginBottom: 50 }}>
                 <Button color="dark">Our Environment</Button>
-                <Button color="dark">Open community cloud</Button>
+                <a href="https://www.operate-first.cloud/community/README.html">
+                    <Button color="dark">Open community cloud</Button>
+                </a>
                 <Button color="dark">SRE Community of Practice</Button>
             </Group>
         </Container>
