@@ -4,6 +4,7 @@ import { createStyles, Header, Container, Group, Burger, Paper, Transition } fro
 import { useBooleanToggle } from '@mantine/hooks';
 import { BrandGithub, BrandSlack, BrandTwitter, BrandYoutube } from 'tabler-icons-react';
 import icon from '../../../static/opf-logo.png'
+import { Link } from "gatsby"
 
 const HEADER_HEIGHT = 60;
 
@@ -79,26 +80,26 @@ export function Nav({ links }) {
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
-      className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
-        toggleOpened(false);
+      to={link.link}
+      className={classes.link}
+      activeClassName={classes.linkActive}
+      onClick={() => {
+        toggleOpened(false)
       }}
     >
       {link.label}
-    </a>
-  ));
+    </Link>
+  ))
 
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <img src={icon} width="150px" alt="opf-logo" />
         <Group spacing={7} className={classes.links}>
-          {items}
+        {items}
+
           <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
             <BrandGithub color="white" />
           </a>
