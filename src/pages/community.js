@@ -4,7 +4,7 @@ import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
 import { CommunityContent } from "../components/nav-tabs/CommunityPage";
 
-const AboutPage = () => {
+const CommunityPage = () => {
     const navItems = [
         {
             "link": "/about",
@@ -58,4 +58,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage;
+export default CommunityPage;
