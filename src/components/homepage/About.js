@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { createStyles, Text, SimpleGrid, Container, Group, Title } from '@mantine/core';
-import { Cloud, Send, Database } from 'tabler-icons-react';
+import { Code, Cloud, BuildingCommunity } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   feature: {
@@ -45,22 +45,22 @@ const useStyles = createStyles((theme) => ({
 
 const mockdata = [
   {
+    icon: Code,
+    title: 'App Developers',
+    description:
+      'Deploy and maintain apps in an open operations environment. Open yourself up to input on how to make your app operate better.',
+  },
+  {
     icon: Cloud,
-    title: 'Production Cloud Environment ',
+    title: 'SRE and DevOps',
     description:
-      'Developing software in a production cloud environment made easier',
+      'Site reliability engineering is the evolution of DevOps for operating managed services. Join a movement to apply SRE best practices in an open operations environment, and help app developers build operations considerations back into their code.',
   },
   {
-    icon: Send,
-    title: 'Deploy your workloads using Git',
+    icon: BuildingCommunity,
+    title: 'Community',
     description:
-      'Making changes to your projects lorem lorem lorem lorem lorem lorem',
-  },
-  {
-    icon: Database,
-    title: 'Data-science driven',
-    description:
-      'Operate First is a free platform with the mission of lorem lorem lorem',
+      'Participate in the Operate First community. Contribute to the success of our open operations mission.',
   },
 ];
 
@@ -103,7 +103,7 @@ export function AboutFeatures() {
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
           Open source software is widely available, but it faces an operations barrier to entry into production environments. Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
-          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself.
+          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself. This means developers and operators collaborating to apply a product's operational considerations right back into the code itself.
         </Text>
       <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
         {items}

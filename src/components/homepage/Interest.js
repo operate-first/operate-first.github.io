@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStyles, Group, Title, Text, TextInput, Button, Container, Center } from '@mantine/core';
-import { Book, QuestionMark, BrandSlack, Calendar, BrandGithub } from 'tabler-icons-react';
+import { Code, Cloud, Book, ZoomQuestion, BrandSlack, Calendar, BrandGithub, Mail } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -111,35 +111,51 @@ export function InterestedField() {
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Want to start learning SRE practices? Or Find out about our resources
+            Select an area that interests you to see how to get started.
           </Text>
         </Container>
 
         <div className={classes.controls}>
-          <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
-            Data Science Learning Pathway
+          <Button leftIcon={<Cloud />} className={classes.control} size="lg">
+            SRE and DevOps
           </Button>
-          <Button leftIcon={<QuestionMark />} className={classes.control} size="lg">
+          <Button leftIcon={<Code />} className={classes.control} size="lg">
+            App Development
+          </Button>
+          <Button leftIcon={<Book />} className={classes.control} size="lg">
+            Training
+          </Button>
+          <Button leftIcon={<ZoomQuestion />} className={classes.control} size="lg">
             Operate First Support
           </Button>
         </div>
+        <div className={classes.controls}>
+          <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
+            Data Science Learning Pathway
+          </Button>
+        </div>
+
         <Title align="center" style={{ color: 'white', marginTop: 40 }} className={classes.title}>Want to get involved?</Title>
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Find our code on GitHub, meet the community on slack, and join our mailing list
+            Find our code on GitHub, meet the community on Slack, and follow our mailing list and calendar.
           </Text>
         </Container>
-        <Group style={{ marginTop: "20px" }}>
-          <Button leftIcon={<BrandGithub />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-            Our GitHub
+
+        <div className={classes.controls}>
+          <Button leftIcon={<BrandGithub />} className={classes.control} size="lg" variant="default" color="gray">
+            GitHub
           </Button>
-          <Button leftIcon={<BrandSlack />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-            Join our Slack
+          <Button leftIcon={<BrandSlack />} className={classes.control} size="lg" variant="default" color="gray">
+            Slack
           </Button>
-          <Button leftIcon={<Calendar />} className={classes.btncontrol} size="lg">
-            Join our calender
+          <Button leftIcon={<Mail />} className={classes.control} size="lg" variant="default" color="gray">
+            Mailing list
           </Button>
-        </Group>
+          <Button leftIcon={<Calendar />} className={classes.control} size="lg" variant="default" color="gray">
+            Calendar
+          </Button>
+        </div>
       </div>
     </Center>
   );
