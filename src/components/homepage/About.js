@@ -103,7 +103,7 @@ export function AboutFeatures() {
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
           Open source software is widely available, but it faces an operations barrier to entry into production environments. Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
-          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself. This means developers and operators collaborating to apply a product's operational considerations right back into the code itself.
+          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself. This means developers and operators collaborating to apply a product&apos;s operational considerations right back into the code itself.
         </Text>
       <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
         {items}

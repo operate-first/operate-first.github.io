@@ -1,28 +1,25 @@
 import * as React from "react";
 // Component imports
-import { HomeContent } from "../components/homepage/HomePage";
-import { AboutFeatures } from "../components/homepage/About";
-import { InterestedField } from "../components/homepage/Interest";
-import { FaqSimple } from "../components/homepage/Faq";
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
+import { AboutContent } from "../components/nav-tabs/AboutPage";
 
-const IndexPage = () => {
+const AboutPage = () => {
   const navItems = [
     {
       "link": "/about",
       "label": "Our Purpose"
     },
     {
-      "link": "/pricing",
+      "link": "/community",
       "label": "Community"
     },
     {
-      "link": "/learn",
+      "link": "/docs-training",
       "label": "Docs & Training"
     },
     {
-      "link": "/community",
+      "link": "/community-cloud",
       "label": "Op1st Community Cloud"
     }
   ]
@@ -55,13 +52,10 @@ const IndexPage = () => {
       }
     `}</style>
       <Nav links={navItems} />
-      <HomeContent />
-      <AboutFeatures />
-      <InterestedField />
-      <FaqSimple />
-      <Footer links={footerItems}/>
+      <AboutContent />
+      <Footer links={footerItems} />
     </main>
   )
 }
 
-export default IndexPage;
+export default AboutPage;
