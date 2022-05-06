@@ -76,8 +76,7 @@ const useStyles = createStyles((theme) => ({
 
 export function Nav({ links }) {
   const [opened, toggleOpened] = useBooleanToggle(false);
-  const [active, setActive] = useState(links[0].link);
-  const { classes, cx } = useStyles();
+  const { classes} = useStyles();
 
   const items = links.map((link) => (
     <Link
@@ -96,10 +95,11 @@ export function Nav({ links }) {
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <img src={icon} width="150px" alt="opf-logo" />
+        <Link to="/">
+          <img src={icon} width="150px" alt="opf-logo" />
+        </Link>
         <Group spacing={7} className={classes.links}>
-        {items}
-
+          {items}
           <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
             <BrandGithub color="white" />
           </a>

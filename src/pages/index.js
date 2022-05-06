@@ -14,15 +14,15 @@ const IndexPage = () => {
       "label": "Our Purpose"
     },
     {
-      "link": "/pricing",
+      "link": "/community",
       "label": "Community"
     },
     {
-      "link": "/learn",
+      "link": "/docs-training",
       "label": "Docs & Training"
     },
     {
-      "link": "/community",
+      "link": "/community-cloud",
       "label": "Op1st Community Cloud"
     }
   ]
