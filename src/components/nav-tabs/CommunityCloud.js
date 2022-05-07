@@ -18,8 +18,12 @@ export function CommunityCloudContent() {
             </List>
             <Title order={2} my="md">Community Cloud Resources</Title>
             <Group style={{ marginBottom: 50 }}>
-                <Button leftIcon={<Book />} color="dark">GitOps Docs</Button>
-                <Button leftIcon={<Cloud />} color="dark">Open community cloud</Button>
+                <a href="https://www.operate-first.cloud/apps/content/README.html">
+                    <Button leftIcon={<Book />} color="dark">GitOps Docs</Button>
+                </a>
+                <a href="https://www.operate-first.cloud/community/README.html">
+                    <Button leftIcon={<Cloud />} color="dark">Open community cloud</Button>
+                </a>
                 <Button leftIcon={<Database />} color="dark">Data Science</Button>
             </Group>
 
