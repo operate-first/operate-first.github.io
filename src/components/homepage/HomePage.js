@@ -96,14 +96,14 @@ export function HomeContent() {
 
         <Group>
           <Link to="/about">
-            <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
-              Developer
-            </Button>
+          <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
+            Developer
+          </Button>
           </Link>
           <Link to="/about#">
-            <Button variant="outline" color="white" size="lg" radius="xl" className={classes.control}>
-              SRE Practices
-            </Button>
+          <Button variant="outline" color="white" size="lg" radius="xl" className={classes.control}>
+            SRE Practices
+          </Button>
           </Link>
         </Group>
       </Container>
