@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStyles, Group, Title, Text, TextInput, Button, Container, Center } from '@mantine/core';
-import { Book, QuestionMark, BrandSlack, Mail, BrandGithub } from 'tabler-icons-react';
+import { Code, Cloud, Book, ZoomQuestion, BrandSlack, Calendar, BrandGithub, Mail } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -111,43 +111,65 @@ export function InterestedField() {
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Want to start learning SRE practices? Or Find out about our resources
+            Select an area that interests you to see how to get started.
           </Text>
         </Container>
 
         <div className={classes.controls}>
-          <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
-            Data Science Learning Pathway
-          </Button>
+          <a href="https://operate-first.cloud/developer">
+            <Button leftIcon={<Code />} className={classes.control} size="lg">
+              App Development
+            </Button>
+          </a>
+          <a href="https://operate-first.cloud/sre">
+            <Button leftIcon={<Cloud />} className={classes.control} size="lg">
+              SRE and DevOps
+            </Button>
+          </a>
+          <a href="https://operate-first.cloud/training">
+            <Button leftIcon={<Book />} className={classes.control} size="lg">
+              Training
+            </Button>
+          </a>
           <a href="https://github.com/operate-first/support">
-            <Button leftIcon={<QuestionMark />} className={classes.control} size="lg">
+            <Button leftIcon={<ZoomQuestion />} className={classes.control} size="lg">
               Operate First Support
             </Button>
           </a>
         </div>
+        <div className={classes.controls}>
+          <a href="https://operate-first.cloud/data_scientist">
+            <Button leftIcon={<Book />} className={classes.control} size="med" variant="default" color="gray">
+              Data Science Learning Pathway
+            </Button>
+          </a>
+        </div>
+
         <Title align="center" style={{ color: 'white', marginTop: 40 }} className={classes.title}>Want to get involved?</Title>
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Find our code on GitHub, meet the community on slack, and join our mailing list
+            Follow us or join the community on GitHub, in Slack, and on our mailing list.
           </Text>
         </Container>
-        <Group style={{ marginTop: "20px" }}>
+
+        <div className={classes.controls}>
           <a href="https://github.com/operate-first">
-            <Button leftIcon={<BrandGithub />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-              Our GitHub
+            <Button leftIcon={<BrandGithub />} className={classes.control} size="lg" variant="default" color="gray">
+              GitHub
             </Button>
           </a>
           <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww">
-            <Button leftIcon={<BrandSlack />} className={classes.btncontrol} size="lg" variant="default" color="gray">
-              Join our Slack
+            <Button leftIcon={<BrandSlack />} className={classes.control} size="lg" variant="default" color="gray">
+              Slack
             </Button>
           </a>
           <a href="https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/">
-            <Button leftIcon={<Mail />} className={classes.btncontrol} size="lg">
-              Join our Mailing list
+            <Button leftIcon={<Mail />} className={classes.control} size="lg" variant="default" color="gray">
+              Mailing list
             </Button>
           </a>
-        </Group>
+        </div>
+
       </div>
     </Center>
   );
