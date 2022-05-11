@@ -2,46 +2,9 @@ import * as React from "react";
 // Component imports
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
-import { SREPracticesContent } from "../pages/SREPracticesPage";
+import { Container, Text, Title } from '@mantine/core';
 
 const SREPracticesPage = () => {
-  const navItems = [
-    {
-      "link": "/about",
-      "label": "Our Purpose"
-    },
-    {
-      "link": "/community",
-      "label": "Community"
-    },
-    {
-      "link": "/docs-training",
-      "label": "Docs & Training"
-    },
-    {
-      "link": "/community-cloud",
-      "label": "Op1st Community Cloud"
-    }
-  ]
-
-  const footerItems = [
-    {
-      "link": "https://www.redhat.com/en/about/privacy-policy",
-      "label": "Privacy statement"
-    },
-    {
-      "link": "https://www.redhat.com/en/about/terms-use",
-      "label": "Terms of use"
-    },
-    {
-      "link": "https://www.redhat.com/en/about/all-policies-guidelines",
-      "label": "Policies and guidelines"
-    },
-    {
-      "link": "https://openinfra.dev/legal/code-of-conduct",
-      "label": "Code of Conduct"
-    }
-  ]
 
   return (
     <main>
@@ -51,9 +14,32 @@ const SREPracticesPage = () => {
         padding: 0px;
       }
     `}</style>
-      <Nav links={navItems} />
-      <SREPracticesContent />
-      <Footer links={footerItems} />
+      <Nav/>
+      <Container>
+        <Title order={2} my="md">SRE Practices</Title>
+        <Text>
+            Beginning in January 2022 the Op1st community is releasing early (and often) a growing set of course materials for learning SRE methods and practices. These courses will be tied into the running community cloud, providing a look behind the veil of operations.
+        </Text>
+        <Text>
+            Our plans for these courses is extensive and will be laid out on these pages. In the meantime, DIY learners are encouraged to begin looking around at how project operations are run, as a view into how the training courses are going to look.
+        </Text>
+        <Text>
+            Additional Resources
+        </Text>
+        <Text>
+            [SRE pages in the Op1st Community Handbook](https://www.operate-first.cloud/community-handbook/operations-intro.md) used by the Op1st Operations SIG.
+        </Text>
+        <Text>
+            The [Op1st video playlists](https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg/playlists) cover various aspects of how the community cloud works, and other aspects of the community.
+        </Text>
+        <Text>
+            Video demonstration of bringing up a new service ([direct link to demonstration](https://www.youtube.com/watch?v=yJcT2z06kb0&t=379s)).
+        </Text>
+        <Text>
+            Source: https://www.operate-first.cloud/sre-learners/
+        </Text>
+      </Container>
+      <Footer/>
     </main>
   )
 }
