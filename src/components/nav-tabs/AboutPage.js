@@ -11,7 +11,7 @@ While open source has made software widely available, it has also exposed anothe
             <Text>
 In doing so, developers and operators collaborate to apply a project’s operational considerations right back into the code. The result?
             </Text>
-            <Title order={3} my="md">Better code, better performance, better final product.</Title>
+            <Title order={4} my="md">Better code, better performance, better final product.</Title>
         </Container>
     )
 }
