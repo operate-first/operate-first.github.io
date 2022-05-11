@@ -6,7 +6,7 @@ import { BuildingCommunity, MailFast, Speakerphone, BrandTwitter } from 'tabler-
 
 const useStyles = createStyles((theme) => ({
     wrapper: {
-      padding: `${theme.spacing.xl * 2}px ${theme.spacing.xl}px`,
+        padding: `${theme.spacing.xl * 2}px ${theme.spacing.xl}px`,
     },
 
     title: {
@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
         lineHeight: 1.1,
         marginBottom: theme.spacing.md,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-        },
+    },
 }));
 
 const features = [
@@ -34,13 +34,13 @@ const features = [
         icon: MailFast,
         title: <a href="http://lists.opendev.org/cgi-bin/mailman/listinfo/openinfralabs">OpenInfra Labs mailing list</a>,
         description:
-        'for those interested in open source cloud operations more broadly',
+            'for those interested in open source cloud operations more broadly',
     },
     {
         icon: BrandTwitter,
         title: <a href="https://twitter.com/operatefirst">Twitter</a>,
         description:
-        'You can also find us on Twitter, or view community project demos and updates on <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg">YouTube</a>',
+            <p style={{margin: 0, padding: 0}}>You can also find us on Twitter, or view community project demos and updates on <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg">YouTube</a></p>,
     },
 ];
 
@@ -48,51 +48,46 @@ export function CommunityContent() {
     const { classes } = useStyles();
 
     const items = features.map((feature) => (
-        <div key={feature.title}>
-        <ThemeIcon
-            size={44}
-            radius="md"
-            variant="gradient"
-            gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
-        >
-            <feature.icon size={26} />
-        </ThemeIcon>
-        <Text size="lg" mt="sm" weight={500}>
-            {feature.title}
-        </Text>
-        <Text color="dimmed" size="sm">
-            {feature.description}
-        </Text>
+        <div key={feature.icon}>
+            <ThemeIcon
+                size={44}
+                radius="md"
+                color='dark'
+            >
+                <feature.icon size={26} />
+            </ThemeIcon>
+            <Text size="lg" mt="sm" weight={600}>
+                {feature.title}
+            </Text>
+            <Text color="dimmed" size="sm">
+                {feature.description}
+            </Text>
         </div>
     ));
 
     return (
         <div className={classes.wrapper}>
-            <Grid gutter={80}>
-            <Col span={12} md={5}>
+            <Container>
                 <Title className={classes.title} order={2}>
-                Who are we?
+                    Who are we?
                 </Title>
-                <Text color="dimmed">
-                We are data scientists, software engineers and DevOps professionals working within the Operate First framework on open source software with open infrastructure, focused on solving large scale operational issues around developing intelligent applications and managing hybrid cloud systems through the application of advanced automation and machine learning.
-                </Text>
-
                 <Text>
-                Join us!
+                    We are data scientists, software engineers and DevOps professionals working within the Operate First framework on open source software with open infrastructure, focused on solving large scale operational issues around developing intelligent applications and managing hybrid cloud systems through the application of advanced automation and machine learning.
                 </Text>
-                <Text color="dimmed">
-                    Find our code on GitHub, meet the community on Slack, and join our mailing lists for announcements and discussions:
+                <Title pt="md" order={2}>Join us!</Title>
+                <Text py="sm">
+                    Find our code on <a href="https://github.com/operate-first/apps">GitHub</a>, meet the community on Slack, and join our mailing lists for announcements and discussions:
                 </Text>
-
-                <Text color="dimmed">
+                <Text py="sm">
                     If you’re interested in data science, check out our data <a href="https://www.operate-first.cloud/data-science/projectsoverview.md">science projects</a>. If you are more interested in site reliability engineering, we have SRE resources to help you get started!
                 </Text>
-            </Col>
-            <Col span={12} md={7}>
-                <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-                {items}
-                </SimpleGrid>
-            </Col>
+            </Container>
+            <Grid gutter={80} justify='center' style={{paddingTop: 20, margin: 0}}>
+                <Col span={12} md={7}>
+                    <SimpleGrid cols={2} spacing={30} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+                        {items}
+                    </SimpleGrid>
+                </Col>
             </Grid>
         </div>
     );

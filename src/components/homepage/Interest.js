@@ -56,7 +56,13 @@ const useStyles = createStyles((theme) => ({
         '@media (max-width: 520px)': {
             flexDirection: 'column',
             width: 360,
-            marginLeft: theme.spacing.xl,
+            marginLeft: theme.spacing.lg,
+        },
+
+        '@media (max-width: 360px)': {
+            flexDirection: 'column',
+            width: 360,
+            marginLeft: 0,
         },
     },
 

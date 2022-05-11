@@ -66,6 +66,10 @@ const useStyles = createStyles((theme) => ({
       marginLeft: theme.spacing.lg * 2,
     },
 
+    '@media (max-width: 360px)': {
+      marginLeft: theme.spacing.lg,
+  },
+
     '&:hover': {
       color: 'black',
       backgroundColor: 'white'
