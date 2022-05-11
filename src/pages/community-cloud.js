@@ -69,11 +69,21 @@ const CommunityCloudPage = () => {
                     The Operate First community makes use of the GitHub open source DevOps platform and integrated community management tools. The links here direct you to resources within that community space at GitHub:
                 </Text>
                 <List my="md">
-                    <List.Item>Data Science Apps</List.Item>
-                    <List.Item>Open Source Developer content</List.Item>
-                    <List.Item>SRE Operations</List.Item>
-                    <List.Item>Blueprints</List.Item>
-                    <List.Item>Support</List.Item>
+                    <a href="https://www.operate-first.cloud/data-science/" >
+                        <List.Item>Data Science Apps</List.Item>
+                    </a>
+                    <a href="https://www.operate-first.cloud/open-source-developers" >
+                        <List.Item>Open Source Developer content</List.Item>
+                    </a>
+                    <a href="https://www.operate-first.cloud/community-handbook/sre" >
+                        <List.Item>SRE Operations</List.Item>
+                    </a>
+                    <a href="https://www.operate-first.cloud/blueprints/blueprint/" >
+                        <List.Item>Blueprints</List.Item>
+                    </a>
+                    <a href="https://www.operate-first.cloud/community-handbook/support/README.md" >
+                        <List.Item>Support</List.Item>
+                    </a>
                 </List>
 
                 <Title order={2} my="md">Community Cloud Documentation</Title>
