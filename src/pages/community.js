@@ -3,52 +3,22 @@ import '../pages/style.css';
 // Component imports
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
+import { Button, Container, Text, Title, Group, List } from '@mantine/core';
+
 import { CommunityContent } from "../components/nav-tabs/CommunityPage";
 
 const CommunityPage = () => {
-    const navItems = [
-        {
-            "link": "/about",
-            "label": "Our Purpose"
-        },
-        {
-            "link": "/community",
-            "label": "Community"
-        },
-        {
-            "link": "/docs-training",
-            "label": "Docs & Training"
-        },
-        {
-            "link": "/community-cloud",
-            "label": "Op1st Community Cloud"
-        }
-    ]
-
-    const footerItems = [
-        {
-            "link": "https://www.redhat.com/en/about/privacy-policy",
-            "label": "Privacy statement"
-        },
-        {
-            "link": "https://www.redhat.com/en/about/terms-use",
-            "label": "Terms of use"
-        },
-        {
-            "link": "https://www.redhat.com/en/about/all-policies-guidelines",
-            "label": "Policies and guidelines"
-        },
-        {
-            "link": "https://openinfra.dev/legal/code-of-conduct",
-            "label": "Code of Conduct"
-        }
-    ]
 
     return (
         <main>
-            <Nav links={navItems} />
+            <Nav />
             <CommunityContent />
-            <Footer links={footerItems} />
+
+            <a href="https://www.operate-first.cloud/community/README.html">
+                <Button color="dark">Open community cloud</Button>
+            </a>
+
+            <Footer />
         </main>
     )
 }

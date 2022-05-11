@@ -77,6 +77,27 @@ const useStyles = createStyles((theme) => ({
 export function Nav({ links }) {
   const [opened, toggleOpened] = useBooleanToggle(false);
   const { classes} = useStyles();
+  const navItems = [
+    {
+        "link": "/about",
+        "label": "Our Purpose"
+    },
+    {
+        "link": "/community",
+        "label": "Community"
+    },
+    {
+        "link": "/docs-training",
+        "label": "Docs & Training"
+    },
+    {
+        "link": "/community-cloud",
+        "label": "Op1st Community Cloud"
+    }
+  ];
+  if (!links) {
+    links = navItems;
+  }
 
   const items = links.map((link) => (
     <Link
