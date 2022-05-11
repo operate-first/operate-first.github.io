@@ -25,10 +25,10 @@ export function DocTrainingContent() {
 
             <Title order={4} my="md">Training Courses</Title>
             <Text>
-              <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank">Introduction to Operate First</a>
+              <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank" rel="noreferrer">Introduction to Operate First</a>
             </Text>
             <Text>
-              <a href="https://www.operate-first.cloud/training/open_source_basics" target="_blank">Open Source Basics</a>
+              <a href="https://www.operate-first.cloud/training/open_source_basics" target="_blank" rel="noreferrer">Open Source Basics</a>
             </Text>
         </Container>
     )

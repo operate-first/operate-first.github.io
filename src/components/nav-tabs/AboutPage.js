@@ -28,13 +28,13 @@ export function AboutContent() {
               to operations. We invite open source developers to bring their
               projects to a production cloud during development hosted and
               maintained through Operate First contributors. There, they
-              can interact with ther cloud provider's operations (people and
+              can interact with ther cloud provider&apos;s operations (people and
               tools) and gain valuable feedback on operations considerations
               for their projects.
             </Text>
             <Title order={4} my="md">Where to start</Title>
             <Text>
-              Continue learning more about Operate First: <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank">Introduction to Operate First</a>
+              Continue learning more about Operate First: <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank" rel="noreferrer">Introduction to Operate First</a>
             </Text>
             <Text>
               <a href="http://localhost:8000/community">Get involved in our community</a>
