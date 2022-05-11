@@ -1,4 +1,5 @@
 import * as React from "react";
+import '../pages/style.css';
 // Component imports
 import { HomeContent } from "../components/homepage/HomePage";
 import { AboutFeatures } from "../components/homepage/About";
@@ -48,18 +49,12 @@ const IndexPage = () => {
 
   return (
     <main>
-      <style jsx global>{`
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-    `}</style>
       <Nav links={navItems} />
       <HomeContent />
       <AboutFeatures />
       <InterestedField />
       <FaqSimple />
-      <Footer links={footerItems}/>
+      <Footer links={footerItems} />
     </main>
   )
 }
