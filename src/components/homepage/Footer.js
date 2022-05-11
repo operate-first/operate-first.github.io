@@ -29,6 +29,28 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function Footer({ links }) {
+  const footerItems = [
+    {
+        "link": "https://www.redhat.com/en/about/privacy-policy",
+        "label": "Privacy statement"
+    },
+    {
+        "link": "https://www.redhat.com/en/about/terms-use",
+        "label": "Terms of use"
+    },
+    {
+        "link": "https://www.redhat.com/en/about/all-policies-guidelines",
+        "label": "Policies and guidelines"
+    },
+    {
+        "link": "https://openinfra.dev/legal/code-of-conduct",
+        "label": "Code of Conduct"
+    }
+  ]
+  if (!links) {
+    links = footerItems;
+  }
+
   const { classes } = useStyles();
   const items = links.map((link) => (
     <Anchor
@@ -56,5 +78,5 @@ export function Footer({ links }) {
 }
 
 Footer.propTypes = {
-    links: PropTypes.object,
+    links: PropTypes.array,
 }
