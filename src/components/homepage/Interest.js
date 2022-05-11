@@ -120,17 +120,17 @@ export function InterestedField() {
                 </Container>
                 {/* Area of interest buttons */}
                 <Group className={classes.controls} position='center'>
-                    <a href="https://operate-first.cloud/developer">
+                    <a href="/developer">
                         <Button leftIcon={<Code />} className={classes.control} size="lg">
                             App Development
                         </Button>
                     </a>
-                    <a href="https://operate-first.cloud/sre">
+                    <a href="/srepractices">
                         <Button leftIcon={<Cloud />} className={classes.control} size="lg">
                             SRE and DevOps
                         </Button>
                     </a>
-                    <a href="https://operate-first.cloud/training">
+                    <a href="/docs-training">
                         <Button leftIcon={<Book />} className={classes.control} size="lg">
                             Training
                         </Button>
@@ -142,7 +142,7 @@ export function InterestedField() {
                     </a>
                 </Group>
                 <Group className={classes.controls}>
-                    <a href="https://operate-first.cloud/data_scientist">
+                    <a href="/data-scientist">
                         <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
                             Data Science Learning Pathway
                         </Button>
