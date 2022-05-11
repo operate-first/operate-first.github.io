@@ -1,4 +1,5 @@
 import * as React from "react";
+import '../pages/style.css';
 // Component imports
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
@@ -45,12 +46,6 @@ const DocsTrainingPage = () => {
 
     return (
         <main>
-            <style jsx global>{`
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-    `}</style>
             <Nav links={navItems} />
             <DocTrainingContent />
             <Footer links={footerItems} />
