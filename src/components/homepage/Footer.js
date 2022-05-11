@@ -56,5 +56,5 @@ export function Footer({ links }) {
 }
 
 Footer.propTypes = {
-    links: PropTypes.object,
+    links: PropTypes.array,
 }

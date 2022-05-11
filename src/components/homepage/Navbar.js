@@ -149,5 +149,5 @@ export function Nav({ links }) {
 }
 
 Nav.propTypes = {
-  links: PropTypes.object,
+  links: PropTypes.array,
 }

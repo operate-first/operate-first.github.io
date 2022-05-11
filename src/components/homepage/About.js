@@ -65,7 +65,7 @@ const mockdata = [
 ];
 
 Feature.propTypes = {
-  icon: PropTypes.object,
+  icon: PropTypes.func,
   title: PropTypes.string,
   description: PropTypes.string,
   className: PropTypes.object,
