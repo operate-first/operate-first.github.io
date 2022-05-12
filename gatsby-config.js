@@ -2,7 +2,9 @@ module.exports = {
   pathPrefix: "/website-ng",
   siteMetadata: {
     title: `Operate First`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://operate-first.cloud/`,
   },
-  plugins: ['gatsby-plugin-mantine'],
+  plugins: [
+    'gatsby-plugin-mantine',
+  ],
 }
