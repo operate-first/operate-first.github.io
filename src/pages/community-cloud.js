@@ -66,35 +66,27 @@ const CommunityCloudPage = () => {
             <Container pb={69}>
                 <Title order={2} my="md">Op1st Community Cloud</Title>
                 <Text>
-                    The Operate First community makes use of the GitHub open source DevOps platform and integrated community management tools. The links here direct you to resources within that community space at GitHub:
+                    The Operate First Community Cloud is a shared environment for Open Source projects and SRE practicioners.
                 </Text>
-                <List my="md">
-                    <a href="https://www.operate-first.cloud/data-science/" >
-                        <List.Item>Data Science Apps</List.Item>
-                    </a>
-                    <a href="https://www.operate-first.cloud/open-source-developers" >
-                        <List.Item>Open Source Developer content</List.Item>
-                    </a>
-                    <a href="https://www.operate-first.cloud/community-handbook/sre" >
-                        <List.Item>SRE Operations</List.Item>
-                    </a>
-                    <a href="https://www.operate-first.cloud/blueprints/blueprint/" >
-                        <List.Item>Blueprints</List.Item>
-                    </a>
-                    <a href="https://www.operate-first.cloud/community-handbook/support/README.md" >
-                        <List.Item>Support</List.Item>
-                    </a>
-                </List>
+                <Text>
+                    It&apos;s operated under a community SLA and as open and transparent as possible.
+                </Text>
 
-                <Title order={2} my="lg">Community Cloud Documentation</Title>
+                <Title order={2} my="lg">Resources</Title>
 
                 <Group mb={40}>
                     <a href="https://www.operate-first.cloud/apps/content/README.html">
                         <Button leftIcon={<Book />} color="dark">GitOps Docs</Button>
                     </a>
+                    <a href="https://github.com/operate-first/blueprint" >
+                        <Button leftIcon={<Book />} color="dark">Blueprints and architectural decision records</Button>
+                    </a>
+                    <a href="https://github.com/operate-first/support" >
+                        <Button leftIcon={<Book />} color="dark">Get support</Button>
+                    </a>
                 </Group>
 
-                <Title order={2} my="md">Community Cloud Clusters</Title>
+                <Title order={2} my="md">Clusters</Title>
 
                 <Card withBorder radius="md" className={classes.card}>
                     <Group position="apart">
@@ -107,6 +99,15 @@ const CommunityCloudPage = () => {
                         {items}
                     </SimpleGrid>
                 </Card>
+
+                <Title order={2} my="md">Workloads</Title>
+
+                <iframe src="https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=moc/smaug&var-namespace=All&theme=light&panelId=4" width="1200" height="400" frameBorder="0"></iframe>
+
+                <iframe src="https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=moc/infra&var-namespace=All&theme=light&panelId=4" width="1200" height="400" frameBorder="0"></iframe>
+
+                <iframe src="https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=emea/balrog&var-namespace=All&theme=light&panelId=4" width="1200" height="400" frameBorder="0"></iframe>
+
             </Container>
             <Footer />
         </main>
