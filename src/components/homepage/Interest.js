@@ -1,6 +1,6 @@
 import React from 'react';
-import { createStyles, Group, Title, Text, TextInput, Button, Container, Center } from '@mantine/core';
-import { Code, Cloud, Book, ZoomQuestion, BrandSlack, Calendar, BrandGithub, Mail } from 'tabler-icons-react';
+import { createStyles, Group, Title, Text, Button, Container, Center } from '@mantine/core';
+import { Code, Cloud, Book, ZoomQuestion, BrandSlack, BrandGithub, Mail } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
     wrapper: {

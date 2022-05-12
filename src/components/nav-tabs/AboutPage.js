@@ -3,7 +3,7 @@ import React from 'react';
 
 export function AboutContent() {
     return (
-        <Container style={{ paddingBottom: 574 }}>
+        <Container style={{ paddingBottom: 200 }}>
             <Title order={2} my="md">Our Purpose</Title>
             <Text pb="sm">
               Open source software is widely available, but it faces an

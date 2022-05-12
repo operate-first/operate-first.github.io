@@ -4,7 +4,7 @@ import '../pages/style.css';
 import { Link } from "gatsby"
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
-import { Button, Container, Text, Title, Group, List } from '@mantine/core';
+import { Button, Container, Text, Title, Group } from '@mantine/core';
 import { createStyles, Card, SimpleGrid, UnstyledButton, Anchor } from '@mantine/core';
 import { Book, Cloud } from 'tabler-icons-react';
 

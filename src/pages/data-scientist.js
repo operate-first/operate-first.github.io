@@ -4,7 +4,7 @@ import '../pages/style.css';
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
 import { Button, Container, Text, Title, Group, List } from '@mantine/core';
-import { Book, Cloud, Database } from 'tabler-icons-react';
+import { Book, Cloud } from 'tabler-icons-react';
 
 const CommunityCloudPage = () => {
 
