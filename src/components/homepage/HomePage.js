@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Image, Group, Center } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Button, Image, Group } from '@mantine/core';
 import { Link } from "gatsby"
 
 const useStyles = createStyles((theme) => ({
@@ -94,21 +94,17 @@ export function HomeContent() {
           height={"50%"}
         />
         <Title className={classes.title}>a concept to incorporate operational experience into software projects</Title>
-        {/* <Text className={classes.description} size="xl" mt="xl">
-        a concept to incorporate operational experience into software projects
-        </Text> */}
-
         <Group>
-          <Link to="/developer">
+          <Link to="/getting-started">
           <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
-            Developer
+            Get Started
           </Button>
           </Link>
-          <Link to="/srepractices">
+          {/* <Link to="/srepractices">
           <Button variant="outline" color="white" size="lg" radius="xl" className={classes.control}>
             SRE Practices
           </Button>
-          </Link>
+          </Link> */}
         </Group>
       </Container>
     </div>

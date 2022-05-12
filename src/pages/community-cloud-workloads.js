@@ -2,8 +2,7 @@ import * as React from "react";
 // Component imports
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
-import { Button, Container, Text, Title, Group, List } from '@mantine/core';
-import { Book, Cloud, Database } from 'tabler-icons-react';
+import { Container, Title} from '@mantine/core';
 
 const CommunityCloudPage = () => {
 

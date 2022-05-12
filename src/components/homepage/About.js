@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createStyles, Text, SimpleGrid, Container, Group, Title } from '@mantine/core';
+import { createStyles, Text, SimpleGrid, Container, Title } from '@mantine/core';
 import { Code, Cloud, BuildingCommunity } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
