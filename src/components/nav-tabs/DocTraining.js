@@ -3,7 +3,7 @@ import React from 'react';
 
 export function DocTrainingContent() {
     return (
-        <Container>
+        <Container pb={314}>
             <Title order={2} my="md">Operate First Documentation and Training</Title>
 
             <Text>Unified Operate First Glossary of Terms (link coming soon)</Text>

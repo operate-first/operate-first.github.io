@@ -6,7 +6,7 @@ import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
 import { Button, Container, Text, Title, Group, List } from '@mantine/core';
 import { createStyles, Card, SimpleGrid, UnstyledButton, Anchor } from '@mantine/core';
-import { Book, Cloud, Database } from 'tabler-icons-react';
+import { Book, Cloud } from 'tabler-icons-react';
 
 const clusters = [
     { title: 'Infra', icon: Cloud, color: 'red', url: 'http://console-openshift-console.apps.moc-infra.massopen.cloud/' },
@@ -50,20 +50,20 @@ const useStyles = createStyles((theme) => ({
 const CommunityCloudPage = () => {
     const { classes, theme } = useStyles();
     const items = clusters.map((item) => (
-        <Link to={item.url} key={item.title} className={classes.item}>
+        <a href={item.url} key={item.title} className={classes.item}>
             <UnstyledButton key={item.title} className={classes.item}>
                 <item.icon color={theme.colors[item.color][6]} size={32} />
-                <Text size="xs" mt={7}>
+                <Text size="sm" mt={7} weight={600}>
                     {item.title}
                 </Text>
             </UnstyledButton>
-        </Link>
+        </a>
     ));
 
     return (
         <main>
-            <Nav/>
-            <Container>
+            <Nav />
+            <Container pb={69}>
                 <Title order={2} my="md">Op1st Community Cloud</Title>
                 <Text>
                     The Operate First community makes use of the GitHub open source DevOps platform and integrated community management tools. The links here direct you to resources within that community space at GitHub:
@@ -86,9 +86,9 @@ const CommunityCloudPage = () => {
                     </a>
                 </List>
 
-                <Title order={2} my="md">Community Cloud Documentation</Title>
+                <Title order={2} my="lg">Community Cloud Documentation</Title>
 
-                <Group style={{ marginBottom: 50 }}>
+                <Group mb={40}>
                     <a href="https://www.operate-first.cloud/apps/content/README.html">
                         <Button leftIcon={<Book />} color="dark">GitOps Docs</Button>
                     </a>
@@ -107,8 +107,6 @@ const CommunityCloudPage = () => {
                         {items}
                     </SimpleGrid>
                 </Card>
-
-
             </Container>
             <Footer />
         </main>
