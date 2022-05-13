@@ -11,7 +11,7 @@ const CommunityCloudPage = () => {
     return (
         <main>
             <Nav />
-            <Container mb={35}>
+            <Container mb={75}>
                 <Title order={2} my="md">Data Scientist</Title>
                 <Title order={3} my="md">Cloud Native Data Science and AI Ops: With Operate-First!</Title>
                 <Title order={4} my="md">Ready to help build the next generation of intelligent applications for the cloud, IN the cloud? 😎</Title>

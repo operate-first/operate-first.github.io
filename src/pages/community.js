@@ -13,7 +13,7 @@ const CommunityPage = () => {
         <main>
             <Nav />
             <CommunityContent />
-            <Center py='md'>
+            <Center pb={40}>
                 <a href="https://www.operate-first.cloud/community/README.html">
                     <Button color="dark">Open community cloud</Button>
                 </a>

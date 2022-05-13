@@ -10,7 +10,7 @@ const SREPracticesPage = () => {
   return (
     <main>
       <Nav />
-      <Container pb={418}>
+      <Container pb={455}>
         <Title order={2} my="md">SRE Practices</Title>
         <Text>
           Beginning in January 2022 the Op1st community is releasing early (and often) a growing set of course materials for learning SRE methods and practices. These courses will be tied into the running community cloud, providing a look behind the veil of operations.
