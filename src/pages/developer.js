@@ -44,7 +44,7 @@ const DeveloperPage = () => {
           Beginning in January 2022 the project is rolling out SRE training courses, which will incorporate meaningful examples from the running Op1st community cloud.
         </Text>
         <Text py="md">
-          <b>Source:</b> <a href="https://www.operate-first.cloud/open-source-developers/">https://www.operate-first.cloud/open-source-developers/</a>
+          <b>Source:</b> <a href="https://old.operate-first.cloud/open-source-developers/">https://old.operate-first.cloud/open-source-developers/</a>
         </Text>
       </Container>
       <Footer />

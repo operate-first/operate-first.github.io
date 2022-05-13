@@ -33,7 +33,7 @@ const SREPracticesPage = () => {
           </List.Item>
         </List>
         <Text py="md">
-          <b>Source:</b> <a href="https://www.operate-first.cloud/sre-learners/">https://www.operate-first.cloud/sre-learners/</a>
+          <b>Source:</b> <a href="https://old.operate-first.cloud/sre-learners/">https://old.operate-first.cloud/sre-learners/</a>
         </Text>
       </Container>
       <Footer />
