@@ -1,51 +1,63 @@
-import * as React from "react"
+import React from 'react';
 import { Link } from "gatsby"
+import { createStyles, Title, Text, Button, Container, Group } from '@mantine/core';
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+const useStyles = createStyles((theme) => ({
+  root: {
+    paddingTop: 80,
+    paddingBottom: 80,
+  },
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+  label: {
+    textAlign: 'center',
+    fontWeight: 900,
+    fontSize: 220,
+    lineHeight: 1,
+    marginBottom: theme.spacing.xl * 1.5,
+    color: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.blue[5],
 
-const NotFoundPage = () => {
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: 120,
+    },
+  },
+
+  title: {
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    textAlign: 'center',
+    fontWeight: 900,
+    fontSize: 38,
+
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: 32,
+    },
+  },
+
+  description: {
+    maxWidth: 500,
+    margin: 'auto',
+    marginTop: theme.spacing.xl,
+    marginBottom: theme.spacing.xl * 1.5,
+  },
+}));
+
+export default function NotFoundPage() {
+  const { classes } = useStyles();
+
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        <>
-          <br />
-          Try creating a page in <code style={codeStyles}>src/pages/</code>.
-          <br />
-        </>
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+    <Container className={classes.root}>
+      <div className={classes.label}>404</div>
+      <Title className={classes.title}>You have found secret place...</Title>
+      <Text color="dimmed" size="lg" align="center" className={classes.description}>
+        Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
+        been moved to another URL :(
+      </Text>
+      <Group position="center">
+      <Link to="/">
+        <Button variant="subtle" size="md">
+          Take me back to home page
+        </Button>
+      </Link>
+      </Group>
+    </Container>
+  );
 }
-
-export default NotFoundPage
