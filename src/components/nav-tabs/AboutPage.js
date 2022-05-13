@@ -1,5 +1,7 @@
 import { Container, Text, Title } from '@mantine/core';
 import React from 'react';
+import { Link } from "gatsby"
+
 
 export function AboutContent() {
     return (
@@ -37,7 +39,7 @@ export function AboutContent() {
               Continue learning more about Operate First: <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank" rel="noreferrer">Introduction to Operate First</a>
             </Text>
             <Text pt={10}>
-              <a href="community">Get involved in our community</a>
+              <Link to="/community">Get involved in our community</Link>
             </Text>
             <Text pt={10}>
               Start using Operate First cloud resources as an app developer (link coming soon)

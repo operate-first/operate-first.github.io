@@ -31,7 +31,7 @@ const CommunityCloudPage = () => {
                         I’m a data scientist looking for an open source project where I can apply my skills to a real world problem with real data, and I’m tired of MNIST! Fork our github repo and make a PR to the <a href="https://github.com/aicoe-aiops/ocp-ci-analysis">AI4CI</a> project.
                     </List.Item>
                     <List.Item py="xs">
-                        I’m a site reliability engineer looking to make my life easier. I need to add some more intelligent automation into my cluster and application management process. Got anything for me? Of course! See our list of <a href="https://www.operate-first.cloud/data-science/projectsoverview.md">AI Ops projects</a> we’ve worked on.
+                        I’m a site reliability engineer looking to make my life easier. I need to add some more intelligent automation into my cluster and application management process. Got anything for me? Of course! See our list of <a href="https://old.operate-first.cloud/data-science/projectsoverview.md">AI Ops projects</a> we’ve worked on.
                     </List.Item>
                     <List.Item>
                         I’m a data scientist, but have no idea how to use OpenShift or Kubernetes to deploy my models and get them out into the world! This <a href="https://github.com/AICoE/elyra-aidevsecops-tutorial">tutorial</a> will get you from 0 to 100 in no time.
@@ -49,7 +49,7 @@ const CommunityCloudPage = () => {
                     </a>
                 </Group>
                 <Text mb="xl">
-                    <b>Source:</b> <a href="https://www.operate-first.cloud/data-science/">https://www.operate-first.cloud/data-science/</a>
+                    <b>Source:</b> <a href="https://old.operate-first.cloud/data-science/">https://old.operate-first.cloud/data-science/</a>
                 </Text>
             </Container>
             <Footer />

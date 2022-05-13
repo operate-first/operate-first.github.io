@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Image, Group } from '@mantine/core';
 import { Link } from "gatsby"
+import Logo from "../../assets/opf-logo.png"
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -88,11 +89,7 @@ export function HomeContent() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <Image
-          src="https://www.operate-first.cloud/static/8d56de4f3d3afae74daab76e9e11c4aa/fcda8/logo.png"
-          width={"50%"}
-          height={"50%"}
-        />
+        <img src={Logo} width={"50%"}></img>
         <Title className={classes.title}>a concept to incorporate operational experience into software projects</Title>
         <Group>
           <Link to="/getting-started">

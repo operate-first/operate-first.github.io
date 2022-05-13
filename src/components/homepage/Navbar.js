@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import { BrandGithub, BrandSlack, BrandTwitter, BrandYoutube } from 'tabler-icons-react';
-import icon from '../../../static/opf-logo.png'
+import icon from '../../assets/opf-logo.png'
 import { Link } from "gatsby"
 
 const HEADER_HEIGHT = 60;

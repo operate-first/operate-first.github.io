@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
-import rhlogo from '../../../static/RHLogo.png'
+import rhlogo from '../../assets/RHLogo.png'
 
 const useStyles = createStyles((theme) => ({
   footer: {

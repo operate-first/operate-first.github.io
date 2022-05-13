@@ -79,7 +79,7 @@ export function CommunityContent() {
                     Find our code on <a href="https://github.com/operate-first/apps">GitHub</a>, meet the community on Slack, and join our mailing lists for announcements and discussions:
                 </Text>
                 <Text py="sm">
-                    If you’re interested in data science, check out our data <a href="https://www.operate-first.cloud/data-science/projectsoverview.md">science projects</a>. If you are more interested in site reliability engineering, we have SRE resources to help you get started!
+                    If you’re interested in data science, check out our data <a href="https://old.operate-first.cloud/data-science/projectsoverview.md">science projects</a>. If you are more interested in site reliability engineering, we have SRE resources to help you get started!
                 </Text>
             </Container>
             <Grid gutter={80} justify='center' style={{paddingTop: 20, margin: 0}}>
