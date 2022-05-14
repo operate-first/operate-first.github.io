@@ -90,7 +90,7 @@ export function HomeContent() {
       />
       <Container className={classes.container}>
         <img src={Logo} width={"50%"}></img>
-        <Title className={classes.title}>a concept to incorporate operational experience into software projects</Title>
+        <Title className={classes.title}>we're running — while creating — a full-Open Source community cloud, so we can learn things and make things better.</Title>
         <Group>
           <Link to="/getting-started">
           <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
