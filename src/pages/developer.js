@@ -11,7 +11,7 @@ const DeveloperPage = () => {
   return (
     <main>
       <Nav />
-      <Container pb={140}>
+      <Container pb={180}>
         <Title order={2} my="md">Developer</Title>
         <Text>
           Does your open source project want to test and prove your software in a cloud environment, as a kind of open source managed service?

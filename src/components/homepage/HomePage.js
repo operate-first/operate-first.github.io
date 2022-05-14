@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Image, Group } from '@mantine/core';
+import { createStyles, Overlay, Container, Title, Button, Group } from '@mantine/core';
 import { Link } from "gatsby"
 import Logo from "../../assets/opf-logo.png"
 
