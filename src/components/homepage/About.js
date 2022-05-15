@@ -48,19 +48,19 @@ const mockdata = [
     icon: Code,
     title: 'App Developers',
     description:
-      'Deploy and maintain apps in an open operations environment. Open yourself up to input on how to make your app operate better.',
+      'Deploy and maintain apps in an Open operations environment. Gather your own data and receive input on how to make your app operate better.',
   },
   {
     icon: Cloud,
     title: 'SRE and DevOps',
     description:
-      'Site reliability engineering is the evolution of DevOps for operating managed services. Join a movement to apply SRE best practices in an open operations environment, and help app developers build operations considerations back into their code.',
+      'Site reliability engineering (SRE) is the evolution of DevOps for operating managed services. Join a movement to learn, capture, and apply SRE best practices in an Open operations environment, and help app developers build operations considerations back into their code.',
   },
   {
     icon: BuildingCommunity,
     title: 'Community',
     description:
-      'Participate in the Operate First community. Contribute to the success of our open operations mission.',
+      'Participate in the Operate First community. Contribute to the success of our Open operations mission while learning or even teaching best and good-enough practices.',
   },
 ];
 
@@ -102,9 +102,10 @@ export function AboutFeatures() {
         Why Operate First?
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
-          Open source software is widely available, but it faces an operations barrier to entry into production environments.
-          Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
-          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself.
+          Open Source software is widely available, but it faces an operations-barrier when bringing it to a production environment.
+          If it is proprietary services enabling Open Source to run in production or as a cloud, it undermines the Open Source development model.
+          We must remove this barrier with an Open Source approach, creating <em>Open Operations</em>.
+          This means developers and operators collaborate Openly to apply a product&apos;s operational considerations right back into the code itself.
       </Text>
       <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
         {items}
