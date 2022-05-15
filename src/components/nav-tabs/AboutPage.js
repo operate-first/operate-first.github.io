@@ -8,31 +8,60 @@ export function AboutContent() {
         <Container pb={205}>
             <Title order={2} my="md">Our Purpose</Title>
             <Text pb="sm">
-              Open source software is widely available, but it faces an
-              operatations barrier to entry into production environments.
-              Proprietary services have attempted to address this barrier, but
-              they undermine the open source model.
+              Why build an all-Open Source community cloud? How does it help learn
+              things and make things better?
             </Text>
             <Text pb="sm">
-              To overcome this operations barrier in an open source way, we
-              must switch to an <b><i>open source approach to operations</i></b>.
-              This means that developers and operators collaborate to apply a
+              Open Source software is widely available, but it faces an
+              operations-barrier when bringing it to a production environment.
+              Proprietary services have attempted to address this barrier, but
+              they undermine the Open Source development model because lessons
+              learned from operating the code are invisible to the Open Source
+              developers.
+            </Text>
+            <Text pb="sm">
+              To overcome this operations barrier in an Open Source way, we
+              must switch to an <b>Open Source-like approach to operations</b>,
+              or <i>Open Operations</i> (<i>Open Ops</i>). Open Operations means
+              developers and operators collaborating Openly to apply a
               product&apos;s operational considerations right back into the code
               itself.
             </Text>
+            <Text pb="sm">
+              Think of it like this: <b>After CI + CD is community cloud</b>.
             <Text>
               <i>The result?</i>
             </Text>
-            <Title order={4} my="md" py="sm">Better code, better performance, better final product.</Title>
+            <Title order={4} my="md" py="sm">Better code + better performance = better final product.</Title>
             <Text pb="sm">
               <b>Operate First</b> is a community of developers, operators,
-              and others who believe in promoting this open source approach
-              to operations. We invite open source developers to bring their
-              projects to a production cloud during development hosted and
-              maintained through Operate First contributors. There, they
-              can interact with ther cloud provider&apos;s operations (people
-              and tools) and gain valuable feedback on operations considerations
-              for their projects.
+              and others — site reliability engineers (SRE), data scientists,
+              Open Source practitioners, and so forth — who believe in promoting
+              this Open Source approach
+              to operations. We invite Open Source developers to bring their
+              projects during development to a production cloud, which is hosted and
+              maintained by Operate First contributors. There in the community cloud
+              developers can interact directly with ther cloud provider&apos;s operations (people
+              and tools) and gain valuable feedback on operating considerations
+              for their code and other artifacts.
+            </Text>
+            <Text pb="sm">
+              In this same community cloud the <i>SRE community of practice (CoP)</i>
+              creates, learns, teaches, and documents what it takes to build and run
+              an all-Open Source cloud.
+            </Text>
+            <Text pb="sm">
+              Rather than holding a pager to a customer SLA, our community cloud is self-supported
+              between overall operators and app teams (Open Source developers) who maintain the cloud
+              to a mutual expectation level. This expectation level is tuned to the community
+              itself, so an app team wanting a higher uptime service level objective (SLO)
+              might respond by servicing their app to a higher expectation level.
+            </Text>
+            <Text pb="sm">
+              Thus developers and operators work together to create a community cloud that
+              matches the needs and expectations of our community. Then scaling the community
+              cloud is a technical effort that intersects with the community expectations
+              as a substitute for the common product-customer relationship.
             </Text>
             <Title order={4} my="md">Where to start:</Title>
             <Text>
