@@ -8,8 +8,8 @@ export function AboutContent() {
         <Container pb={205}>
             <Title order={2} my="md">Our Purpose</Title>
             <Text pb="sm">
-              <b>Why build an all-Open Source community cloud? How does it help learn
-              things and make things better?</b>
+              <b>Why build an all-Open Source community cloud? How does it help
+              learn stuff and make things better?</b>
             </Text>
             <Text pb="sm">
               Open Source software is widely available, but it faces an
