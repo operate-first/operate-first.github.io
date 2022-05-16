@@ -29,6 +29,7 @@ export function AboutContent() {
             </Text>
             <Text pb="sm">
               Think of it like this: <b>After CI + CD is community cloud</b>.
+            </Text>
             <Text>
               <i>The result?</i>
             </Text>
