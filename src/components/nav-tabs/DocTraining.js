@@ -1,5 +1,6 @@
 import { Container, Text, Title } from '@mantine/core';
 import React from 'react';
+import DocsImage from "../../assets/docs-training-layered-learning.png"
 
 export function DocTrainingContent() {
     return (
@@ -17,14 +18,13 @@ export function DocTrainingContent() {
             </Text>
 
             <Text>
-              <img src="../.../assets/docs-training-layered-learning.png"
-              align="center"/>
+              <img src={DocsImage} alt="Operate First Documentation and Training"></img>
             </Text>
 
             <Text>
               Here you can find resources for understanding how these concepts —
               from the foundational to the deeply specific — actually work in
-              the Operate First project. We're beginning with the foundational
+              the Operate First project. We&apos;re beginning with the foundational
               documentation and training while the broader community organically
               creates and maintains area-specific content.
             </Text>
