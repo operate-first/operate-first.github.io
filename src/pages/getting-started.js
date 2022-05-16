@@ -17,17 +17,18 @@ const ActionPage = () => {
           <b>Start by reading about <Link to="/about">Our Purpose</Link>.</b>
         </Text>
         <Text py="sm">
-          Where you go from there is shaped by your background
-          and how you want to use or contribute to Operate First.
+          Where you go from there is shaped by your background and your interests.
+          From there you can explore how you may use or contribute to Operate
+          First.
         </Text>
 
         <Title order={3} mt="xl"><Code /> I&apos;m an app developer...</Title>
         <Text pt="sm">
-          <i>I develop software applications that I deploy in production cloud
-          environments. I want my production deployment to have open
-          operations so that DevOps professionals and site reliability
+          <i>I develop software applications I deploy in production cloud
+          environments. I want my production deployment to have Open
+          Operations so DevOps professionals and site reliability
           engineers (SREs) can study how it operates and suggest how I can
-          evolve the code to improve operations.</i>
+          evolve the code to improve operational qualities.</i>
         </Text>
         <Text py="sm">
           <b>Get started by:</b>
@@ -40,9 +41,9 @@ const ActionPage = () => {
         <Title order={3} mt="xl"><Cloud /> I&apos;m in DevOps or SRE...</Title>
         <Text pt="sm">
           <i>I have provided DevOps or SRE services in a production cloud
-          environment. I want to work in an open operations setting where I
+          environment. I want to work in an Open Operations setting where I
           can gather information about an application&apos;s operational performance
-          and suggest code changes to application developers that can help them
+          and suggest code changes to application developers to help them
           improve how their apps operate.</i>
         </Text>
         <Text pt="sm">
@@ -66,9 +67,10 @@ const ActionPage = () => {
           <b>Visit the <Link to="/data-scientist">Data Scientist page</Link> to learn more.</b>
         </Text>
 
-        <Title order={3} mt="xl"><Book /> I&apos;m a student...</Title>
+        <Title order={3} mt="xl"><Book /> I&apos;m a student or life-long learner ...</Title>
         <Text pt="sm">
-          <i>I am a student of IT or software engineering who is interested in
+          <i>I am a student or learner of IT or software engineering who is
+          interested in
           learning more about open source, DevOps, SRE, and applying open
           operations in a production environment.</i>
         </Text>
