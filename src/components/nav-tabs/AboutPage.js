@@ -83,6 +83,7 @@ export function AboutContent() {
               intersects with the community expectations as a substitute for the
               common product-customer relationship.
             </Text>
+            <hr />
             <Title order={4} my="md">Where to start:</Title>
             <Text>
               Continue learning more about Operate First: <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank" rel="noreferrer">Introduction to Operate First</a>
