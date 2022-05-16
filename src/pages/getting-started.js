@@ -87,7 +87,7 @@ const ActionPage = () => {
           get involved in what&apos;s going on.</i>
         </Text>
         <Text pt="sm">
-          <b>Get started by following or joining our <Link to="/community">Operate First Community</Link>.</b>
+          <b>Get started by following or joining our <Link to="/our-community">Operate First Community</Link>.</b>
         </Text>
         <Text pb="lg">
           When you revisit in the future, you can jump directly to the

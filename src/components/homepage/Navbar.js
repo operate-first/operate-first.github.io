@@ -83,7 +83,7 @@ export function Nav({ links }) {
         "label": "Our Purpose"
     },
     {
-        "link": "/community",
+        "link": "/our-community",
         "label": "Community"
     },
     {
