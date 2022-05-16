@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
         paddingBottom: 80,
         border: 'none',
         background: 'rgb(0,25,51)',
-        background: 'linear-gradient(359deg, rgb(0 44 91) 0%, rgba(0,44,92,1) 51%, rgba(0,52,107,1) 100%)',
+        background: 'linear-gradient(359deg, rgb(50 50 50) 0%, rgb(78 78 78) 51%, rgb(100 100 100) 100%)',
         '@media (max-width: 755px)': {
             paddingTop: 80,
             paddingBottom: 60,
@@ -113,7 +113,7 @@ export function InterestedField() {
             <div className={classes.inner}>
                 <Title className={classes.title}>
                     Are{' '}
-                    <Text component="span" color="blue" inherit>
+                    <Text component="span" color="yellow" inherit>
                         you
                     </Text>{' '}
                     interested?
@@ -127,22 +127,22 @@ export function InterestedField() {
                 {/* Area of interest buttons */}
                 <Group className={classes.controls} position='center'>
                     <a href="/developer">
-                        <Button leftIcon={<Code />} className={classes.control} size="lg">
+                        <Button leftIcon={<Code />} className={classes.control} color="yellow" size="lg">
                             App Development
                         </Button>
                     </a>
                     <a href="/srepractices">
-                        <Button leftIcon={<Cloud />} className={classes.control} size="lg">
+                        <Button leftIcon={<Cloud />} className={classes.control} color="yellow" size="lg">
                             SRE and DevOps
                         </Button>
                     </a>
                     <a href="/docs-training">
-                        <Button leftIcon={<Book />} className={classes.control} size="lg">
+                        <Button leftIcon={<Book />} className={classes.control} color="yellow" size="lg">
                             Training
                         </Button>
                     </a>
                     <a href="https://github.com/operate-first/support">
-                        <Button leftIcon={<ZoomQuestion />} className={classes.control} size="lg">
+                        <Button leftIcon={<ZoomQuestion />} className={classes.control} color="yellow" size="lg">
                             Operate First Support
                         </Button>
                     </a>
