@@ -10,7 +10,7 @@ const useStyles = createStyles((theme) => ({
         paddingBottom: 80,
         border: 'none',
         background: 'rgb(0,25,51)',
-        background: 'linear-gradient(359deg, rgb(0 44 91) 0%, rgba(0,44,92,1) 51%, rgba(0,52,107,1) 100%)',
+        background: 'linear-gradient(359deg, rgb(50 50 50) 0%, rgb(78 78 78) 51%, rgb(100 100 100) 100%)',
         '@media (max-width: 755px)': {
             paddingTop: 80,
             paddingBottom: 60,

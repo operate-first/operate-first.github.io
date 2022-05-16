@@ -10,7 +10,7 @@ const useStyles = createStyles((theme, _params, getRef) => {
       paddingTop: theme.spacing.xl * 2,
       minHeight: 700,
       background: 'rgb(0,38,79)',
-      background: 'linear-gradient(180deg, rgb(0 44 91) 0%, rgba(0,25,51,1) 50%, rgba(0,16,33,1) 100%)',
+      background: 'linear-gradient(180deg, rgb(52 52 52) 0%, rgb(35 35 35) 50%, rgb(10 10 10) 100%)',
       position: 'relative',
     },
 
