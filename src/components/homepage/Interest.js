@@ -113,7 +113,7 @@ export function InterestedField() {
             <div className={classes.inner}>
                 <Title className={classes.title}>
                     Are{' '}
-                    <Text component="span" color="blue" inherit>
+                    <Text component="span" color="yellow" inherit>
                         you
                     </Text>{' '}
                     interested?
@@ -127,22 +127,22 @@ export function InterestedField() {
                 {/* Area of interest buttons */}
                 <Group className={classes.controls} position='center'>
                     <a href="/developer">
-                        <Button leftIcon={<Code />} className={classes.control} size="lg">
+                        <Button leftIcon={<Code />} className={classes.control} color="yellow" size="lg">
                             App Development
                         </Button>
                     </a>
                     <a href="/srepractices">
-                        <Button leftIcon={<Cloud />} className={classes.control} size="lg">
+                        <Button leftIcon={<Cloud />} className={classes.control} color="yellow" size="lg">
                             SRE and DevOps
                         </Button>
                     </a>
                     <a href="/docs-training">
-                        <Button leftIcon={<Book />} className={classes.control} size="lg">
+                        <Button leftIcon={<Book />} className={classes.control} color="yellow" size="lg">
                             Training
                         </Button>
                     </a>
                     <a href="https://github.com/operate-first/support">
-                        <Button leftIcon={<ZoomQuestion />} className={classes.control} size="lg">
+                        <Button leftIcon={<ZoomQuestion />} className={classes.control} color="yellow" size="lg">
                             Operate First Support
                         </Button>
                     </a>

@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
-    color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6],
+    color: theme.colors.yellow[5],
   },
 
   title: {
@@ -77,7 +77,6 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
     <div className={cx(classes.feature, className)} {...others}>
       <div className={classes.overlay} />
-
       <div className={classes.content}>
         <Icon size={38} className={classes.icon} />
         <Text weight={700} size="lg" mb="xs" mt={5} className={classes.title}>
@@ -98,7 +97,7 @@ export function AboutFeatures() {
 
   return (
     <Container mt={30} mb={30} size="lg" py="lg">
-      <Title order={1} align="center" sx={(theme) => ({color: theme.colors.blue[7]})}>
+      <Title order={1} align="center" sx={(theme) => ({color: theme.colors.yellow[5]})}>
       Why build an all-Open Source community cloud?
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
