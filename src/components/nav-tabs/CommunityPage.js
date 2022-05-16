@@ -71,19 +71,18 @@ export function CommunityContent() {
                 <Title className={classes.title} order={2}>
                     Who are we?
                 </Title>
-                <Text>
+                <Text py="sm">
                   We are data scientists, software engineers, and DevOps
                   professionals working within the Operate First framework on
-                  Open Source software with Open infrastructure and Open
-                  Operations.
+                  Open Source software with Open Operations and infrastructure.
                 </Text>
-                <Text>
+                <Text py="sm">
                   We are focused on solving large scale operational issues
                   around developing intelligent applications and managing hybrid
                   cloud systems through the application of advanced automation
                   and machine learning.
                 </Text>
-                <Text>
+                <Text py="sm">
                   In short, <b>we are building an all-Open Source
                   community cloud as the best and clear way to understand and
                   solve common, interrelated problems, while documenting the
