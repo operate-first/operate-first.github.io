@@ -29,7 +29,8 @@ export function AboutContent() {
             <Text pb="sm">
               Open Operations means developers and operators collaborating
               Openly to apply a product&apos;s operational considerations right
-              back into the code itself.
+              back into the code itself. The result is an <a href="https://www.operate-first.cloud/community/open-source-services.html">
+              Open Source service</a>.
             </Text>
             <Text pb="sm">
               Think of it like this: <b>After CI + CD is community cloud</b>.
