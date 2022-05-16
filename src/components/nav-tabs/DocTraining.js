@@ -18,7 +18,7 @@ export function DocTrainingContent() {
 
             <Text>
               <img src="../.../assets/docs-training-layered-learning.png"
-              align="center">
+              align="center"/>
             </Text>
 
             <Text>
