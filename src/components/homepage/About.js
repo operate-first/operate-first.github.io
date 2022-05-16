@@ -99,7 +99,7 @@ export function AboutFeatures() {
   return (
     <Container mt={30} mb={30} size="lg" py="lg">
       <Title order={1} align="center" sx={(theme) => ({color: theme.colors.blue[7]})}>
-        Why Operate First?
+      Why build an all-Open Source community cloud?
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
           Open Source software is widely available, but it faces an operations-barrier when bringing it to a production environment.
