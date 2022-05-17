@@ -13,11 +13,11 @@ const DeveloperPage = () => {
       <Nav />
       <Container pb={180}>
         <Title order={2} my="md">Developer</Title>
-        <Text>
-          Does your open source project want to test and prove your software in a cloud environment, as a kind of open source managed service?
+        <Text py="sm">
+          Does your Open Source project want to test and prove your software in a cloud environment, as a kind of Open Source managed service?
         </Text>
-        <Text>
-          If you are interested in running your open source software in the Op1st community cloud, as a way to gain operational insights to make your software easier to run (operate) and debug in a production cloud, take these steps:
+        <Text py="sm">
+          If you are interested in running your Open Source software in the Op1st community cloud, as a way to gain operational insights to make your software easier to run (operate) and debug in a production cloud, take these steps:
         </Text>
         <List type="ordered" py="lg" withPadding>
           <List.Item>
@@ -35,9 +35,9 @@ const DeveloperPage = () => {
         <Text>
           If you have any further questions, you can reach to <a href="https://www.operate-first.cloud/community-handbook/support/README.md">Op1st community support</a> for help.
         </Text>
+        <Title order={4} my="md">Learning Resources</Title>
         <Text py="md">
-          Learning Resources
-          As the Op1st project adds training and other learning resources, those will be linked in here to help open source developers find a learning pathway or self-directed learning within these materials.
+          As the Op1st project adds training and other learning resources, those will be linked in here to help Open Source developers find a learning pathway or self-directed learning within these materials.
         </Text>
         <Text>
           The GitOps Reference Documentation is useful for finding the what and how of getting operations done in the project.
