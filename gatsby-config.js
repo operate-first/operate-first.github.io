@@ -12,5 +12,11 @@ module.exports = {
         head: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/assets/opf-logo.png`
+      },
+    },
   ],
 }
