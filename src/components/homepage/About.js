@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
-    color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6],
+    color: theme.colors.yellow[5],
   },
 
   title: {
@@ -48,19 +48,19 @@ const mockdata = [
     icon: Code,
     title: 'App Developers',
     description:
-      'Deploy and maintain apps in an open operations environment. Open yourself up to input on how to make your app operate better.',
+      'Deploy and maintain apps in an Open operations environment. Gather your own data and receive input on how to make your app operate better.',
   },
   {
     icon: Cloud,
     title: 'SRE and DevOps',
     description:
-      'Site reliability engineering is the evolution of DevOps for operating managed services. Join a movement to apply SRE best practices in an open operations environment, and help app developers build operations considerations back into their code.',
+      'Site reliability engineering (SRE) is the evolution of DevOps for operating managed services. Join a movement to learn, capture, and apply SRE best practices in an Open operations environment, and help app developers build operations considerations back into their code.',
   },
   {
     icon: BuildingCommunity,
     title: 'Community',
     description:
-      'Participate in the Operate First community. Contribute to the success of our open operations mission.',
+      'Participate in the Operate First community. Contribute to the success of our Open operations mission while learning or even teaching best and good-enough practices.',
   },
 ];
 
@@ -77,7 +77,6 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
   return (
     <div className={cx(classes.feature, className)} {...others}>
       <div className={classes.overlay} />
-
       <div className={classes.content}>
         <Icon size={38} className={classes.icon} />
         <Text weight={700} size="lg" mb="xs" mt={5} className={classes.title}>
@@ -98,13 +97,14 @@ export function AboutFeatures() {
 
   return (
     <Container mt={30} mb={30} size="lg" py="lg">
-      <Title order={1} align="center" sx={(theme) => ({color: theme.colors.blue[7]})}>
-        Why Operate First?
+      <Title order={1} align="center" sx={(theme) => ({color: theme.colors.yellow[5]})}>
+      Why build an all-Open Source community cloud?
       </Title>
       <Text my="xl" size="lg" px={100} className={classes.abouttext}align="center">
-          Open source software is widely available, but it faces an operations barrier to entry into production environments.
-          Proprietary services for operations undermine the open source model. To overcome this barrier, we must shift to an open source approach to operations.
-          This means developers and operators collaborate to apply a product&apos;s operational considerations right back into the code itself.
+          Open Source software is widely available, but it faces an operations-barrier when bringing it to a production environment.
+          If it is proprietary services enabling Open Source to run in production or as a cloud, it undermines the Open Source development model.
+          We must remove this barrier with an Open Source approach, creating <em>Open Operations</em>.
+          This means developers and operators collaborate Openly to apply a product&apos;s operational considerations right back into the code itself.
       </Text>
       <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
         {items}

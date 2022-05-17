@@ -12,7 +12,7 @@ const DocsTrainingPage = () => {
             "label": "Our Purpose"
         },
         {
-            "link": "/community",
+            "link": "/our-community",
             "label": "Community"
         },
         {

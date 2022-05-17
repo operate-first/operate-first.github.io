@@ -51,6 +51,12 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  navLogo: {
+    '@media (max-width: 520px)': {
+      width: '30%',
+    },
+  },
+
   link: {
     display: 'block',
     lineHeight: 1,
@@ -76,23 +82,23 @@ const useStyles = createStyles((theme) => ({
 
 export function Nav({ links }) {
   const [opened, toggleOpened] = useBooleanToggle(false);
-  const { classes} = useStyles();
+  const { classes } = useStyles();
   const navItems = [
     {
-        "link": "/about",
-        "label": "Our Purpose"
+      "link": "/about",
+      "label": "Our Purpose"
     },
     {
-        "link": "/community",
-        "label": "Community"
+      "link": "/our-community",
+      "label": "Community"
     },
     {
-        "link": "/docs-training",
-        "label": "Docs & Training"
+      "link": "/docs-training",
+      "label": "Docs & Training"
     },
     {
-        "link": "/community-cloud",
-        "label": "Op1st Community Cloud"
+      "link": "/community-cloud",
+      "label": "Op1st Community Cloud"
     }
   ];
   if (!links) {
@@ -117,7 +123,7 @@ export function Nav({ links }) {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to="/">
-          <img src={icon} width="150px" alt="opf-logo" />
+          <img src={icon} width="150px" alt="opf-logo" className={classes.navLogo} />
         </Link>
         <Group spacing={7} className={classes.links}>
           {items}

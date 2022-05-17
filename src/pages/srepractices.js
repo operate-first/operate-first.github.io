@@ -13,7 +13,7 @@ const SREPracticesPage = () => {
       <Container pb={455}>
         <Title order={2} my="md">SRE Practices</Title>
         <Text>
-          Beginning in January 2022 the Op1st community is releasing early (and often) a growing set of course materials for learning SRE methods and practices. These courses will be tied into the running community cloud, providing a look behind the veil of operations.
+          Beginning in January 2022 the Op1st community is releasing early (and often) a growing set of course materials for learning SRE methods and practices. These courses will be tied into the running community cloud, providing a look behind the normal secrecy wall around operations.
         </Text>
         <Text>
           Our plans for these courses is extensive and will be laid out on these pages. In the meantime, DIY learners are encouraged to begin looking around at how project operations are run, as a view into how the training courses are going to look.

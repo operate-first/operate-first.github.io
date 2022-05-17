@@ -10,7 +10,7 @@ const useStyles = createStyles((theme, _params, getRef) => {
       paddingTop: theme.spacing.xl * 2,
       minHeight: 700,
       background: 'rgb(0,38,79)',
-      background: 'linear-gradient(180deg, rgb(0 44 91) 0%, rgba(0,25,51,1) 50%, rgba(0,16,33,1) 100%)',
+      background: 'linear-gradient(180deg, rgb(52 52 52) 0%, rgb(35 35 35) 50%, rgb(10 10 10) 100%)',
       position: 'relative',
     },
 
@@ -93,7 +93,7 @@ export function FaqSimple() {
             contentInner: classes.content,
           }}
           icon={
-            <ThemeIcon radius="xl" className={classes.gradient} size={32}>
+            <ThemeIcon radius="xl" color="yellow" size={32}>
               <Plus size={18} />
             </ThemeIcon>
           }
@@ -101,7 +101,7 @@ export function FaqSimple() {
           <Accordion.Item label="How can I get access to X service/cluster?">
             <p>Check the <a href="https://www.operate-first.cloud/apps/content/README.html">operational docs</a> for the service. See if there&apos;s a section on how to access it. This will often instruct you on how to self provision access via a github PR. You need some basic git knowledge.<br />If you want someone to do it for you, you can make an issue in github support, but keep in mind the turnaround time for this is highly dependent on current workload of operations team.</p>
             <Group>
-              <Button leftIcon={<Book />} className={cx(classes.gradient, classes.button)} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
+              <Button leftIcon={<Book />} className={classes.button} color="yellow" component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
               <Button leftIcon={<BrandGithub />} className={classes.button} color="dark" component="a" href="https://github.com/operate-first/support/issues/new/choose">Create a issue</Button>
             </Group>
           </Accordion.Item>
@@ -109,7 +109,7 @@ export function FaqSimple() {
             <p>Check the docs <a href="https://www.operate-first.cloud/apps/content/README.html">https://www.operate-first.cloud/apps/content/README.html</a>, check workloads dashboards: <a href="https://www.operate-first.cloud/community-cloud">https://www.operate-first.cloud/community-cloud</a> If it&apos;s listed there we probably have it. You can also check the apps repo: <a href="https://github.com/operate-first/apps">https://github.com/operate-first/apps</a>. <br /> <br />For operators, if it&apos;s listed <a href="https://github.com/operate-first/apps/tree/master/cluster-scope/base/operators.coreos.com/subscriptions">here</a>. We probably have it in at least one of our clusters. To determine which one,<br />I would check the <code>apps/cluster-scope/overlays/prod/&lt;env&gt;/&lt;cluster&gt;/kustomization.yaml</code>  (some of them might appear as bundles).</p>
             <p>For other services, check the apps repo root, if a directory for that service exists, we probably have it in one of our clusters, check overlays sub folder to see which ones.</p>
             <Group>
-              <Button leftIcon={<Book />} className={cx(classes.gradient, classes.button)} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
+              <Button leftIcon={<Book />} className={classes.button} color="yellow" component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
               <Button leftIcon={<Dashboard />} className={classes.button} color="violet" component="a" href="https://www.operate-first.cloud/community-cloud">Workload dashboards</Button>
             </Group>
           </Accordion.Item>

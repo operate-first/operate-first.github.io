@@ -71,12 +71,26 @@ export function CommunityContent() {
                 <Title className={classes.title} order={2}>
                     Who are we?
                 </Title>
-                <Text>
-                    We are data scientists, software engineers and DevOps professionals working within the Operate First framework on open source software with open infrastructure, focused on solving large scale operational issues around developing intelligent applications and managing hybrid cloud systems through the application of advanced automation and machine learning.
+                <Text py="sm">
+                  We are data scientists, software engineers, and DevOps
+                  professionals working within the Operate First framework on
+                  Open Source software with Open Operations and infrastructure.
+                </Text>
+                <Text py="sm">
+                  We are focused on solving large scale operational issues
+                  around developing intelligent applications and managing hybrid
+                  cloud systems through the application of advanced automation
+                  and machine learning.
+                </Text>
+                <Text py="sm">
+                  In short, <b>we are building an all-Open Source
+                  community cloud as the best and clear way to understand and
+                  solve common, interrelated problems, while documenting the
+                  methods and practices of running a cloud</b>.
                 </Text>
                 <Title pt="md" order={2}>Join us!</Title>
                 <Text py="sm">
-                    Find our code on <a href="https://github.com/operate-first/apps">GitHub</a>, meet the community on Slack, and join our mailing lists for announcements and discussions:
+                    Find our code on <a href="https://github.com/operate-first/apps">GitHub</a>, meet the community on Slack, and <a href="https://lists.operate-first.cloud/">join our mailing lists</a> for announcements and discussions:
                 </Text>
                 <Text py="sm">
                     If you’re interested in data science, check out our data <a href="https://old.operate-first.cloud/data-science/projectsoverview.md">science projects</a>. If you are more interested in site reliability engineering, we have SRE resources to help you get started!

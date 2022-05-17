@@ -2,12 +2,12 @@ import React from 'react';
 import { createStyles, Overlay, Container, Title, Button, Group } from '@mantine/core';
 import { Link } from "gatsby"
 import Logo from "../../assets/opf-logo.png"
+import Concrete from "../../assets/concrete.png"
 
 const useStyles = createStyles((theme) => ({
   hero: {
     position: 'relative',
-    backgroundImage:
-      'url(https://wallpaperaccess.com/full/1567666.png)',
+    backgroundImage: `url(${Concrete})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -89,19 +89,14 @@ export function HomeContent() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <img src={Logo} width={"50%"}></img>
-        <Title className={classes.title}>Building an all-Open Source community cloud to learn stuff and make <Link to="/about">things</Link> better</Title>
+        <img src={Logo} width={"35%"}></img>
+        <Title className={classes.title}>Building an all-Open Source community cloud to learn stuff and make <Link to="/about">things</Link> better</Title
         <Group>
           <Link to="/getting-started">
-          <Button variant="gradient" size="lg" radius="xl" className={classes.control}>
+          <Button color="yellow" size="lg" radius="xl" className={classes.control}>
             Get Started
           </Button>
           </Link>
-          {/* <Link to="/srepractices">
-          <Button variant="outline" color="white" size="lg" radius="xl" className={classes.control}>
-            SRE Practices
-          </Button>
-          </Link> */}
         </Group>
       </Container>
     </div>
