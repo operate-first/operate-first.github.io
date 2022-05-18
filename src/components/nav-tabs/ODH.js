@@ -3,8 +3,7 @@ import '../../pages/style.css';
 // Component imports
 import { Link } from "gatsby"
 import { Container, Text, Title, Group } from '@mantine/core';
-import { createStyles, Card, SimpleGrid, UnstyledButton, Anchor } from '@mantine/core';
-import { Book, Cloud } from 'tabler-icons-react';
+import { createStyles, Card, SimpleGrid, Anchor, UnstyledButton, Tooltip } from '@mantine/core';
 // Service SVGs
 import JupyterLogo from "../../assets/services/jupyterhub.svg"
 import ArgoLogo from "../../assets/services/argo.svg";
@@ -21,58 +20,68 @@ const clusters = [
     {
         title: 'JupyterHub',
         image: JupyterLogo,
-        url: 'https://jupyter.org/hub'
+        url: 'https://jupyter.org/hub',
+        description: 'A multi-user version of the notebook designed for companies, classrooms and research labs',
     },
     {
         title: 'Argo',
         image: ArgoLogo,
-        url: 'https://argoproj.github.io/'
+        url: 'https://argoproj.github.io/',
+        description: 'Kubernetes native workflows, events, CI and CD',
     },
     {
         title: 'Superset',
         image: SupersetLogo,
-        color: 'blue',
         url: 'https://superset.apache.org/',
+        description: 'A modern, enterprise-ready business intelligence web application',
     },
     {
         title: 'Prometheus',
         image: PrometheusLogo,
-        url: 'https://prometheus.io/docs/introduction/overview/'
+        url: 'https://prometheus.io/docs/introduction/overview/',
+        description: 'Systems monitoring and alerting toolkit',
     },
     {
         title: 'Grafana',
         image: GrafanaLogo,
         url: 'https://grafana.com/docs/grafana/latest/',
+        description: 'Visualization and analytics software',
     },
     {
         title: 'Spark',
         image: SparkLogo,
         url: 'https://spark.apache.org/docs/latest/',
+        description: 'Unified analytics engine for large-scale data processing',
     },
     {
         title: 'Seldon',
         image: SeldonLogo,
         url: 'https://docs.seldon.io/',
+        description: 'Platform for rapidly deploying machine learning models on Kubernetes.',
     },
     {
         title: 'Kafka',
         image: KafkaLogo,
         url: 'https://kafka.apache.org/documentation/',
+        description: 'Distributed event streaming platform',
     },
     {
         title: 'Airflow',
         image: AirflowLogo,
         url: 'https://airflow.apache.org/',
+        description: 'Platform to programmatically author, schedule, and monitor workflows',
     },
     {
         title: 'Hue',
         image: HueLogo,
         url: 'https://docs.gethue.com/',
+        description: 'Data exploration platform for Hive and S3 storage',
     },
     {
         title: 'SparkSQL',
         image: SparkLogo,
         url: 'https://spark.apache.org/docs/latest/sql-distributed-sql-engine.html',
+        description: 'Expose Spark data frames modeled as Hive tables through a JDBC connection',
     },
 ];
 
@@ -93,7 +102,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         textAlign: 'center',
         borderRadius: theme.radius.md,
-        height: 90,
+        height: 150,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
         transition: 'box-shadow 150ms ease, transform 100ms ease',
 
@@ -105,16 +114,25 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const ODHServices = () => {
-    const { classes, theme } = useStyles();
+    const { classes } = useStyles();
     const items = clusters.map((item) => (
-        <a href={item.url} key={item.title} className={classes.item}>
+        <Tooltip
+            label={`Click to learn more about ${item.title}`}
+            withArrow
+        >
+        <a href={item.url} key={item.title} className={classes.item} style={{textDecoration: "none"}}>
             <UnstyledButton key={item.title} className={classes.item}>
                 <img src={item.image} alt={item.title} width="50" height="50"></img>
                 <Text size="sm" mt={7} weight={600}>
                     {item.title}
                 </Text>
+                <hr style={{width: 90}}/>
+                <Text px={12} size="sm">
+                    {item.description}
+                </Text>
             </UnstyledButton>
         </a>
+        </Tooltip>
     ));
 
     return (
