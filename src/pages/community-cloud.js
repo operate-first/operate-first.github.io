@@ -1,13 +1,23 @@
 import * as React from "react";
 import '../pages/style.css';
 // Component imports
-import { Link } from "gatsby"
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
-import { Button, Container, Text, Title, Group } from '@mantine/core';
-import { createStyles, Card, SimpleGrid, UnstyledButton, Anchor } from '@mantine/core';
+import ServicesBoard from "../components/nav-tabs/Services";
+// Mantine imports
+import {
+    Button,
+    Container,
+    Text,
+    Title,
+    Group,
+    createStyles,
+    Card,
+    SimpleGrid,
+    UnstyledButton,
+    Anchor
+} from '@mantine/core';
 import { Book, Cloud } from 'tabler-icons-react';
-import ODHServices from "../components/nav-tabs/ODH";
 
 const clusters = [
     { title: 'Infra', icon: Cloud, color: 'red', url: 'http://console-openshift-console.apps.moc-infra.massopen.cloud/' },
@@ -101,7 +111,7 @@ const CommunityCloudPage = () => {
                     </SimpleGrid>
                 </Card>
 
-                <ODHServices />
+                <ServicesBoard />
 
                 <Title order={2} my="md">Workloads</Title>
                 <iframe src="https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=moc/smaug&var-namespace=All&theme=light&panelId=4" width="1200" height="400" frameBorder="0"></iframe>
