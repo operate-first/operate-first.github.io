@@ -10,8 +10,8 @@ const services = [
     {
         title: 'Grafana',
         image: GrafanaLogo,
-        url: 'https://grafana.com/docs/grafana/latest/',
-        description: 'Visualization and analytics software, which we use for monitoring and dashboards',
+        url: 'https://www.operate-first.cloud/apps/content/grafana/README.html',
+        description: 'Dashboard anything. Observe everything.',
     },
     {
         title: 'OpenDataHub',
