@@ -18,13 +18,13 @@ const ActionPage = () => {
           Operate First (Op1st) project.
         </Text>
         <Text py="sm">
-          **Users** are typically interested in doing work with the tools
+          <b>Users</b> are typically interested in doing work with the tools
           available in the Op1st community cloud. This page will guide you in
           understanding what those tools are and how to access them, along with
           some documentation and pointers to more comprehensive materials.
         </Text>
         <Text py="sm">
-          **Contributors** may also be doing work with the tools in the
+          <b>Contributors</b> may also be doing work with the tools in the
           community cloud, but they are also interested in participating as a
           contributor. Contributions come in many forms, and from contributors
           of all experiences levels.
@@ -32,7 +32,7 @@ const ActionPage = () => {
         <Text py="sm">
           Contributions may take such forms as: content (like this webpage),
           user help, cloud operations with GitOps, cloud configuration
-          suggestions, blogging, giving talks, presenting on meetup and video
+          suggestions, blogging, giving talks, presenting at meetups and video
           series, writing code, figuring out where code needs to be written and
           enabling others to write the code, and so many more.
         </Text>
@@ -44,10 +44,10 @@ const ActionPage = () => {
           cloud.
         </Text>
         <Text py="sm">
-          To understand more, read about <Link to="/about">our purpose</Link>
-          in creating and maintaining the Operate First project.
+          To understand more, read about <Link to="/about">our purpose</Link> in
+          creating and maintaining the Operate First project.
         </Text>
-        <Title order={2} mt="xl"><Code />Getting started examples</Title>      
+        <Title order={2} mt="xl">Getting started examples</Title>
         <Text py="sm">
           Where you go is shaped by your background and your interests. You can
           explore how you may use or contribute to Operate First in many ways,
