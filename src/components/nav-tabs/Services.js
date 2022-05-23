@@ -35,7 +35,7 @@ const useStyles = createStyles((theme) => ({
         justifyContent: 'center',
         textAlign: 'center',
         borderRadius: theme.radius.md,
-        height: 150,
+        height: 180,
         backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
         transition: 'box-shadow 150ms ease, transform 100ms ease',
 
@@ -47,10 +47,9 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const ServicesBoard = () => {
-    const [selectedCluster, setCluster] = useState('smaug');
     const { classes } = useStyles();
 
-    const items = services.map((item) => item.cluster == selectedCluster ? (
+    const items = services.map((item) => (
         <Tooltip
             key={item.title}
             label={`Click to learn more about ${item.title}`}
@@ -69,36 +68,18 @@ const ServicesBoard = () => {
                 </UnstyledButton>
             </a>
         </Tooltip>
-    ) : null);
+    ))
 
-    function handleClusterSelectionChange(e) {
-        setCluster(e)
-    }
 
     return (
         <main>
             <Container pb={69} style={{paddingLeft: 0, paddingRight: 0}}>
-                <Title order={2} my="md">Popular Services</Title>
+                <Title order={2} my="md">Our Services</Title>
                 <Card withBorder radius="md" className={classes.card}>
                     <Group position="apart">
-                        <Text className={classes.title}>{selectedCluster}</Text>
                         <Anchor size="xs" color="dimmed" sx={{ lineHeight: 1 }}>
                             ...
                         </Anchor>
-                        <Select
-                            label="Select your cluster"
-                            defaultValue="infra"
-                            value={selectedCluster}
-                            onChange={handleClusterSelectionChange}
-                            data={[
-                                { value: 'infra', label: 'Infra' },
-                                { value: 'smaug', label: 'Smaug' },
-                                { value: 'morty', label: 'Morty' },
-                                { value: 'rick', label: 'Rick' },
-                                { value: 'balrog', label: 'Balrog' },
-                                { value: 'osc', label: 'OSC' },
-                            ]}
-                        />
                     </Group>
                     <SimpleGrid cols={3} mt="md">
                         {items}

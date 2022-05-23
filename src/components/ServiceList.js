@@ -1,93 +1,47 @@
 // Service SVGs
-import JupyterLogo from "../assets/services/jupyterhub.svg"
-import ArgoLogo from "../assets/services/argo.svg";
-import SupersetLogo from "../assets/services/superset.svg";
-import PrometheusLogo from "../assets/services/prometheus.svg";
 import GrafanaLogo from "../assets/services/grafana.svg";
-import SparkLogo from "../assets/services/spark.svg";
-import SeldonLogo from "../assets/services/seldon.svg";
-import KafkaLogo from "../assets/services/kafka.svg";
-import AirflowLogo from "../assets/services/airflow.svg";
-import HueLogo from "../assets/services/hue.svg"
-
+import ODHLogo from "../assets/services/odh.png";
+import ArgoLogo from "../assets/services/argo.svg";
+import ObservatoriumLogo from "../assets/services/observatorium.svg";
+import RedHatLogo from "../assets/services/redhat.svg";
+import Dexlogo from "../assets/services/dex.svg"
 
 const services = [
-    {
-        title: 'JupyterHub',
-        image: JupyterLogo,
-        url: 'https://jupyter.org/hub',
-        description: 'A multi-user version of the notebook designed for companies, classrooms and research labs',
-        cluster: 'smaug'
-    },
-    {
-        title: 'Argo',
-        image: ArgoLogo,
-        url: 'https://argoproj.github.io/',
-        description: 'Kubernetes native workflows, events, CI and CD',
-        cluster: 'smaug'
-    },
-    {
-        title: 'Superset',
-        image: SupersetLogo,
-        url: 'https://superset.apache.org/',
-        description: 'A modern, enterprise-ready business intelligence web application',
-        cluster: 'osc'
-    },
-    {
-        title: 'Prometheus',
-        image: PrometheusLogo,
-        url: 'https://prometheus.io/docs/introduction/overview/',
-        description: 'Systems monitoring and alerting toolkit',
-        cluster: 'smaug'
-    },
     {
         title: 'Grafana',
         image: GrafanaLogo,
         url: 'https://grafana.com/docs/grafana/latest/',
-        description: 'Visualization and analytics software',
-        cluster: 'smaug'
+        description: 'Visualization and analytics software, which we use for monitoring and dashboards',
     },
     {
-        title: 'Spark',
-        image: SparkLogo,
-        url: 'https://spark.apache.org/docs/latest/',
-        description: 'Unified analytics engine for large-scale data processing',
-        cluster: 'osc'
+        title: 'OpenDataHub',
+        image: ODHLogo,
+        url: 'https://opendatahub.io/',
+        description: 'We manage a deployment of Open Data Hub (ODH) on the Smaug cluster and OSC cluster',
     },
     {
-        title: 'Seldon',
-        image: SeldonLogo,
-        url: 'https://docs.seldon.io/',
-        description: 'Platform for rapidly deploying machine learning models on Kubernetes.',
-        cluster: 'osc'
+        title: 'ArgoCD',
+        image: ArgoLogo,
+        url: 'https://argo-cd.readthedocs.io/en/stable/',
+        description: 'Kubernetes native workflows, events, CI and CD. We manage a multi-tenant deployment of ArgoCD on the MOC Infra cluster',
     },
     {
-        title: 'Kafka',
-        image: KafkaLogo,
-        url: 'https://kafka.apache.org/documentation/',
-        description: 'Distributed event streaming platform',
-        cluster: 'smaug'
+        title: 'Observatorium',
+        image: ObservatoriumLogo,
+        url: 'https://github.com/observatorium',
+        description: 'We have an instance of Observatorium currently being used to provision Thanos and Loki',
     },
     {
-        title: 'Airflow',
-        image: AirflowLogo,
-        url: 'https://airflow.apache.org/',
-        description: 'Platform to programmatically author, schedule, and monitor workflows',
-        cluster: 'baloscog'
+        title: 'OpenShift Data Foundation',
+        image: RedHatLogo,
+        url: 'https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation',
+        description: 'ODF provides both persistent volumes and S3 compatible object storage via Rook Operator',
     },
     {
-        title: 'Hue',
-        image: HueLogo,
-        url: 'https://docs.gethue.com/',
-        description: 'Data exploration platform for Hive and S3 storage',
-        cluster: 'osc'
-    },
-    {
-        title: 'SparkSQL',
-        image: SparkLogo,
-        url: 'https://spark.apache.org/docs/latest/sql-distributed-sql-engine.html',
-        description: 'Expose Spark data frames modeled as Hive tables through a JDBC connection',
-        cluster: 'osc'
+        title: 'Dex OIDC Provider',
+        image: Dexlogo,
+        url: 'https://github.com/dexidp/dex',
+        description: 'We manage an instance of Dex on the Smaug cluster to provide authentication for some of our services',
     },
 ];
 
