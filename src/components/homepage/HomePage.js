@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 400,
+      height: theme.spacing.xl * 13,
       paddingBottom: theme.spacing.xl * 5,
       marginLeft: 20
     },

@@ -7,18 +7,20 @@ import { InterestedField } from "../components/homepage/Interest";
 import { FaqSimple } from "../components/homepage/Faq";
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
+import DisplayNotifcation from "../components/homepage/Notifcations";
 
 const IndexPage = () => {
 
   return (
-    <main>
-      <Nav />
-      <HomeContent />
-      <AboutFeatures />
-      <InterestedField />
-      <FaqSimple />
-      <Footer />
-    </main>
+      <main>
+        <Nav />
+        <DisplayNotifcation />
+        <HomeContent />
+        <AboutFeatures />
+        <InterestedField />
+        <FaqSimple />
+        <Footer />
+      </main>
   )
 }
 
