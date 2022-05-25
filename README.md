@@ -1,4 +1,5 @@
 # Operate First Website
+<img src="src/assets/opf-logo.png" width="250"/>
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
 [![Deploy Operate First GH Pages](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml/badge.svg)](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml)
@@ -37,3 +38,9 @@ Fully manual build is possible by issuing following commands (requires _write_ a
 npm install
 npm deploy
 ```
+
+### Resources
+If you wish to understand the codebase better and the technologies we use then here are some useful links!
+- [Gatsby Docs](https://www.gatsbyjs.com/docs)
+- [Learn more about React](https://beta.reactjs.org/)
+- [Mantine Docs](https://mantine.dev/getting-started/)
