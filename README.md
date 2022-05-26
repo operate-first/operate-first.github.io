@@ -1,10 +1,9 @@
-# Operate First Website
-<img src="src/assets/opf-logo.png" width="250"/>
+<img src="src/assets/opf-logo.png" alt="Operate First Website Image" width="250"/>
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.operate-first.cloud%2F)
 [![Deploy Operate First GH Pages](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml/badge.svg)](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml)
 
-This repository contains some content and the code to build [operate-first.cloud](https://www.operate-first.cloud/). It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [GitHub Pages](https://pages.github.com/).
+This repository contains some content and the code to build the [operate-first.cloud](https://www.operate-first.cloud/) website. It is based on [Gatsby](https://www.gatsbyjs.com/) and can be deployed to [GitHub Pages](https://pages.github.com/).
 
 ## Local Development
 
