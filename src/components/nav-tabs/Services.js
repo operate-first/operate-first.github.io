@@ -6,14 +6,11 @@ import {
     Container,
     Text,
     Title,
-    Group,
     createStyles,
     Card,
     SimpleGrid,
-    Anchor,
     UnstyledButton,
     Tooltip,
-    Select
 } from '@mantine/core';
 
 import { services } from "../ServiceList";
@@ -70,17 +67,11 @@ const ServicesBoard = () => {
         </Tooltip>
     ))
 
-
     return (
         <main>
-            <Container pb={69} style={{paddingLeft: 0, paddingRight: 0}}>
+            <Container pb={69} style={{ paddingLeft: 0, paddingRight: 0 }}>
                 <Title order={2} my="md">Our Services</Title>
                 <Card withBorder radius="md" className={classes.card}>
-                    <Group position="apart">
-                        <Anchor size="xs" color="dimmed" sx={{ lineHeight: 1 }}>
-                            ...
-                        </Anchor>
-                    </Group>
                     <SimpleGrid cols={3} mt="md">
                         {items}
                     </SimpleGrid>
