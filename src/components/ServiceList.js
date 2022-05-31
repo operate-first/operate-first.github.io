@@ -16,19 +16,19 @@ const services = [
     {
         title: 'OpenDataHub',
         image: ODHLogo,
-        url: 'https://opendatahub.io/',
+        url: 'https://www.operate-first.cloud/apps/content/odh/README.html',
         description: 'We manage a deployment of Open Data Hub (ODH) on the Smaug cluster and OSC cluster',
     },
     {
         title: 'ArgoCD',
         image: ArgoLogo,
-        url: 'https://argo-cd.readthedocs.io/en/stable/',
+        url: 'https://www.operate-first.cloud/apps/content/argocd-gitops/README.html',
         description: 'Kubernetes native workflows, events, CI and CD. We manage a multi-tenant deployment of ArgoCD on the MOC Infra cluster',
     },
     {
         title: 'Observatorium',
         image: ObservatoriumLogo,
-        url: 'https://github.com/observatorium',
+        url: 'https://www.operate-first.cloud/apps/content/observatorium/README.html',
         description: 'We have an instance of Observatorium currently being used to provision Thanos and Loki',
     },
     {
