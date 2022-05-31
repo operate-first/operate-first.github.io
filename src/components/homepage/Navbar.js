@@ -98,7 +98,7 @@ export function Nav({ links }) {
     },
     {
       "link": "/community-cloud",
-      "label": "Op1st Community Cloud"
+      "label": "Our Community Cloud"
     }
   ];
   if (!links) {
