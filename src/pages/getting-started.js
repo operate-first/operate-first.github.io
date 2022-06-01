@@ -14,14 +14,45 @@ const ActionPage = () => {
       <Container>
         <Title order={1} my="lg">Getting Started in Operate First</Title>
         <Text py="sm">
-          <b>Start by reading about <Link to="/about">Our Purpose</Link>.</b>
+          This page is to help you get started using or contributing to the
+          Operate First (Op1st) project.
         </Text>
         <Text py="sm">
-          Where you go from there is shaped by your background and your interests.
-          From there you can explore how you may use or contribute to Operate
-          First.
+          <b>Users</b> are typically interested in doing work with the tools
+          available in the Op1st community cloud. This page will guide you in
+          understanding what those tools are and how to access them, along with
+          some documentation and pointers to more comprehensive materials.
         </Text>
-
+        <Text py="sm">
+          <b>Contributors</b> may also be doing work with the tools in the
+          community cloud, but they are also interested in participating as a
+          contributor. Contributions come in many forms, and from contributors
+          of all experiences levels.
+        </Text>
+        <Text py="sm">
+          Contributions may take such forms as: content (like this webpage),
+          user help, cloud operations with GitOps, cloud configuration
+          suggestions, blogging, giving talks, presenting at meetups and video
+          series, writing code, figuring out where code needs to be written and
+          enabling others to write the code, and so many more.
+        </Text>
+        <Text py="sm">
+          Regardless of why you are here, you may ultimately be seen as a
+          contributor. Users who bring workloads to the community cloud can be
+          helping the underlying project purpose of gaining AI/ML insights
+          from the observability of that workload running in an all-open source
+          cloud.
+        </Text>
+        <Text py="sm">
+          To understand more, read about <Link to="/about">our purpose</Link> in
+          creating and maintaining the Operate First project.
+        </Text>
+        <Title order={2} mt="xl">Getting started examples</Title>
+        <Text py="sm">
+          Where you go is shaped by your background and your interests. You can
+          explore how you may use or contribute to Operate First in many ways,
+          such as:
+        </Text>
         <Title order={3} mt="xl"><Code /> I&apos;m an app developer...</Title>
         <Text pt="sm">
           <i>I develop software applications I deploy in production cloud
