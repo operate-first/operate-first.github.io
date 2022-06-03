@@ -47,6 +47,16 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  linkedText: {
+    textDecoration: "none",
+    color: "#ffcc00",
+
+    '&:hover': {
+      textDecoration: "#ffcc00 underline",
+      color: "#808080"
+    }
+  },
+
   description: {
     color: theme.white,
     maxWidth: 600,
@@ -69,7 +79,7 @@ const useStyles = createStyles((theme) => ({
 
     '@media (max-width: 360px)': {
       marginLeft: theme.spacing.lg,
-  },
+    },
 
     '&:hover': {
       color: 'black',
@@ -90,12 +100,12 @@ export function HomeContent() {
       />
       <Container className={classes.container}>
         <img src={Logo} width={"35%"}></img>
-        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" style={{textDecoration: "none", color:"white"}}>things*</Link> better</Title>
+        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" className={classes.linkedText}>things*</Link> better</Title>
         <Group>
           <Link to="/getting-started">
-          <Button color="yellow" size="lg" radius="xl" className={classes.control}>
-            Get Started
-          </Button>
+            <Button color="yellow" size="lg" radius="xl" className={classes.control}>
+              Get Started
+            </Button>
           </Link>
         </Group>
       </Container>
