@@ -82,6 +82,9 @@ const CommunityCloudPage = () => {
                 <Text>
                     It&apos;s operated under a community SLA and as open and transparent as possible.
                 </Text>
+                <Text py="md">
+                  <a href="/getting-started"><b>Click here to get started as a user and contributor</b></a>
+                </Text>
 
                 <Title order={2} my="lg">Resources</Title>
 

@@ -85,6 +85,9 @@ export function AboutContent() {
             </Text>
             <hr />
             <Title order={4} my="md">Where to start:</Title>
+            <Text py="md">
+              <a href="/getting-started"><b>Jump to Getting Started page</b></a>
+            </Text>
             <Text>
               Continue learning more about Operate First: <a href="https://www.operate-first.cloud/training/operate_first_intro" target="_blank" rel="noreferrer">Introduction to Operate First</a>
             </Text>

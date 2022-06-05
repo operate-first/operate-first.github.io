@@ -89,6 +89,9 @@ export function CommunityContent() {
                   methods and practices of running a cloud</b>.
                 </Text>
                 <Title pt="md" order={2}>Join us!</Title>
+                <Text py="md">
+                  <a href="/getting-started"><b>Jump to Getting Started page</b></a>
+                </Text>
                 <Text py="sm">
                     Find our code on <a href="https://github.com/operate-first/apps">GitHub</a>, meet the community on Slack, and <a href="https://lists.operate-first.cloud/">join our mailing lists</a> for announcements and discussions:
                 </Text>
