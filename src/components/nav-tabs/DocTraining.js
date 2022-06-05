@@ -7,6 +7,10 @@ export function DocTrainingContent() {
         <Container pb={350}>
             <Title order={2} my="md">Operate First Documentation and Training</Title>
 
+            <Text py="md">
+              <a href="/getting-started"><b>Jump to Getting Started page</b></a>
+            </Text>
+
             <Text py="sm">
               <b>GitOps, cloud native, managed service, Open Source</b>, and so
               many other concepts
