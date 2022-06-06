@@ -86,7 +86,7 @@ export function Nav({ links }) {
   const navItems = [
     {
       "link": "/about",
-      "label": "Our Purpose"
+      "label": "Purpose"
     },
     {
       "link": "/our-community",
@@ -98,7 +98,7 @@ export function Nav({ links }) {
     },
     {
       "link": "/community-cloud",
-      "label": "Op1st Community Cloud"
+      "label": "Community Cloud"
     }
   ];
   if (!links) {
