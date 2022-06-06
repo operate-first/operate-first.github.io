@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 400,
+      height: theme.spacing.xl * 13,
       paddingBottom: theme.spacing.xl * 5,
       marginLeft: 20
     },
@@ -42,7 +42,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
+      fontSize: 25,
       lineHeight: 1.3,
     },
   },
@@ -69,11 +69,11 @@ const useStyles = createStyles((theme) => ({
 
     '@media (max-width: 360px)': {
       marginLeft: theme.spacing.lg,
-  },
+    },
 
     '&:hover': {
-      color: 'black',
-      backgroundColor: 'white'
+      color: '#fcc419',
+      backgroundColor: 'black'
     }
   },
 }));
@@ -90,12 +90,12 @@ export function HomeContent() {
       />
       <Container className={classes.container}>
         <img src={Logo} width={"35%"}></img>
-        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" style={{textDecoration: "none", color:"white"}}>things*</Link> better</Title>
+        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" style={{ textDecoration: "none", color: "white" }}>things*</Link> better</Title>
         <Group>
           <Link to="/getting-started">
-          <Button color="yellow" size="lg" radius="xl" className={classes.control}>
-            Get Started
-          </Button>
+            <Button color="yellow" size="lg" radius="xl" className={classes.control}>
+              Get Started
+            </Button>
           </Link>
         </Group>
       </Container>
