@@ -76,6 +76,13 @@ const useStyles = createStyles((theme) => ({
       backgroundColor: 'black'
     }
   },
+  purpose:{
+    textDecoration: 'none',
+    color:'#fcc419',
+    '&:hover':{
+    color:'white'
+    }
+  }
 }));
 
 export function HomeContent() {
@@ -90,7 +97,7 @@ export function HomeContent() {
       />
       <Container className={classes.container}>
         <img src={Logo} width={"35%"}></img>
-        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" style={{ textDecoration: "none", color: "white" }}>things*</Link> better</Title>
+        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" className={classes.purpose}>things*</Link> better</Title>
         <Group>
           <Link to="/getting-started">
             <Button color="yellow" size="lg" radius="xl" className={classes.control}>
