@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 400,
+      height: theme.spacing.xl * 13,
       paddingBottom: theme.spacing.xl * 5,
       marginLeft: 20
     },
@@ -42,7 +42,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     [theme.fn.smallerThan('xs')]: {
-      fontSize: 28,
+      fontSize: 25,
       lineHeight: 1.3,
     },
   },
@@ -82,8 +82,8 @@ const useStyles = createStyles((theme) => ({
     },
 
     '&:hover': {
-      color: 'black',
-      backgroundColor: 'white'
+      color: '#fcc419',
+      backgroundColor: 'black'
     }
   },
 }));
