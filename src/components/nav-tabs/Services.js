@@ -71,7 +71,14 @@ const ServicesBoard = () => {
             <Container pb={69} style={{ paddingLeft: 0, paddingRight: 0 }}>
                 <Title order={2} my="md">Our Services</Title>
                 <Card withBorder radius="md" className={classes.card}>
-                    <SimpleGrid cols={3} mt="md">
+                    <SimpleGrid
+                        cols={3}
+                        mt="md"
+                        breakpoints={[
+                            { maxWidth: 980, cols: 2, spacing: 'md' },
+                            { maxWidth: 600, cols: 1, spacing: 'sm' },
+                        ]}
+                    >
                         {items}
                     </SimpleGrid>
                 </Card>
