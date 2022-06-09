@@ -93,6 +93,10 @@ export function Nav({ links }) {
       "label": "Community"
     },
     {
+      "link": "/blog",
+      "label": "Blog"
+    },
+    {
       "link": "/docs-training",
       "label": "Docs & Training"
     },
