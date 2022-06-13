@@ -129,9 +129,7 @@ const ActionPage = () => {
 
         <Text pb="xl">
         </Text>
-
       </Container>
-
       <Footer />
     </main>
   )

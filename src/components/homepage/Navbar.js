@@ -80,7 +80,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function Nav({ links }) {
+export function Nav() {
   const [opened, toggleOpened] = useBooleanToggle(false);
   const { classes } = useStyles();
   const navItems = [
@@ -105,11 +105,8 @@ export function Nav({ links }) {
       "label": "Community Cloud"
     }
   ];
-  if (!links) {
-    links = navItems;
-  }
 
-  const items = links.map((link) => (
+  const items = navItems.map((link) => (
     <Link
       key={link.label}
       to={link.link}
