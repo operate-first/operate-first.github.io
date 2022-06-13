@@ -28,31 +28,28 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function Footer({ links }) {
+export function Footer() {
   const footerItems = [
     {
-        "link": "https://www.redhat.com/en/about/privacy-policy",
-        "label": "Privacy statement"
+      "link": "https://www.redhat.com/en/about/privacy-policy",
+      "label": "Privacy statement"
     },
     {
-        "link": "https://www.redhat.com/en/about/terms-use",
-        "label": "Terms of use"
+      "link": "https://www.redhat.com/en/about/terms-use",
+      "label": "Terms of use"
     },
     {
-        "link": "https://www.redhat.com/en/about/all-policies-guidelines",
-        "label": "Policies and guidelines"
+      "link": "https://www.redhat.com/en/about/all-policies-guidelines",
+      "label": "Policies and guidelines"
     },
     {
-        "link": "https://openinfra.dev/legal/code-of-conduct",
-        "label": "Code of Conduct"
+      "link": "https://openinfra.dev/legal/code-of-conduct",
+      "label": "Code of Conduct"
     }
   ]
-  if (!links) {
-    links = footerItems;
-  }
 
   const { classes } = useStyles();
-  const items = links.map((link) => (
+  const items = footerItems.map((link) => (
     <Anchor
       color="dimmed"
       key={link.label}
@@ -68,7 +65,7 @@ export function Footer({ links }) {
     <div className={classes.footer}>
       <Container className={classes.inner}>
         <a href="https://www.redhat.com/en" target="_blank" rel="noreferrer">
-            <img src={rhlogo} width="100"/>
+          <img src={rhlogo} width="100" />
         </a>
         <Text color="dimmed" size="xs">Operate First is a Red Hat initiative</Text>
         <Group className={classes.links}>{items}</Group>
@@ -78,5 +75,5 @@ export function Footer({ links }) {
 }
 
 Footer.propTypes = {
-    links: PropTypes.array,
+  links: PropTypes.array,
 }
