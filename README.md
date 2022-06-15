@@ -29,7 +29,7 @@ We use Netlify to preview PR changes. Each PR will show a Netlify check that can
 
 CI will deploy to GitHub pages automatically on every push to default branch as well on daily schedule. You can trigger a new build manually if you have _write_ permissions on this repo by simply clicking **Run workflow** button on the [CI workflow details screen here](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml).
 
-![Manual CI trigger](misc/manual_ci_trigger.png)
+[![image](./docs/run-workflow-button.png)](https://github.com/operate-first/operate-first.github.io/actions/workflows/build_job.yaml)
 
 Fully manual build is possible by issuing following commands (requires _write_ access to the repo):
 
