@@ -85,7 +85,7 @@ export function Nav() {
   const { classes } = useStyles();
   const navItems = [
     {
-      "link": "/about",
+      "link": "/purpose",
       "label": "Purpose"
     },
     {
