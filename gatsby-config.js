@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve:'@lekoarts/gatsby-theme-minimal-blog-core',
       option:{
-        
+
       }
     },
     'gatsby-plugin-mantine',
