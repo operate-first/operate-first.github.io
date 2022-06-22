@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve:'@lekoarts/gatsby-theme-minimal-blog-core',
       option:{
-        basePath:'/data', 
-        blogPath:'/data'
+      basePath:'/data',
+      blogPath:'/data'
       }
     },
     'gatsby-plugin-mantine',
