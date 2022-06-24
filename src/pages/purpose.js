@@ -5,7 +5,7 @@ import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
 import { AboutContent } from "../components/nav-tabs/AboutPage";
 
-const AboutPage = () => {
+const PurposePage = () => {
 
   return (
     <main>
@@ -16,4 +16,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage;
+export default PurposePage;
