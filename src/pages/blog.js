@@ -3,30 +3,31 @@ import { graphql } from "gatsby"
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
 export default function Blog({ data }) {
-    return (
+    const blogData = Object.entries(data.allMdx.nodes)
+    blogData.forEach((data)=> console.log(data[1].id))
 
+
+    return (
         <div>
             <Nav />
-            <h1>{data.mdx.frontmatter.title}</h1>
-            <h2>{data.mdx.frontmatter.author}</h2>
-            <p>{data.mdx.excerpt}</p>
-
-
+            {blogData.map((data)=>{<li>{data[1].author}</li>})}
             <Footer />
         </div>
     )
 }
 
 export const query = graphql`
-  {
-    mdx {
-      frontmatter {
-        author
-        date
-        description
-        title
+{
+    allMdx {
+      nodes {
+        id
+        frontmatter {
+          title
+          author
+          date(fromNow: true)
+          description
+        }
       }
-      id
-      excerpt
     }
-  }`
+  }
+`
