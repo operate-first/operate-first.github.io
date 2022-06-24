@@ -2,15 +2,19 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Nav } from "../components/homepage/Navbar";
 import { Footer } from "../components/homepage/Footer";
+import Link from 'gatsby-link'
 export default function Blog({ data }) {
-    const blogData = Object.entries(data.allMdx.nodes)
-    blogData.forEach((data)=> console.log(data[1].id))
-
-
     return (
         <div>
             <Nav />
-            {blogData.map((data)=>{<li>{data[1].author}</li>})}
+             {data.allMdx.nodes.map(blogData =>(
+              <div id={blogData.id}>
+                <h1>{blogData.frontmatter.title}</h1>
+                <p>Written by: {blogData.frontmatter.author}</p>
+                <p>Date: {blogData.frontmatter.date}</p>
+                <Link to={'/'+blogData.id}>Read More!</Link>
+              </div>
+            ))}
             <Footer />
         </div>
     )

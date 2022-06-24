@@ -4,6 +4,8 @@ module.exports = {
     siteUrl: `https://operate-first.cloud/`,
   },
   plugins: [
+   'gatsby-plugin-catch-links'
+    ,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

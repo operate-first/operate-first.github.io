@@ -20,6 +20,7 @@
     "@mantine/core": "^4.2.2",
     "@mantine/hooks": "^4.2.2",
     "gatsby": "^4.13.1",
+    "gatsby-plugin-catch-links": "^4.17.0",
     "gatsby-plugin-google-analytics": "^4.14.0",
     "gatsby-plugin-manifest": "^4.14.0",
     "gatsby-plugin-mantine": "^4.0.0",
