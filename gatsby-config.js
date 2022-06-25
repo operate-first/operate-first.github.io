@@ -4,24 +4,14 @@ module.exports = {
     siteUrl: `https://operate-first.cloud/`,
   },
   plugins: [
-   'gatsby-plugin-catch-links'
-    ,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts/`,
-      },
-    },
-
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.mdx`, `.md`],
-      },
+      resolve:'@lekoarts/gatsby-theme-minimal-blog-core',
+      option:{
+        basePath:'/data', 
+        blogPath:'/data'
+      }
     },
     'gatsby-plugin-mantine',
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -35,6 +25,5 @@ module.exports = {
         icon: `src/assets/opf-logo.png`
       },
     },
-
   ],
 }

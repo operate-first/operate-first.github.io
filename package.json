@@ -17,16 +17,13 @@
     "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'"
   },
   "dependencies": {
+    "@lekoarts/gatsby-theme-minimal-blog-core": "^4.1.7",
     "@mantine/core": "^4.2.2",
     "@mantine/hooks": "^4.2.2",
     "gatsby": "^4.13.1",
-    "gatsby-plugin-catch-links": "^4.17.0",
     "gatsby-plugin-google-analytics": "^4.14.0",
     "gatsby-plugin-manifest": "^4.14.0",
     "gatsby-plugin-mantine": "^4.0.0",
-    "gatsby-plugin-mdx": "^3.17.0",
-    "gatsby-source-filesystem": "^4.17.0",
-    "gatsby-transformer-remark": "^5.17.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
