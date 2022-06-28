@@ -1,9 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Layout = () => {
+import { Nav } from "../components/homepage/Navbar";
+import { Footer } from "../components/homepage/Footer";
+
+export const Layout = ({ children }) => {
     return (
-        <>
-            <h1>This is boiler-plate code</h1>
-        </>
+        <main>
+            <Nav />
+                {children}
+            <Footer />
+        </main>
     );
 };
+
+Layout.propTypes = {
+    children: PropTypes.node,
+}
