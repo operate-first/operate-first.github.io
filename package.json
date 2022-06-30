@@ -17,7 +17,7 @@
     "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'"
   },
   "dependencies": {
-    "@mantine/core": "4.2.2",
+    "@mantine/core": "4.2.11",
     "@mantine/hooks": "4.2.2",
     "gatsby": "4.14.0",
     "gatsby-plugin-google-analytics": "4.14.0",
