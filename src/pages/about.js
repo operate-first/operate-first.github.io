@@ -7,11 +7,9 @@ import { Layout } from "../components/Layout";
 const AboutPage = () => {
 
   return (
-    <main>
-      <Layout>
-        <AboutContent />
-      </Layout>
-    </main>
+    <Layout>
+      <AboutContent />
+    </Layout>
   )
 }
 
