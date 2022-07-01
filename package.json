@@ -29,8 +29,8 @@
     "tabler-icons-react": "1.47.0"
   },
   "devDependencies": {
-    "eslint": "8.14.0",
-    "eslint-plugin-react": "7.29.4",
+    "eslint": "8.18.0",
+    "eslint-plugin-react": "7.30.1",
     "gh-pages": "3.2.3"
   }
 }
