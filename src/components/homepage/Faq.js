@@ -98,14 +98,14 @@ export function FaqSimple() {
             </ThemeIcon>
           }
         >
-          <Accordion.Item label="How can I get access to X service/cluster?">
+          <Accordion.Item label="How can I get access to my service/cluster?">
             <p>Check the <a href="https://www.operate-first.cloud/apps/content/README.html">operational docs</a> for the service. See if there&apos;s a section on how to access it. This will often instruct you on how to self provision access via a github PR. You need some basic git knowledge.<br />If you want someone to do it for you, you can make an issue in github support, but keep in mind the turnaround time for this is highly dependent on current workload of operations team.</p>
             <Group>
               <Button leftIcon={<Book />} className={classes.button} color="yellow" component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
               <Button leftIcon={<BrandGithub />} className={classes.button} color="dark" component="a" href="https://github.com/operate-first/support/issues/new/choose">Create a issue</Button>
             </Group>
           </Accordion.Item>
-          <Accordion.Item label="Does Operate First have X operator/service?">
+          <Accordion.Item label="Does Operate First have a particular operator/service?">
             <p>Check the docs <a href="https://www.operate-first.cloud/apps/content/README.html">https://www.operate-first.cloud/apps/content/README.html</a>, check workloads dashboards: <a href="https://www.operate-first.cloud/community-cloud">https://www.operate-first.cloud/community-cloud</a> If it&apos;s listed there we probably have it. You can also check the apps repo: <a href="https://github.com/operate-first/apps">https://github.com/operate-first/apps</a>. <br /> <br />For operators, if it&apos;s listed <a href="https://github.com/operate-first/apps/tree/master/cluster-scope/base/operators.coreos.com/subscriptions">here</a>. We probably have it in at least one of our clusters. To determine which one,<br />I would check the <code>apps/cluster-scope/overlays/prod/&lt;env&gt;/&lt;cluster&gt;/kustomization.yaml</code>  (some of them might appear as bundles).</p>
             <p>For other services, check the apps repo root, if a directory for that service exists, we probably have it in one of our clusters, check overlays sub folder to see which ones.</p>
             <Group>
@@ -113,10 +113,10 @@ export function FaqSimple() {
               <Button leftIcon={<Dashboard />} className={classes.button} color="violet" component="a" href="https://www.operate-first.cloud/community-cloud">Workload dashboards</Button>
             </Group>
           </Accordion.Item>
-          <Accordion.Item label="How can I get X hardware for free?">
+          <Accordion.Item label="How can I get hardware for free?">
             <p>We are not here to hand out free hardware. Our intended goal is to invite developers/service maintainers to come use our environments to develop, deploy, and operate their services in an open fashion. You should be able to make a case on how you are planning to do this with our clusters. An example of how to do this is to get onboarded to one of our namespaces, follow a gitops model to store your application manifests in a transparent version control hub like github. We also offer a public <a href="https://www.operate-first.cloud/apps/content/argocd-gitops/README.html">ArgoCD</a> instance that you can use to do this. Make your service available in our <a href="https://www.operate-first.cloud/community-cloud">workloads dashboards</a>. Provide instructions on how others can access / use your service. Provide monitoring capabilities for your service, and some commitment on your part to maintain/operate this service. We would of course walk you through/help you out in this process.</p>
           </Accordion.Item>
-          <Accordion.Item label="Is X service down?">
+          <Accordion.Item label="Is a certain service down?">
             <p>We don&apos;t have an uptime dashboard/page yet, so you will basically have to ask in the #support slack channel or make an issue in the github repo.</p>
             <Button leftIcon={<BrandSlack />} className={classes.button} color="orange" component="a" href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" style={{width: 200}}>Join our Slack</Button>
           </Accordion.Item>
