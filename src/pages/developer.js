@@ -1,16 +1,13 @@
 import * as React from "react";
 import '../pages/style.css';
-// Component imports
-import { Nav } from "../components/homepage/Navbar";
-import { Footer } from "../components/homepage/Footer";
+import { Layout } from "../components/Layout";
 import { Container, List, Text, Title } from '@mantine/core';
 
 
 const DeveloperPage = () => {
 
   return (
-    <main>
-      <Nav />
+    <Layout>
       <Container pb={180}>
         <Title order={2} my="md">Developer</Title>
         <Text py="sm">
@@ -47,8 +44,7 @@ const DeveloperPage = () => {
           <b>Source:</b> <a href="https://old.operate-first.cloud/open-source-developers/">https://old.operate-first.cloud/open-source-developers/</a>
         </Text>
       </Container>
-      <Footer />
-    </main>
+    </Layout>
   )
 }
 

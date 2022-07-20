@@ -1,16 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import '../pages/style.css';
-import { Container, Title, Button, Text, Table } from '@mantine/core';
+import { Container, Title, Text } from '@mantine/core';
 import { Code, Cloud, CloudUpload, DeviceLaptop, Book } from 'tabler-icons-react';
-import { Nav } from "../components/homepage/Navbar";
-import { Footer } from "../components/homepage/Footer";
+import { Layout } from "../components/Layout";
 
-const ActionPage = () => {
+const GettingStartedPage = () => {
   return (
-    <main>
-      <Nav />
-
+    <Layout>
       <Container>
         <Title order={1} my="lg">Getting Started in Operate First</Title>
         <Text py="sm">
@@ -130,9 +127,8 @@ const ActionPage = () => {
         <Text pb="xl">
         </Text>
       </Container>
-      <Footer />
-    </main>
+    </Layout>
   )
 }
 
-export default ActionPage;
+export default GettingStartedPage;

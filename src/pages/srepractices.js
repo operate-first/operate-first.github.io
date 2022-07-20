@@ -1,15 +1,13 @@
 import * as React from "react";
 import '../pages/style.css';
 // Component imports
-import { Nav } from "../components/homepage/Navbar";
-import { Footer } from "../components/homepage/Footer";
+import { Layout } from "../components/Layout";
 import { Container, List, Text, Title } from '@mantine/core';
 
 const SREPracticesPage = () => {
 
   return (
-    <main>
-      <Nav />
+    <Layout>
       <Container pb={455}>
         <Title order={2} my="md">SRE Practices</Title>
         <Text>
@@ -36,8 +34,7 @@ const SREPracticesPage = () => {
           <b>Source:</b> <a href="https://old.operate-first.cloud/sre-learners/">https://old.operate-first.cloud/sre-learners/</a>
         </Text>
       </Container>
-      <Footer />
-    </main>
+    </Layout>
   )
 }
 
