@@ -9,6 +9,9 @@ import { Footer } from "./homepage/Footer";
 
 export const Layout = ({ children }) => {
     const colorScheme = 'light';
+    const theme = {
+        colorScheme: 'light',
+    }
 
     return (
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
