@@ -1,9 +1,8 @@
 import * as React from "react";
 import '../pages/style.css';
-// Component imports
-import { Nav } from "../components/homepage/Navbar";
-import { Footer } from "../components/homepage/Footer";
-import ServicesBoard from "../components/nav-tabs/Services";
+import ServicesBoard from "../components/ServicesBoard";
+import { Layout } from "../components/Layout.tsx";
+
 // Mantine imports
 import {
     Button,
@@ -89,8 +88,7 @@ const CommunityCloudPage = () => {
     ));
 
     return (
-        <main>
-            <Nav />
+        <Layout>
             <Container pb={69}>
                 <Title order={2} my="md">Op1st Community Cloud</Title>
                 <Text>
@@ -100,7 +98,7 @@ const CommunityCloudPage = () => {
                     It&apos;s operated under a community SLA and as open and transparent as possible.
                 </Text>
                 <Text py="md">
-                  <a href="/getting-started"><b>Click here to get started as a user and contributor</b></a>
+                    <a href="/getting-started"><b>Click here to get started as a user and contributor</b></a>
                 </Text>
 
                 <Title order={2} my="lg">Resources</Title>
@@ -132,8 +130,7 @@ const CommunityCloudPage = () => {
                 <iframe src={grafanaLinks[1].link} className={classes.frame}></iframe>
                 <iframe src={grafanaLinks[2].link} className={classes.frame}></iframe>
             </Container>
-            <Footer />
-        </main>
+        </Layout>
     )
 }
 
