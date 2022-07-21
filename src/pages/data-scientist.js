@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 import { Layout } from "../components/Layout";
 import { Button, Container, Text, Title, Group, List } from '@mantine/core';
 import { Book, Cloud } from 'tabler-icons-react';

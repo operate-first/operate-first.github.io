@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Container, Text, Title } from '@mantine/core';
 import { Link } from "gatsby"
-import '../pages/style.css';
 import { Layout } from "../components/Layout.tsx";
 
 const AboutPage = () => {

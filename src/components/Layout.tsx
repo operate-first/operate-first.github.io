@@ -3,6 +3,8 @@
 import React from 'react';
 import { MantineProvider, MantineThemeOverride } from '@mantine/core';
 
+import "./Layout.css"
+
 import { Nav } from "./homepage/Navbar";
 import { Footer } from "./homepage/Footer";
 

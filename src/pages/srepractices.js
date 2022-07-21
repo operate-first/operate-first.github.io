@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 // Component imports
 import { Layout } from "../components/Layout";
 import { Container, List, Text, Title } from '@mantine/core';

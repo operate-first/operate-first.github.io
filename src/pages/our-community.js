@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 import { Button, Container, Text, Title, Center } from '@mantine/core';
 import { createStyles, SimpleGrid, ThemeIcon, Grid, Col } from '@mantine/core';
 import { BuildingCommunity, MailFast, Speakerphone, BrandTwitter } from 'tabler-icons-react';

@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 import ServicesBoard from "../components/ServicesBoard";
 import { Layout } from "../components/Layout.tsx";
 
