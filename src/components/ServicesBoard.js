@@ -1,5 +1,5 @@
 import * as React from "react";
-import '../../pages/style.css';
+import '../pages/style.css';
 // Component imports
 import {
     Container,
@@ -12,7 +12,7 @@ import {
     Tooltip,
 } from '@mantine/core';
 
-import { services } from "../ServiceList";
+import { services } from "./ServiceList";
 
 const useStyles = createStyles((theme) => ({
     card: {

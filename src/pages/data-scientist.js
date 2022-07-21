@@ -1,16 +1,13 @@
 import * as React from "react";
 import '../pages/style.css';
-// Component imports
-import { Nav } from "../components/homepage/Navbar";
-import { Footer } from "../components/homepage/Footer";
+import { Layout } from "../components/Layout";
 import { Button, Container, Text, Title, Group, List } from '@mantine/core';
 import { Book, Cloud } from 'tabler-icons-react';
 
-const CommunityCloudPage = () => {
+const DataSciencePage = () => {
 
     return (
-        <main>
-            <Nav />
+        <Layout>
             <Container mb={75}>
                 <Title order={2} my="md">Data Scientist</Title>
                 <Title order={3} my="md">Cloud Native Data Science and AI Ops: With Operate-First!</Title>
@@ -52,9 +49,8 @@ const CommunityCloudPage = () => {
                     <b>Source:</b> <a href="https://old.operate-first.cloud/data-science/">https://old.operate-first.cloud/data-science/</a>
                 </Text>
             </Container>
-            <Footer />
-        </main>
+        </Layout>
     )
 }
 
-export default CommunityCloudPage;
+export default DataSciencePage;

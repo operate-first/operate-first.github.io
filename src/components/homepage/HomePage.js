@@ -13,19 +13,18 @@ const useStyles = createStyles((theme) => ({
   },
 
   container: {
-    height: 500,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
+    paddingTop: theme.spacing.xl * 8,
     paddingBottom: theme.spacing.xl * 8,
     zIndex: 0,
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: theme.spacing.xl * 13,
+      paddingTop: theme.spacing.xl * 5,
       paddingBottom: theme.spacing.xl * 5,
-      marginLeft: 20
     },
   },
 
@@ -88,7 +87,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function HomeContent() {
+export function HomePage() {
   const { classes } = useStyles();
 
   return (
