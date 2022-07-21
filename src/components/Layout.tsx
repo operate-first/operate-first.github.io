@@ -15,10 +15,16 @@ interface LayoutProps {
 // https://mantine.dev/theming/mantine-provider/
 const myTheme: MantineThemeOverride = {
     colorScheme: 'light',
-    // primaryColor: 'orange',
     // defaultRadius: 0,
     // fontFamily: 'Open Sans',
-};
+    // https://smart-swatch.netlify.app/#ffcc02 (from the Operate First logo)
+    colors: {
+        operate_first_yellow: ['#fffada', '#fff0ad', '#ffe57d', '#ffdb4b', '#ffd11a', '#e6b700', '#b38f00', '#806600', '#4e3d00', '#1d1400'],
+    },
+    primaryColor: 'yellow',
+}
+
+
 
 export function Layout({ children }: LayoutProps) {
     return (

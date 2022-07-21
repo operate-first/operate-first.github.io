@@ -101,16 +101,16 @@ export function FaqSimple() {
           <Accordion.Item label="How can I get access to my service/cluster?">
             <p>Check the <a href="https://www.operate-first.cloud/apps/content/README.html">operational docs</a> for the service. See if there&apos;s a section on how to access it. This will often instruct you on how to self provision access via a github PR. You need some basic git knowledge.<br />If you want someone to do it for you, you can make an issue in github support, but keep in mind the turnaround time for this is highly dependent on current workload of operations team.</p>
             <Group>
-              <Button leftIcon={<Book />} className={classes.button} color="yellow" component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
-              <Button leftIcon={<BrandGithub />} className={classes.button} color="dark" component="a" href="https://github.com/operate-first/support/issues/new/choose">Create a issue</Button>
+              <Button leftIcon={<Book />} className={classes.button} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
+              <Button leftIcon={<BrandGithub />} className={classes.button} component="a" href="https://github.com/operate-first/support/issues/new/choose">Create a issue</Button>
             </Group>
           </Accordion.Item>
           <Accordion.Item label="Does Operate First have a particular operator/service?">
             <p>Check the docs <a href="https://www.operate-first.cloud/apps/content/README.html">https://www.operate-first.cloud/apps/content/README.html</a>, check workloads dashboards: <a href="https://www.operate-first.cloud/community-cloud">https://www.operate-first.cloud/community-cloud</a> If it&apos;s listed there we probably have it. You can also check the apps repo: <a href="https://github.com/operate-first/apps">https://github.com/operate-first/apps</a>. <br /> <br />For operators, if it&apos;s listed <a href="https://github.com/operate-first/apps/tree/master/cluster-scope/base/operators.coreos.com/subscriptions">here</a>. We probably have it in at least one of our clusters. To determine which one,<br />I would check the <code>apps/cluster-scope/overlays/prod/&lt;env&gt;/&lt;cluster&gt;/kustomization.yaml</code>  (some of them might appear as bundles).</p>
             <p>For other services, check the apps repo root, if a directory for that service exists, we probably have it in one of our clusters, check overlays sub folder to see which ones.</p>
             <Group>
-              <Button leftIcon={<Book />} className={classes.button} color="yellow" component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
-              <Button leftIcon={<Dashboard />} className={classes.button} color="violet" component="a" href="https://www.operate-first.cloud/community-cloud">Workload dashboards</Button>
+              <Button leftIcon={<Book />} className={classes.button} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
+              <Button leftIcon={<Dashboard />} className={classes.button} component="a" href="https://www.operate-first.cloud/community-cloud">Workload dashboards</Button>
             </Group>
           </Accordion.Item>
           <Accordion.Item label="How can I get hardware for free?">
@@ -118,7 +118,7 @@ export function FaqSimple() {
           </Accordion.Item>
           <Accordion.Item label="Is a certain service down?">
             <p>We don&apos;t have an uptime dashboard/page yet, so you will basically have to ask in the #support slack channel or make an issue in the github repo.</p>
-            <Button leftIcon={<BrandSlack />} className={classes.button} color="orange" component="a" href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" style={{width: 200}}>Join our Slack</Button>
+            <Button leftIcon={<BrandSlack />} className={classes.button} component="a" href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" style={{width: 200}}>Join our Slack</Button>
           </Accordion.Item>
         </Accordion>
       </Container>
