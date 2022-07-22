@@ -127,29 +127,29 @@ export function InterestedField() {
                 {/* Area of interest buttons */}
                 <Group className={classes.controls} position='center'>
                     <a href="/developer">
-                        <Button leftIcon={<Code />} className={classes.control} color="yellow" size="lg">
+                        <Button leftIcon={<Code />} className={classes.control} size="lg">
                             App Development
                         </Button>
                     </a>
                     <a href="/srepractices">
-                        <Button leftIcon={<Cloud />} className={classes.control} color="yellow" size="lg">
+                        <Button leftIcon={<Cloud />} className={classes.control} size="lg">
                             SRE and DevOps
                         </Button>
                     </a>
                     <a href="/docs-training">
-                        <Button leftIcon={<Book />} className={classes.control} color="yellow" size="lg">
+                        <Button leftIcon={<Book />} className={classes.control} size="lg">
                             Training
                         </Button>
                     </a>
                     <a href="https://github.com/operate-first/support">
-                        <Button leftIcon={<ZoomQuestion />} className={classes.control} color="yellow" size="lg">
+                        <Button leftIcon={<ZoomQuestion />} className={classes.control} size="lg">
                             Operate First Support
                         </Button>
                     </a>
                 </Group>
                 <Group className={classes.controls}>
                     <a href="/data-scientist">
-                        <Button leftIcon={<Book />} className={classes.control} size="lg" variant="default" color="gray">
+                        <Button leftIcon={<Book />} className={classes.control} size="lg">
                             Data Science Learning Pathway
                         </Button>
                     </a>
@@ -164,17 +164,17 @@ export function InterestedField() {
 
                 <Group className={classes.controls}>
                     <a href="https://github.com/operate-first">
-                        <Button leftIcon={<BrandGithub />} className={classes.control} size="lg" variant="default" color="gray">
+                        <Button leftIcon={<BrandGithub />} className={classes.control} size="lg">
                             GitHub
                         </Button>
                     </a>
                     <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww">
-                        <Button leftIcon={<BrandSlack />} className={classes.control} size="lg" variant="default" color="gray">
+                        <Button leftIcon={<BrandSlack />} className={classes.control} size="lg">
                             Slack
                         </Button>
                     </a>
                     <a href="https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/">
-                        <Button leftIcon={<Mail />} className={classes.control} size="lg" variant="default" color="gray">
+                        <Button leftIcon={<Mail />} className={classes.control} size="lg">
                             Mailing list
                         </Button>
                     </a>

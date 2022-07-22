@@ -1,6 +1,5 @@
 import * as React from "react";
 import Helmet from 'react-helmet';
-import '../pages/style.css';
 import { Container, Title, Button, Text } from '@mantine/core';
 import { Cloud } from 'tabler-icons-react';
 import { Layout } from "../components/Layout";

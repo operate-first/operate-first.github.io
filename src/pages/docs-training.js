@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 
 import { Container, Text, Title } from '@mantine/core';
 import DocsImage from "../assets/docs-training-layered-learning.png"

@@ -102,7 +102,7 @@ export function HomePage() {
         <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" className={classes.linkedText}>things*</Link> better</Title>
         <Group>
           <Link to="/getting-started">
-            <Button color="yellow" size="lg" radius="xl" className={classes.control}>
+            <Button size="lg" radius="xl" className={classes.control}>
               Get Started
             </Button>
           </Link>

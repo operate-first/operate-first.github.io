@@ -29,7 +29,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
-    color: theme.colors.yellow[5],
+    color: theme.colors[theme.primaryColor][5],
   },
 
   title: {

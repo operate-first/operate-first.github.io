@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import '../pages/style.css';
 import { Container, Title, Text } from '@mantine/core';
 import { Code, Cloud, CloudUpload, DeviceLaptop, Book } from 'tabler-icons-react';
 import { Layout } from "../components/Layout";

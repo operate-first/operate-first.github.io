@@ -1,5 +1,4 @@
 import * as React from "react";
-import '../pages/style.css';
 // Component imports
 import {
     Container,
