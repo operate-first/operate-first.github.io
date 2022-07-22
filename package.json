@@ -14,7 +14,9 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "gh-pages": "gh-pages -d public",
-    "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'"
+    "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'",
+    "format": "prettier -w 'src/**/*.{ts,js}'",
+    "lint": "prettier --check 'src/**/*.{ts,js}'; eslint src --ext .ts,.js"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog-core": "4.1.8",
@@ -36,8 +38,17 @@
     "tabler-icons-react": "1.52.0"
   },
   "devDependencies": {
-    "eslint": "8.19.0",
+    "@typescript-eslint/eslint-plugin": "5.30.7",
+    "@typescript-eslint/parser": "5.30.7",
+    "eslint": "8.20.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.30.1",
-    "gh-pages": "4.0.0"
+    "gh-pages": "4.0.0",
+    "prettier": "2.7.1"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
