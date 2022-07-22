@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { createStyles, Header, Container, Group, Burger, Paper, Transition } from '@mantine/core';
+import {
+  createStyles,
+  Header,
+  Container,
+  Group,
+  Burger,
+  Paper,
+  Transition,
+} from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
-import { BrandGithub, BrandSlack, BrandTwitter, BrandYoutube } from 'tabler-icons-react';
-import icon from '../../assets/opf-logo.png'
-import { Link } from "gatsby"
+import {
+  BrandGithub,
+  BrandSlack,
+  BrandTwitter,
+  BrandYoutube,
+} from 'tabler-icons-react';
+import icon from '../../assets/opf-logo.png';
+import { Link } from 'gatsby';
 
 const HEADER_HEIGHT = 60;
 
@@ -12,7 +25,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
-    backgroundColor: "#151515"
+    backgroundColor: '#151515',
   },
 
   dropdown: {
@@ -68,7 +81,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 600,
 
     '&:hover': {
-      backgroundColor: theme.colors.dark[6]
+      backgroundColor: theme.colors.dark[6],
     },
 
     [theme.fn.smallerThan('sm')]: {
@@ -79,31 +92,30 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-
 export function Nav() {
   const [opened, toggleOpened] = useBooleanToggle(false);
   const { classes } = useStyles();
   const navItems = [
     {
-      "link": "/about",
-      "label": "Purpose"
+      link: '/about',
+      label: 'Purpose',
     },
     {
-      "link": "/our-community",
-      "label": "Community"
+      link: '/our-community',
+      label: 'Community',
     },
     {
-      "link": "/blog",
-      "label": "Blog"
+      link: '/blog',
+      label: 'Blog',
     },
     {
-      "link": "/docs-training",
-      "label": "Docs & Training"
+      link: '/docs-training',
+      label: 'Docs & Training',
     },
     {
-      "link": "/community-cloud",
-      "label": "Community Cloud"
-    }
+      link: '/community-cloud',
+      label: 'Community Cloud',
+    },
   ];
 
   const items = navItems.map((link) => (
@@ -113,31 +125,54 @@ export function Nav() {
       className={classes.link}
       activeClassName={classes.linkActive}
       onClick={() => {
-        toggleOpened(false)
+        toggleOpened(false);
       }}
     >
       {link.label}
     </Link>
-  ))
+  ));
 
   return (
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to="/">
-          <img src={icon} width="150px" alt="opf-logo" className={classes.navLogo} />
+          <img
+            src={icon}
+            width="150px"
+            alt="opf-logo"
+            className={classes.navLogo}
+          />
         </Link>
         <Group spacing={7} className={classes.links}>
           {items}
-          <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/operate-first"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BrandGithub color="white" />
           </a>
-          <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" target="_blank" rel="noreferrer">
+          <a
+            href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BrandSlack color="white" />
           </a>
-          <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg" alt="youtube" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg"
+            alt="youtube"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BrandYoutube color="white" />
           </a>
-          <a href="https://twitter.com/OperateFirst" alt="twitter" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/OperateFirst"
+            alt="twitter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BrandTwitter color="white" />
           </a>
         </Group>
@@ -147,24 +182,42 @@ export function Nav() {
           onClick={() => toggleOpened()}
           className={classes.burger}
           size="sm"
-          color='gray'
+          color="gray"
         />
 
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>
               {items}
-              <Group spacing='xl' px='sm'>
-                <a href="https://github.com/operate-first" target="_blank" rel="noreferrer">
+              <Group spacing="xl" px="sm">
+                <a
+                  href="https://github.com/operate-first"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BrandGithub color="black" />
                 </a>
-                <a href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" target="_blank" rel="noreferrer">
+                <a
+                  href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BrandSlack color="black" />
                 </a>
-                <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg" alt="youtube" target="_blank" rel="noreferrer">
+                <a
+                  href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg"
+                  alt="youtube"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BrandYoutube color="black" />
                 </a>
-                <a href="https://twitter.com/OperateFirst" alt="twitter" target="_blank" rel="noreferrer">
+                <a
+                  href="https://twitter.com/OperateFirst"
+                  alt="twitter"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <BrandTwitter color="black" />
                 </a>
               </Group>
@@ -178,4 +231,4 @@ export function Nav() {
 
 Nav.propTypes = {
   links: PropTypes.array,
-}
+};
