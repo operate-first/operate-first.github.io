@@ -17,14 +17,21 @@
     "deploy": "npm run build && npm run gh-pages -- -m 'Updates: Manual build'"
   },
   "dependencies": {
+    "@lekoarts/gatsby-theme-minimal-blog-core": "4.1.8",
     "@mantine/core": "4.2.11",
     "@mantine/hooks": "4.2.11",
+    "@mantine/prism": "4.2.11",
     "gatsby": "4.17.2",
+    "gatsby-plugin-catch-links": "4.19.0",
     "gatsby-plugin-google-analytics": "4.17.0",
     "gatsby-plugin-manifest": "4.17.0",
     "gatsby-plugin-mantine": "4.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "gatsby-plugin-react-helmet": "5.19.0",
+    "gatsby-remark-prismjs": "6.19.0",
+    "prism-react-renderer": "1.3.5",
+    "prism-themes": "^1.9.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
     "tabler-icons-react": "1.52.0"
   },
