@@ -7,7 +7,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ActionIcon, Image, Card, Center, Badge, Avatar, createStyles, useMantineTheme } from '@mantine/core';
+import {
+  ActionIcon,
+  Image,
+  Card,
+  Center,
+  Badge,
+  Avatar,
+  createStyles,
+  useMantineTheme,
+} from '@mantine/core';
 import { Heart, Bookmark, Share } from 'tabler-icons-react';
 
 import { Text, SimpleGrid, Container, Title } from '@mantine/core';
@@ -15,9 +24,9 @@ import { Group } from '@mantine/core';
 
 import { Code, Cloud, BuildingCommunity } from 'tabler-icons-react';
 
-import { Link } from "gatsby"
+import { Link } from 'gatsby';
 
-import { Layout } from "./Layout";
+import { Layout } from './Layout';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -26,7 +35,8 @@ const useStyles = createStyles((theme) => ({
 
   card: {
     position: 'relative',
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+    backgroundColor:
+      theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
   },
 
   rating: {
@@ -43,7 +53,10 @@ const useStyles = createStyles((theme) => ({
   },
 
   action: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
+    backgroundColor:
+      theme.colorScheme === 'dark'
+        ? theme.colors.dark[7]
+        : theme.colors.gray[0],
   },
 
   footer: {
@@ -53,18 +66,18 @@ const useStyles = createStyles((theme) => ({
 
 type PostsProps = {
   posts: {
-    slug: string
-    title: string
-    date: string
-    excerpt: string
-    description: string
-    timeToRead?: number
+    slug: string;
+    title: string;
+    date: string;
+    excerpt: string;
+    description: string;
+    timeToRead?: number;
     tags?: {
-      name: string
-      slug: string
-    }[]
-  }[]
-}
+      name: string;
+      slug: string;
+    }[];
+  }[];
+};
 
 interface ArticleCardProps {
   // image: string;
@@ -87,13 +100,19 @@ export function ArticleCard({
   // author,
   // rating,
   ...others
-}: ArticleCardProps & Omit<React.ComponentPropsWithoutRef<'div'>, keyof ArticleCardProps>) {
+}: ArticleCardProps &
+  Omit<React.ComponentPropsWithoutRef<'div'>, keyof ArticleCardProps>) {
   const { classes, cx } = useStyles();
   const theme = useMantineTheme();
   const linkProps = { href: link, rel: 'noopener noreferrer' };
 
   return (
-    <Card withBorder radius="md" className={cx(classes.card, className)} {...others}>
+    <Card
+      withBorder
+      radius="md"
+      className={cx(classes.card, className)}
+      {...others}
+    >
       {/* <Card.Section>
         <a {...linkProps}>
           <Image src={image} height={180} />
@@ -144,20 +163,19 @@ export const Blog = ({ posts }: PostsProps) => {
 
   return (
     <Layout>
-                  <div className={classes.wrapper}>
-
-      <SimpleGrid cols={3} mt="md">
-        {posts.map((post) => (
-          <ArticleCard
-            link={post.slug}
-            title={post.title}
-            description={post.excerpt}
-          />
-        ))}
-      </SimpleGrid>
+      <div className={classes.wrapper}>
+        <SimpleGrid cols={3} mt="md">
+          {posts.map((post) => (
+            <ArticleCard
+              link={post.slug}
+              title={post.title}
+              description={post.excerpt}
+            />
+          ))}
+        </SimpleGrid>
       </div>
     </Layout>
   );
-}
+};
 
-export default Blog
+export default Blog;

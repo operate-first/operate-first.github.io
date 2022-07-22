@@ -1,6 +1,20 @@
 import React from 'react';
-import { createStyles, Title, Container, Accordion, ThemeIcon, Button, Group } from '@mantine/core';
-import { Book, BrandGithub, BrandSlack, Dashboard, Plus } from 'tabler-icons-react';
+import {
+  createStyles,
+  Title,
+  Container,
+  Accordion,
+  ThemeIcon,
+  Button,
+  Group,
+} from '@mantine/core';
+import {
+  Book,
+  BrandGithub,
+  BrandSlack,
+  Dashboard,
+  Plus,
+} from 'tabler-icons-react';
 
 const useStyles = createStyles((theme, _params, getRef) => {
   const icon = getRef('control');
@@ -10,7 +24,8 @@ const useStyles = createStyles((theme, _params, getRef) => {
       paddingTop: theme.spacing.xl * 2,
       minHeight: 700,
       background: 'rgb(0,38,79)',
-      background: 'linear-gradient(180deg, rgb(52 52 52) 0%, rgb(35 35 35) 50%, rgb(10 10 10) 100%)',
+      background:
+        'linear-gradient(180deg, rgb(52 52 52) 0%, rgb(35 35 35) 50%, rgb(10 10 10) 100%)',
       position: 'relative',
     },
 
@@ -51,8 +66,9 @@ const useStyles = createStyles((theme, _params, getRef) => {
     },
 
     gradient: {
-      backgroundImage: `radial-gradient(${theme.colors[theme.primaryColor][6]} 0%, ${theme.colors[theme.primaryColor][5]
-        } 100%)`,
+      backgroundImage: `radial-gradient(${
+        theme.colors[theme.primaryColor][6]
+      } 0%, ${theme.colors[theme.primaryColor][5]} 100%)`,
     },
 
     itemOpened: {
@@ -99,26 +115,129 @@ export function FaqSimple() {
           }
         >
           <Accordion.Item label="How can I get access to my service/cluster?">
-            <p>Check the <a href="https://www.operate-first.cloud/apps/content/README.html">operational docs</a> for the service. See if there&apos;s a section on how to access it. This will often instruct you on how to self provision access via a github PR. You need some basic git knowledge.<br />If you want someone to do it for you, you can make an issue in github support, but keep in mind the turnaround time for this is highly dependent on current workload of operations team.</p>
+            <p>
+              Check the{' '}
+              <a href="https://www.operate-first.cloud/apps/content/README.html">
+                operational docs
+              </a>{' '}
+              for the service. See if there&apos;s a section on how to access
+              it. This will often instruct you on how to self provision access
+              via a github PR. You need some basic git knowledge.
+              <br />
+              If you want someone to do it for you, you can make an issue in
+              github support, but keep in mind the turnaround time for this is
+              highly dependent on current workload of operations team.
+            </p>
             <Group>
-              <Button leftIcon={<Book />} className={classes.button} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
-              <Button leftIcon={<BrandGithub />} className={classes.button} component="a" href="https://github.com/operate-first/support/issues/new/choose">Create a issue</Button>
+              <Button
+                leftIcon={<Book />}
+                className={classes.button}
+                component="a"
+                href="https://www.operate-first.cloud/apps/content/README.html"
+              >
+                Operations Docs
+              </Button>
+              <Button
+                leftIcon={<BrandGithub />}
+                className={classes.button}
+                component="a"
+                href="https://github.com/operate-first/support/issues/new/choose"
+              >
+                Create a issue
+              </Button>
             </Group>
           </Accordion.Item>
           <Accordion.Item label="Does Operate First have a particular operator/service?">
-            <p>Check the docs <a href="https://www.operate-first.cloud/apps/content/README.html">https://www.operate-first.cloud/apps/content/README.html</a>, check workloads dashboards: <a href="https://www.operate-first.cloud/community-cloud">https://www.operate-first.cloud/community-cloud</a> If it&apos;s listed there we probably have it. You can also check the apps repo: <a href="https://github.com/operate-first/apps">https://github.com/operate-first/apps</a>. <br /> <br />For operators, if it&apos;s listed <a href="https://github.com/operate-first/apps/tree/master/cluster-scope/base/operators.coreos.com/subscriptions">here</a>. We probably have it in at least one of our clusters. To determine which one,<br />I would check the <code>apps/cluster-scope/overlays/prod/&lt;env&gt;/&lt;cluster&gt;/kustomization.yaml</code>  (some of them might appear as bundles).</p>
-            <p>For other services, check the apps repo root, if a directory for that service exists, we probably have it in one of our clusters, check overlays sub folder to see which ones.</p>
+            <p>
+              Check the docs{' '}
+              <a href="https://www.operate-first.cloud/apps/content/README.html">
+                https://www.operate-first.cloud/apps/content/README.html
+              </a>
+              , check workloads dashboards:{' '}
+              <a href="https://www.operate-first.cloud/community-cloud">
+                https://www.operate-first.cloud/community-cloud
+              </a>{' '}
+              If it&apos;s listed there we probably have it. You can also check
+              the apps repo:{' '}
+              <a href="https://github.com/operate-first/apps">
+                https://github.com/operate-first/apps
+              </a>
+              . <br /> <br />
+              For operators, if it&apos;s listed{' '}
+              <a href="https://github.com/operate-first/apps/tree/master/cluster-scope/base/operators.coreos.com/subscriptions">
+                here
+              </a>
+              . We probably have it in at least one of our clusters. To
+              determine which one,
+              <br />I would check the{' '}
+              <code>
+                apps/cluster-scope/overlays/prod/&lt;env&gt;/&lt;cluster&gt;/kustomization.yaml
+              </code>{' '}
+              (some of them might appear as bundles).
+            </p>
+            <p>
+              For other services, check the apps repo root, if a directory for
+              that service exists, we probably have it in one of our clusters,
+              check overlays sub folder to see which ones.
+            </p>
             <Group>
-              <Button leftIcon={<Book />} className={classes.button} component="a" href="https://www.operate-first.cloud/apps/content/README.html">Operations Docs</Button>
-              <Button leftIcon={<Dashboard />} className={classes.button} component="a" href="https://www.operate-first.cloud/community-cloud">Workload dashboards</Button>
+              <Button
+                leftIcon={<Book />}
+                className={classes.button}
+                component="a"
+                href="https://www.operate-first.cloud/apps/content/README.html"
+              >
+                Operations Docs
+              </Button>
+              <Button
+                leftIcon={<Dashboard />}
+                className={classes.button}
+                component="a"
+                href="https://www.operate-first.cloud/community-cloud"
+              >
+                Workload dashboards
+              </Button>
             </Group>
           </Accordion.Item>
           <Accordion.Item label="How can I get hardware for free?">
-            <p>We are not here to hand out free hardware. Our intended goal is to invite developers/service maintainers to come use our environments to develop, deploy, and operate their services in an open fashion. You should be able to make a case on how you are planning to do this with our clusters. An example of how to do this is to get onboarded to one of our namespaces, follow a gitops model to store your application manifests in a transparent version control hub like github. We also offer a public <a href="https://www.operate-first.cloud/apps/content/argocd-gitops/README.html">ArgoCD</a> instance that you can use to do this. Make your service available in our <a href="https://www.operate-first.cloud/community-cloud">workloads dashboards</a>. Provide instructions on how others can access / use your service. Provide monitoring capabilities for your service, and some commitment on your part to maintain/operate this service. We would of course walk you through/help you out in this process.</p>
+            <p>
+              We are not here to hand out free hardware. Our intended goal is to
+              invite developers/service maintainers to come use our environments
+              to develop, deploy, and operate their services in an open fashion.
+              You should be able to make a case on how you are planning to do
+              this with our clusters. An example of how to do this is to get
+              onboarded to one of our namespaces, follow a gitops model to store
+              your application manifests in a transparent version control hub
+              like github. We also offer a public{' '}
+              <a href="https://www.operate-first.cloud/apps/content/argocd-gitops/README.html">
+                ArgoCD
+              </a>{' '}
+              instance that you can use to do this. Make your service available
+              in our{' '}
+              <a href="https://www.operate-first.cloud/community-cloud">
+                workloads dashboards
+              </a>
+              . Provide instructions on how others can access / use your
+              service. Provide monitoring capabilities for your service, and
+              some commitment on your part to maintain/operate this service. We
+              would of course walk you through/help you out in this process.
+            </p>
           </Accordion.Item>
           <Accordion.Item label="Is a certain service down?">
-            <p>We don&apos;t have an uptime dashboard/page yet, so you will basically have to ask in the #support slack channel or make an issue in the github repo.</p>
-            <Button leftIcon={<BrandSlack />} className={classes.button} component="a" href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww" style={{width: 200}}>Join our Slack</Button>
+            <p>
+              We don&apos;t have an uptime dashboard/page yet, so you will
+              basically have to ask in the #support slack channel or make an
+              issue in the github repo.
+            </p>
+            <Button
+              leftIcon={<BrandSlack />}
+              className={classes.button}
+              component="a"
+              href="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww"
+              style={{ width: 200 }}
+            >
+              Join our Slack
+            </Button>
           </Accordion.Item>
         </Accordion>
       </Container>

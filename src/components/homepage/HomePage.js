@@ -1,8 +1,15 @@
 import React from 'react';
-import { createStyles, Overlay, Container, Title, Button, Group } from '@mantine/core';
-import { Link } from "gatsby"
-import Logo from "../../assets/opf-logo.png"
-import Concrete from "../../assets/concrete.png"
+import {
+  createStyles,
+  Overlay,
+  Container,
+  Title,
+  Button,
+  Group,
+} from '@mantine/core';
+import { Link } from 'gatsby';
+import Logo from '../../assets/opf-logo.png';
+import Concrete from '../../assets/concrete.png';
 
 const useStyles = createStyles((theme) => ({
   hero: {
@@ -47,13 +54,13 @@ const useStyles = createStyles((theme) => ({
   },
 
   linkedText: {
-    textDecoration: "none",
-    color: "#ffcc00",
+    textDecoration: 'none',
+    color: '#ffcc00',
 
     '&:hover': {
-      textDecoration: "#ffcc00 underline",
-      color: "#808080"
-    }
+      textDecoration: '#ffcc00 underline',
+      color: '#808080',
+    },
   },
 
   description: {
@@ -82,8 +89,8 @@ const useStyles = createStyles((theme) => ({
 
     '&:hover': {
       color: '#fcc419',
-      backgroundColor: 'black'
-    }
+      backgroundColor: 'black',
+    },
   },
 }));
 
@@ -98,8 +105,14 @@ export function HomePage() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <img src={Logo} width={"35%"}></img>
-        <Title className={classes.title}>Building an all-Open Source community cloud to learn and make <Link to="/about" className={classes.linkedText}>things*</Link> better</Title>
+        <img src={Logo} width={'35%'}></img>
+        <Title className={classes.title}>
+          Building an all-Open Source community cloud to learn and make{' '}
+          <Link to="/about" className={classes.linkedText}>
+            things*
+          </Link>{' '}
+          better
+        </Title>
         <Group>
           <Link to="/getting-started">
             <Button size="lg" radius="xl" className={classes.control}>

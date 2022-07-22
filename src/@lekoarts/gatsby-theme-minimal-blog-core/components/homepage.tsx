@@ -1,19 +1,18 @@
-import * as React from "react"
-import Blog from "../../../components/blog"
+import * as React from 'react';
+import Blog from '../../../components/blog';
 
 type Props = {
   data: {
-    allPost: any
-    [key: string]: string
-  }
-  [key: string]: any
-}
+    allPost: any;
+    [key: string]: string;
+  };
+  [key: string]: any;
+};
 
 export default function MinimalBlogCoreHomepage({ ...props }: Props) {
   const {
     data: { allPost },
-  } = props
+  } = props;
 
-  return <Blog posts={allPost.nodes} {...props} />
-
+  return <Blog posts={allPost.nodes} {...props} />;
 }

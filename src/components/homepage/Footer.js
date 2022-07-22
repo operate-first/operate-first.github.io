@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
-import rhlogo from '../../assets/RHLogo.png'
+import rhlogo from '../../assets/RHLogo.png';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -31,22 +31,22 @@ const useStyles = createStyles((theme) => ({
 export function Footer() {
   const footerItems = [
     {
-      "link": "https://www.redhat.com/en/about/privacy-policy",
-      "label": "Privacy statement"
+      link: 'https://www.redhat.com/en/about/privacy-policy',
+      label: 'Privacy statement',
     },
     {
-      "link": "https://www.redhat.com/en/about/terms-use",
-      "label": "Terms of use"
+      link: 'https://www.redhat.com/en/about/terms-use',
+      label: 'Terms of use',
     },
     {
-      "link": "https://www.redhat.com/en/about/all-policies-guidelines",
-      "label": "Policies and guidelines"
+      link: 'https://www.redhat.com/en/about/all-policies-guidelines',
+      label: 'Policies and guidelines',
     },
     {
-      "link": "https://openinfra.dev/legal/code-of-conduct",
-      "label": "Code of Conduct"
-    }
-  ]
+      link: 'https://openinfra.dev/legal/code-of-conduct',
+      label: 'Code of Conduct',
+    },
+  ];
 
   const { classes } = useStyles();
   const items = footerItems.map((link) => (
@@ -67,7 +67,9 @@ export function Footer() {
         <a href="https://www.redhat.com/en" target="_blank" rel="noreferrer">
           <img src={rhlogo} width="100" />
         </a>
-        <Text color="dimmed" size="xs">Operate First is a Red Hat initiative</Text>
+        <Text color="dimmed" size="xs">
+          Operate First is a Red Hat initiative
+        </Text>
         <Group className={classes.links}>{items}</Group>
       </Container>
     </div>
@@ -76,4 +78,4 @@ export function Footer() {
 
 Footer.propTypes = {
   links: PropTypes.array,
-}
+};

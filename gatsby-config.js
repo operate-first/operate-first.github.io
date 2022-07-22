@@ -4,11 +4,10 @@ module.exports = {
     siteUrl: `https://operate-first.cloud/`,
   },
   plugins: [
-
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog-core`,
       options: {
-        basePath: '/blog'
+        basePath: '/blog',
       },
     },
 
@@ -44,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/assets/opf-logo.png`
+        icon: `src/assets/opf-logo.png`,
       },
     },
   ],
-}
+};

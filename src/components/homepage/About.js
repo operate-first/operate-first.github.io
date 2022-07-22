@@ -1,6 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createStyles, Text, SimpleGrid, Container, Title } from '@mantine/core';
+import {
+  createStyles,
+  Text,
+  SimpleGrid,
+  Container,
+  Title,
+} from '@mantine/core';
 import { Code, Cloud, BuildingCommunity } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -46,7 +52,7 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       padding: 10,
     },
-  }
+  },
 }));
 
 const mockdata = [
@@ -75,7 +81,7 @@ Feature.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   className: PropTypes.object,
-}
+};
 
 function Feature({ icon: Icon, title, description, className, ...others }) {
   const { classes, cx } = useStyles();
@@ -96,23 +102,42 @@ function Feature({ icon: Icon, title, description, className, ...others }) {
   );
 }
 
-
 export function AboutFeatures() {
   const { classes } = useStyles();
   const items = mockdata.map((item) => <Feature {...item} key={item.title} />);
 
   return (
     <Container mt={30} mb={30} size="lg" py="lg">
-      <Title order={1} align="center" sx={(theme) => ({ color: theme.colors.yellow[5] })} className={classes.txtTitle}>
+      <Title
+        order={1}
+        align="center"
+        sx={(theme) => ({ color: theme.colors.yellow[5] })}
+        className={classes.txtTitle}
+      >
         Why build an all-Open Source community cloud?
       </Title>
-      <Text my="xl" size="lg" px={100} className={classes.abouttext} align="center">
-        Open Source software is widely available, but it faces an operations-barrier when bringing it to a production environment.
-        If it is proprietary services enabling Open Source to run in production or as a cloud, it undermines the Open Source development model.
-        We must remove this barrier with an Open Source approach, creating <em>Open Operations</em>.
-        This means developers and operators collaborate Openly to apply a product&apos;s operational considerations right back into the code itself.
+      <Text
+        my="xl"
+        size="lg"
+        px={100}
+        className={classes.abouttext}
+        align="center"
+      >
+        Open Source software is widely available, but it faces an
+        operations-barrier when bringing it to a production environment. If it
+        is proprietary services enabling Open Source to run in production or as
+        a cloud, it undermines the Open Source development model. We must remove
+        this barrier with an Open Source approach, creating{' '}
+        <em>Open Operations</em>. This means developers and operators
+        collaborate Openly to apply a product&apos;s operational considerations
+        right back into the code itself.
       </Text>
-      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]} spacing={50} py="md">
+      <SimpleGrid
+        cols={3}
+        breakpoints={[{ maxWidth: 'sm', cols: 1 }]}
+        spacing={50}
+        py="md"
+      >
         {items}
       </SimpleGrid>
     </Container>

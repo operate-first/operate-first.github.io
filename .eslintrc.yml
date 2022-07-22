@@ -1,7 +1,11 @@
 env:
   browser: true
   es2021: true
-extends: plugin:react/recommended
+extends:
+  - plugin:react/recommended
+  - eslint:recommended
+  - prettier
+  - react-app
 parserOptions:
   ecmaFeatures:
     jsx: true
@@ -9,4 +13,5 @@ parserOptions:
   sourceType: module
 plugins:
   - react
+  - prettier
 rules: {}

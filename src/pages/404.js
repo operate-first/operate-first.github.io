@@ -1,6 +1,13 @@
 import React from 'react';
-import { Link } from "gatsby"
-import { createStyles, Title, Text, Button, Container, Group } from '@mantine/core';
+import { Link } from 'gatsby';
+import {
+  createStyles,
+  Title,
+  Text,
+  Button,
+  Container,
+  Group,
+} from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
   root: {
@@ -14,7 +21,10 @@ const useStyles = createStyles((theme) => ({
     fontSize: 220,
     lineHeight: 1,
     marginBottom: theme.spacing.xl * 1.5,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.blue[5],
+    color:
+      theme.colorScheme === 'dark'
+        ? theme.colors.dark[4]
+        : theme.colors.blue[5],
 
     [theme.fn.smallerThan('sm')]: {
       fontSize: 120,
@@ -47,16 +57,21 @@ export default function NotFoundPage() {
     <Container className={classes.root}>
       <div className={classes.label}>404</div>
       <Title className={classes.title}>You have found secret place...</Title>
-      <Text color="dimmed" size="lg" align="center" className={classes.description}>
-        Unfortunately, this is only a 404 page. You may have mistyped the address, or the page has
-        been moved to another URL :(
+      <Text
+        color="dimmed"
+        size="lg"
+        align="center"
+        className={classes.description}
+      >
+        Unfortunately, this is only a 404 page. You may have mistyped the
+        address, or the page has been moved to another URL :(
       </Text>
       <Group position="center">
-      <Link to="/">
-        <Button variant="subtle" size="md">
-          Take me back to home page
-        </Button>
-      </Link>
+        <Link to="/">
+          <Button variant="subtle" size="md">
+            Take me back to home page
+          </Button>
+        </Link>
       </Group>
     </Container>
   );
