@@ -22,7 +22,7 @@
     "@lekoarts/gatsby-theme-minimal-blog-core": "4.1.8",
     "@mantine/core": "4.2.11",
     "@mantine/hooks": "4.2.11",
-    "@mantine/prism": "4.2.11",
+    "@mantine/prism": "5.0.0",
     "gatsby": "4.17.2",
     "gatsby-plugin-catch-links": "4.19.0",
     "gatsby-plugin-google-analytics": "4.17.0",
