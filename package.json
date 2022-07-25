@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog-core": "4.1.8",
-    "@mantine/core": "4.2.11",
+    "@mantine/core": "5.0.0",
     "@mantine/hooks": "4.2.11",
     "@mantine/prism": "4.2.11",
     "gatsby": "4.17.2",
