@@ -1,0 +1,159 @@
+---
+title: "Why SRE?"
+date: 2022-05-23
+slug: "/why-sre"
+---
+
+# Why SRE?
+*Author(s):@david-martin*<br/>
+*Contributor(s):Narayanan Raghavan, Jay Ferrandini, Tony Fister, Aditya Konarde, Tim Waugh*<br/>
+
+There are lots of reasons you may be thinking about Site Reliability Engineering (SRE), both the role (Engineer) and the concept (Engineering).
+The role can have a very specific meaning in your organisation, which is fine.
+In fact it needs to be specific so you can hire accordingly, onboard and train people to do a specific job.
+It's your implementation of the SRE principles.
+
+The SRE concept and principles are born from Google and their [various publications][1].
+Principles such as *Embracing Risk*, *Service Level Objectives* and *Eliminating Toil*.
+Following on from the principles are practices like *Managing Incidents*, a *Postmortem Culture* and *Testing for Reliability*.
+Here, we’ll present some case studies in Red Hat where SRE is being practised and try to understand the reasons for choosing SRE and how it was applied.
+
+## Case Study 1: Managed OpenShift
+
+At Red Hat there are many SRE teams, all of which evolved a little differently to solve different problems.
+So the reasons to start 'doing' SRE were varied.
+One example is the SRE team behind Managed OpenShift.
+It was established out of frustration with not being able to move fast enough.
+The time it took to provision clusters for customers limited how fast they could grow.
+The ops team at the time spent a lot of time 'hands on' with clusters, managing them and dealing with escalations.
+The concept of SRE was discussed as a way to reorganise and think about the problem differently.
+
+It started with some reasonable goals e.g. Can we halve the time it takes to create a cluster, thereby allowing double the amount per year?
+As that goal was reached, it got revised again and again until it got to the point where it didn't matter how many clusters needed to be created.
+The SRE team had sufficiently automated away so much of the manual processes around creation that it was a non-event for a new cluster to be created.
+
+Having an initial goal to rally around can help when forming a new team or making a transition.
+There are many other aspects that can boost the effort as well.
+Hiring software engineers who have a 'systems mindset' and can think about scale was important here.
+A lot of focus was put on the processes and people when hiring and building the team rather than the technology.
+Embracing risk and removing any fear of retribution was important to establish early on.
+As was having a foundation of trust and building on it.
+In general, focus was on the people, the practice, education, training and enablement.
+
+You can read more about this transition in this blog post from 2020, [From Ops to SRE: Evolution of the OpenShift Dedicated Team][2]
+
+## Case Study 2: Ansible Automation Platform on Azure
+
+The team behind the Ansible Automation Platform is a relatively new team.
+It is an ensemble team made up of developers and SREs.
+The SRE team's job is to ensure the service deploys, stays running and is kept up to date.
+It runs as a Managed Application on Azure, which was a major reason for establishing a new SRE team.
+There are other 'centralised' SRE teams at Red Hat that enable services running on OpenShift.
+However, this team needed to specialise in Ansible Automation Platform as well as Azure.
+The reasons for 'SRE' specifically were twofold.
+It was already an established practice in Red Hat with various practicing teams to draw knowledge from.
+Also, the management team had previous experience with many of the SRE principles and practices.
+
+One the biggest motivating factors for this team is pain.
+Both customer pain and the team's pain.
+An example of customer pain would be not being able to purchase and deploy at the press of a button.
+The team saw this from the customers perspective and looked at ways of automating away the manual steps and engagements.
+They identified areas where a deploy could fail late in the process and someone would have to manually reset and trigger things again.
+The solution here was adding pre-installation checks.
+It's a reactive model, but it's also [actively managing TOIL early on](https://github.com/operate-first/sre/blob/main/sre_maturity.md#toil-management-and-operational-improvements).
+The concept of tying your decisions to what the customer cares about and measuring it is an important one for this team.
+They are establishing Service Level Indicators (SLIs) and Objectives (SLOs) in an effort to be more proactive.
+
+The management team deliberately hired from a diverse group of backgrounds.
+The focus was on hiring people who could lead & speak their mind.
+People who could think from the bottom up, as management wasn't going to have all the ideas.
+They recognised the importance of a good education plan.
+When hiring for the team it was always going to be a challenge to get everyone up to the same level of confidence.
+Some people have a lot of Ansible skills, while some have a lot of Azure skills.
+It's important to invest in the team by recommending courses and allowing time for people to upskill.
+
+## Case Study 3: Services on OpenShift
+
+There's an SRE team in Red Hat called the SRE Services (or SRES) team.
+At the time of writing they manage roughly 50 services.
+These services range from customer facing services to ancillary services that support those, all of which run on OpenShift.
+The team uses a gitops model to normalise things across services and manage building, deploying, configuring & upgrading things.
+This model allows teams to build a service and onboard them to this central SRE team by following standardised processes and using automation.
+However, it took a while to get to this point. This SRES team was a natural evolution of a bigger plan.
+
+Building on the Managed OpenShift SRE story in Case Study 1, the OpenShift platform reached a high level of reliability, maturity and scale.
+There was a transition point to start introducing services to the platform.
+The SRE model was a success already so it made sense to use that same model to solve this new problem.
+The SRES team was formed and tasked with solving that problem.
+
+Git was central to change management for this team.
+Everything went through git.
+Pull requests had checks and automated pipelines for rolling out changes when they merged.
+Configuration was declarative and the service contract was clearly defined in the versioned json schema.
+A standard set of monitoring tools was adopted and SLOs were starting to be defined and used.
+Driving principles were automation, limiting toil and scaling.
+The team knew they had to scale to many services.
+
+All this came with a trade off.
+Every service had to fit into the model, or else the model had to change and adapt.
+One such adaption was the idea of an 'Add-On' to an OpenShift cluster.
+A service that can be installed and managed on a customer's existing Managed OpenShift cluster.
+Add-Ons were managed slightly differently than all other services.
+It was still gitops, but on non-SRES owned infrastructure.
+It was a sufficiently different model with different concerns that a new SRE team emerged to focus on this problem.
+Like before, the SRE model was working well, so it made sense to continue with those concepts and principles to solve this new problem.
+
+This new team drives hard on automation, reliability and self service.
+They always try to automate something before accepting toil.
+For this team, pagers are a last resort and are tied to SLIs and SLOs.
+These teams are all on-call, but it's not their primary responsibility to be on-call.
+An important mechanism for driving this in teams developing services is communication.
+It's important to have a shared channel for highlighting these things on a regular basis.
+This can't be done daily with each development team as it just won't scale.
+Instead there's weekly checkpoints where bidirectional sharing of upcoming changes and requests can happen.
+
+When building this team, the focus was on development skills first.
+There was a lot of effort put into a pipeline for automating things.
+As things progressed, there was a need for people with operational experience.
+Particularly as the number of customers increased.
+When interviewing, asking how someone dealt with situations, pages and on call was very telling.
+Questions like 'Are they blameless?' or 'Are they accountable?'.
+You need people that will take accountability and drive projects.
+The team is very heavy on talking with each other while onboarding and reading documentation.
+Understanding the ‘why’ is important before transitioning to actual work.
+Having a core region of people made it easier to bring others up to speed and plan for 24/7 on-call.
+
+## Case Study 4: Software Production
+
+There is a group in Red Hat called Software Production.
+The group creates and maintains tools and services used in the process of building Red Hat’s enterprise-grade software.
+In this group there was a team of engineers called ‘SysOps’.
+It was a central team that other dependent teams could reach out to for operational things like provisioning VMs, maintenance tasks on linux hosts and granting appropriate permissions in several different applications with their own auth models.
+The team's approach to service reliability was based around response times to tickets, which stakeholders would create.
+A few problems were identified, which led to rethinking the whole process:
+
+* The process wasn’t scaling. As ticket volume increased, the team size needed to increase with it. Scaling the team linearly with the volume of work was not sustainable.
+* The expectation that stakeholders would be the ones finding reliability issues before we did was flawed.
+* We wanted to provide a better career path to associates.
+
+All these things culminated in a reorg where new teams were formed, each with embedded SREs.
+An SRE ‘League’ was established where all the SREs from the different teams got together regularly to discuss common concerns.
+A number of key SRE principles and practices were adopted and spread throughout the wider group via the individual SREs.
+
+1. The group has more than 100 services to keep running, so they built a catalog and classified them according to criticality. The criticality then maps to an SLO. The corresponding SLIs are defined in this catalog as well. Indicators range from internet & internal probes, prometheus metrics, CI job success rates to executing database queries periodically. This has helped to observe what’s actually happening in the services to the point where introducing an Error Budget policy is being considered.
+1. The concept of TOIL has also been introduced via a technical improvement policy. Some teams use story points to estimate the size and scope of issues on their backlog. Each quarter a certain percentage of story points are set aside to improve the lives of the team by reducing TOIL and automating things.
+1. Doing Root Cause Analysis (RCA) and post mortems has become a regular part of running services. It allows teams to prioritise the outcome of post mortems in upcoming sprints with a shared understanding of why they are prioritised.
+
+## Conclusion
+
+There are many reasons for choosing to follow SRE principles and practices.
+It could be a way to shift the focus of an ops or devops team to reliability, scaling and automation.
+Perhaps it’s something you’re already familiar with and you want to put it into practice with a new team.
+Maybe it’s already working well for you and you have a new problem to solve, so you seed a new team with experienced SREs.
+Each of these reasons has its own challenges around building a team, which principles to focus on first and finding the right time to introduce new principles.
+Having an initial problem to solve and rally behind helps you make those initial decisions.
+However, the principles and practices don’t change in SRE.
+If you believe in them, let them guide you and your own team's implementation of them.
+
+[1]: https://sre.google
+[2]: https://cloud.redhat.com/blog/from-ops-to-sre-evolution-of-the-openshift-dedicated-team
