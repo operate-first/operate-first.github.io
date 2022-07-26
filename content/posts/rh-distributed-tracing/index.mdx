@@ -11,13 +11,14 @@ tags:
   - OpenTelemetry
 ---
 
-The [OpenTelemetry](https://opentelemetry.io/) project has been advancing cloud-native observability for the past few years.
-This project is a collection of tools, APIs, and SDKs to instrument, generate, collect, and export telemetry data (metrics, logs, and traces).
+*Senior software engineer Sally Ann O'Malley describes recent additions to the Operate First cloud that simplify the collection of OpenTelemetry data.*
+*Catch her on K8s slack or GitHub @sallyom*
+
+Over the past few years, the open source project [OpenTelemetry](https://opentelemetry.io/) has advanced cloud-native observability.
+As modern software platforms have become more distributed and complex, observing application data has become more critical and also more difficult.
+OpenTelemetry is a collection of tools, APIs, standards, and SDKs to instrument, generate, collect, and export telemetry data (metrics, logs, and traces).
 With OpenTelemetry (OTLP), end-users and developers are empowered to choose a telemetry backend that suits their needs.
 It is vendor neutral, open source, and is supported by industry leaders in the observability space.
-Perhaps you've been planning to add OTLP instrumentation to your applications.
-It is relatively straight-forward and usually involves a few lines of code.
-The more complicated issue is how to collect, export, and visualize the generated data.
 This post describes recent additions to the Operate First community cloud that have made it easy for users to collect and analyze OTLP.
 
 To learn more about the Operate First [community cloud](https://www.operate-first.cloud/community-cloud/) and how you can access it, visit the [onboarding docs](https://www.operate-first.cloud/getting-started).
@@ -27,10 +28,9 @@ From there you can onboard your Kubernetes based cloud-native workloads with hel
 Recently, two Operators were deployed on the Operate First `Smaug` cluster that enable collection of OTLP data from any application.
 The operators are `Red Hat Distributed Tracing Platform` and `Red Hat Distributed Tracing Data Collection`.
 The former includes a Jaeger operator for visualizing OTLP data and the latter includes the OpenTelemetry operator that manages namespaced OpenTelemetryCollectors to collect OTLP.
-These and many other Kubernetes Operators are available from the [Certified OpenShift Operators Hub](https://catalog.redhat.com/software/operators/explore).
+These and many other operators are available from the [Certified OpenShift Operators Hub](https://catalog.redhat.com/software/operators/explore).
 This post describes how to connect your applications and workloads to these distributed tracing operators to reach your observability goals.
-You might bring your instrumented applications to Operate First, or you might use this post to collect OTLP data from another K8s cluster.
-
+For an excellent overview of observability in general, check out [this blog](https://developers.redhat.com/articles/2022/04/12/observability-2022-why-it-matters-and-how-opentelemetry-can-help#) from Ben Evans and [Red Hat Developer](https://developers.redhat.com/).
 
 ### Table of Contents
 * [Introduction](#introduction)
@@ -44,16 +44,11 @@ You might bring your instrumented applications to Operate First, or you might us
 
 ### Introduction
 
-Let’s start with what this blog is _not_.
-This post does not demonstrate how to instrument your applications to export OTLP.
-It assumes you have an application that is already instrumented.
-However, the [example application](https://github.com/sallyom/golang-ex.git) can be used as a guide for instrumenting a simple golang web server.
-There are also many online resources to help you along your way.
-Start with the [instrumentation docs](https://opentelemetry.io/docs/instrumentation/) for language-specific guides.
-With only a few lines of code, your application will be exporting telemetry.
-The interesting part is the collection and analysis of that data.
-It is a core mission of the OpenTelemetry project to make instrumenting easy and universal, to uncouple instrumentation from data storage
-and analysis.
+With OpenTelemetry, it is relatively straight-forward and usually involves a few lines of code to add OTLP instrumentation.
+In fact, it is a core mission of the OpenTelemetry project to make instrumenting easy and universal, to uncouple instrumentation from data storage and analysis.
+The [instrumentation docs](https://opentelemetry.io/docs/instrumentation/) are an excellent starting place.
+The more complicated issue is how to collect, export, visualize, and analyze application data.
+That is what has been simplified with the distributed tracing operators now running in Operate First.
 
 ### Red Hat Distributed Tracing Data Collection
 
@@ -103,11 +98,6 @@ oc apply -f opentelemetry-sample-app/sample-app.yaml
 Two files are served by this application.
 A [`Hello OpenShift`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) page and a [counter](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count).
 Visiting the pages creates trace spans that can be collected with the OpenTelemetry Collector and visualized with Jaeger.
-
-> **Note:**
-The example application hard-codes the [opentelemetry collector service name](https://github.com/sallyom/golang-ex/blob/eef199cce7dd20f37e8d09a7149754c112f8fcb2/hello_openshift.go#L81) `otelcol-collector.otel-dev.svc:4317`. `otelcol` is the name of the `OpenTelemetryCollector`.
-Its presence in a project triggers the creation of a service with an internal address of `resource-name.namespace.svc:4317`. `4317` is the default GRPC collector port.
-It is often appropriate to configure `localhost:4317`, whenever the application & collector share localhost.
 
 ### Connecting to OpenTelemetry Collector
 
@@ -225,7 +215,6 @@ Now that `Red Hat Distributed Tracing Platform` and `Red Hat Distributed Tracing
 0. Install Red Hat Distributed Tracing Platform & Red Hat Distributed Tracing Data Collection from the Operator Hub
    - these are already running in the Smaug cluster
 1. Deploy an OTLP instrumented application
-   -  be mindful of where your application exports to in your code
 2. Create an `OpenTelemetryCollector` in the project/namespace
 3. Create a `Jaeger` instance in the project/namespace
 4. Edit the collector resource to configure a Jaeger exporter at
