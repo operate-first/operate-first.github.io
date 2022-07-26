@@ -21,6 +21,12 @@
                 "github-actions"
             ],
             "groupName": "GitHub Actions"
+        },
+        {
+            "groupName": "mantine",
+            "matchPackagePrefixes": [
+              "@mantine/"
+            ]
         }
     ]
 }
