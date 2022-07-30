@@ -12,6 +12,12 @@ import { Layout } from './Layout';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     padding: `${theme.spacing.xl * 2}px ${theme.spacing.xl}px`,
+    marginLeft: '10%',
+    marginRight: '10%',
+    [theme.fn.smallerThan('sm')]: {
+      marginLeft: 0,
+      marginRight: 0,
+    },
   },
 }));
 
