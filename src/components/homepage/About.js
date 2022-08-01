@@ -64,7 +64,7 @@ const mockdata = [
   },
   {
     icon: Cloud,
-    title: 'SRE and DevOps',
+    title: 'SRE & DevOps',
     description:
       'Site reliability engineering (SRE) is the evolution of DevOps for operating managed services. Join the movement to learn, capture, and apply SRE best practices in an Open operations environment, and help app developers build operations considerations back into their code.',
   },
