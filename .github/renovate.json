@@ -25,7 +25,8 @@
         {
             "groupName": "mantine",
             "matchPackagePrefixes": [
-              "@mantine/"
+              "@mantine/",
+              "gatsby-plugin-mantine"
             ]
         }
     ]
