@@ -85,24 +85,32 @@ The [OpenTelemetry Registry](https://opentelemetry.io/registry/) lists OTLP comp
 ### Example Application
 
 For this blog, an [example golang application](https://github.com/sallyom/golang-ex/tree/master/opentelemetry-sample-app) is deployed in the Smaug cluster `otel-dev` project.
-The application includes a simple web server, a service that exposes port 8080 of the web server pod, and a route that exposes the service. View the single yaml file [here](https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelemetry-sample-app/sample-app.yaml).
-To deploy this application in your own cluster, first create an `otel-dev` namespace or project (or, substitute `otel-dev` everywhere for your namespace), and then apply the sample-app yaml file.
+The application includes a simple web server, a service that exposes port 8080 of the web server pod, and a route that exposes the service.
+View the single yaml file [here](https://github.com/sallyom/golang-ex/tree/master/opentelemetry-sample-app/sample-app-w-route.yaml).
+
+> **Note:**
+All objects will be created in `otel-dev` namespace (project), including the namespace itself.
+
 Since Smaug is an OpenShift cluster, here we use the command-line tool `oc`.
 However, `kubectl` can be substituted and used with any Kubernetes based cluster.
 
+**Create the sample application**
+
 ```bash
-oc new-project otel-dev  // or kubectl create namespace otel-dev
-oc apply -f opentelemetry-sample-app/sample-app.yaml
+oc apply -f https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelemetry-sample-app/sample-app-w-route.yaml
 ```
 
 Two files are served by this application.
-A [`Hello OpenShift`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) page and a [counter](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count).
+A [`Hello OpenShift`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) page and a [`counter`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count).
 Visiting the pages creates trace spans that can be collected with the OpenTelemetry Collector and visualized with Jaeger.
 
 ### Connecting to OpenTelemetry Collector
 
 Because the Smaug cluster is running the OpenTelemetry Operator, it is very easy to launch a collector in any namespace.
 This is the OpenTelemetryCollector custom resource that was created in the `otel-dev` project, alongside the example application.
+This definition is also found [here](https://github.com/sallyom/golang-ex/tree/master/opentelemetry-sample-app/otelcol.yaml)
+
+**otelcol.yaml**
 
 ```yaml
 apiVersion: v1
@@ -164,6 +172,13 @@ The `mode` is also specified as a `deployment`.
 Once the receivers and exporters are configured, all that's left to do is specify a service pipeline.
 Here we've configured a `traces` pipeline.
 Refer to the [OTLP Collector documentation](https://opentelemetry.io/docs/collector/) for more detailed explanations of its options.
+
+**Create the OpenTelemetryCollector**
+
+```bash
+oc apply -f https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelemetry-sample-app/otelcol.yaml
+```
+
 That's it! Now the OTLP collector will be collecting trace data from any instrumented application that is running in the `otel-dev` namespace and that is configured to connect to the collector service address.
 
 > **Note:**
@@ -181,7 +196,8 @@ This Jaeger resource triggers the creation of everything required to visualize t
 ![Creation of Jaeger Instance from OpenShift console](jaeger-shot.png)
 
 Similar to the OpenTelemetryCollector, a Jaeger can also be created from the command line.
-Here is the definition for the simplest All-In-One resource:
+Here is the definition for the simplest All-In-One Jaeger resource.
+The definition is also found [here](https://github.com/sallyom/golang-ex/tree/master/opentelemetry-sample-app/jaeger.yaml).
 
 **jaeger.yaml**
 
@@ -193,14 +209,25 @@ metadata:
   namespace: otel-dev
 ```
 
+**Create a Jaeger instance**
+
 ```bash
-oc apply -f jaeger.yaml
+oc apply -f https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelemetry-sample-app/jaeger.yaml
 ```
 
 ### Visualizing Your Data
 
 Creation of a public route for the Jaeger frontend is triggered by the existence of a `Jaeger`.
 All that is left to do now is visit the frontend at the `jaegerex` Route.
+
+> **Note:**
+A powerful debugging tool results from correlating log data with trace data (and metrics, too).
+You can correlate spans with logs by filtering `span_id` and `trace_id` from the sample-app pod logs.
+Doing so, you can gather additional information about any span from a Jaeger trace.
+
+```bash
+oc get logs -n otel-dev [sample-app-podname]
+```
 
 ![Jaeger Route from OpenShift console](jaeger-route.png)
 
