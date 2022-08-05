@@ -101,7 +101,7 @@ oc apply -f https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelem
 ```
 
 Two files are served by this application.
-A [`Hello OpenShift`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) page and a [`counter`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count).
+A [`Hello OpenTelemetry`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) page and a [`counter`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count).
 Visiting the pages creates trace spans that can be collected with the OpenTelemetry Collector and visualized with Jaeger.
 
 ### Connecting to OpenTelemetry Collector
@@ -220,20 +220,26 @@ oc apply -f https://raw.githubusercontent.com/sallyom/golang-ex/master/opentelem
 Creation of a public route for the Jaeger frontend is triggered by the existence of a `Jaeger`.
 All that is left to do now is visit the frontend at the `jaegerex` Route.
 
-> **Note:**
-A powerful debugging tool results from correlating log data with trace data (and metrics, too).
-You can correlate spans with logs by filtering `span_id` and `trace_id` from the sample-app pod logs.
-Doing so, you can gather additional information about any span from a Jaeger trace.
-
-```bash
-oc get logs -n otel-dev [sample-app-podname]
-```
+View the route from the application running in Operate First at [https://jaegerex-otel-dev.apps.smaug.na.operate-first.cloud/](https://jaegerex-otel-dev.apps.smaug.na.operate-first.cloud/).
+You can generate trace data by visiting the [`/hello`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/hello) and [`/count`](https://sample-app-otel-dev.apps.smaug.na.operate-first.cloud/count) pages.
 
 ![Jaeger Route from OpenShift console](jaeger-route.png)
 
 ![Jaeger Overview from Example App](jaeger-overview.png)
 
 ![Trace Data](jaeger-trace.png)
+
+A powerful debugging tool results from correlating log data with trace data (and metrics, too).
+You can correlate spans with logs by filtering `span_id` and `trace_id` from the sample-app pod logs.
+Doing so, you can gather additional information about any span from a Jaeger trace.
+
+To view logs from the application that include span_id & trace_id information:
+
+```bash
+oc get logs -n otel-dev [sample-app-podname]
+```
+
+![Logs Injected with Trace Data](logs-with-traces.png)
 
 ### Summary
 
