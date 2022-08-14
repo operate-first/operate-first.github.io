@@ -1,15 +1,8 @@
 import { Text, Group } from '@mantine/core';
 import React from 'react';
 
-import {
-  ActionIcon,
-  Image,
-  Card,
-  Badge,
-  Avatar,
-  createStyles,
-} from '@mantine/core';
-import { Heart, Bookmark, Share } from 'tabler-icons-react';
+import { ActionIcon, Image, Card, Badge, createStyles } from '@mantine/core';
+import { Star, Bookmark, Man, ExternalLink } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -43,31 +36,33 @@ export function CommunityCard(c) {
         {c.title}
       </Text>
 
-      <Group mt="lg">
-        <Avatar src={c.author.image} radius="sm" />
-        <div>
-          <Text weight={500}>{c.author.name}</Text>
-          <Text size="xs" color="dimmed">
-            {c.author.description}
-          </Text>
-        </div>
-      </Group>
+      <Text size="sm" color="dimmed" lineClamp={4}>
+        {c.description}
+      </Text>
 
       <Card.Section className={classes.footer}>
         <Group position="apart">
-          <Text size="xs" color="dimmed">
+          <Text size="m" color="dimmed">
             {c.footer}
           </Text>
         </Group>
-        <Group spacing={0}>
+        <Group spacing={20}>
+          <Group spacing={1}>
+            <Star size={18} color={theme.colors.yellow[6]} />
+            {c.stars}
+          </Group>
+          <Group spacing={1}>
+            <Bookmark size={18} color={theme.colors.red[6]} />
+            {c.forks}
+          </Group>
+          <Group spacing={1}>
+            <Man size={18} color={theme.colors.green[6]} />
+            {c.contributors}
+          </Group>
           <ActionIcon>
-            <Heart size={18} color={theme.colors.red[6]} />
-          </ActionIcon>
-          <ActionIcon>
-            <Bookmark size={18} color={theme.colors.yellow[6]} />
-          </ActionIcon>
-          <ActionIcon>
-            <Share size={16} color={theme.colors.blue[6]} />
+            <a href={c.landingpage} target="_blank" rel="noreferrer">
+              <ExternalLink size={18} color={theme.colors.blue[6]} />
+            </a>
           </ActionIcon>
         </Group>
       </Card.Section>
