@@ -30,7 +30,7 @@ import { Layout } from './Layout';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    padding: `${theme.spacing.xl * 2}px ${theme.spacing.xl}px`,
+    padding: `${theme.spacing.xl * 1}px ${theme.spacing.xl}px`,
   },
 
   card: {
@@ -164,7 +164,15 @@ export const Blog = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <div className={classes.wrapper}>
-        <SimpleGrid cols={3} mt="md">
+        <SimpleGrid
+          cols={3}
+          mt="md"
+          breakpoints={[
+            { maxWidth: 980, cols: 3, spacing: 'md' },
+            { maxWidth: 755, cols: 2, spacing: 'sm' },
+            { maxWidth: 600, cols: 1, spacing: 'sm' },
+          ]}
+        >
           {posts.map((post) => (
             <ArticleCard
               link={post.slug}
