@@ -25,7 +25,14 @@ export function CommunityCard(c) {
   // console.log(props);
 
   return (
-    <Card withBorder p="lg" radius="md" className={classes.card}>
+    <Card
+      withBorder
+      p="lg"
+      radius="md"
+      className={classes.card}
+      component="a"
+      href={c.landingpage}
+    >
       <Card.Section mb="sm">
         <Image src={c.image} alt={c.title} height={180} />
       </Card.Section>
@@ -60,9 +67,7 @@ export function CommunityCard(c) {
             {c.contributors}
           </Group>
           <ActionIcon>
-            <a href={c.landingpage} target="_blank" rel="noreferrer">
-              <ExternalLink size={18} color={theme.colors.blue[6]} />
-            </a>
+            <ExternalLink size={18} color={theme.colors.blue[6]} />
           </ActionIcon>
         </Group>
       </Card.Section>
