@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
 import rhlogo from '../../assets/RHLogo.png';
+import mocalliancelogo from '../../assets/MOC-Alliance_logo_transp.png';
+import openinfralabslogo from '../../assets/OpenInfraLabs-logo_transp.png';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -68,9 +70,16 @@ export function Footer() {
           <img src={rhlogo} width="100" />
         </a>
         <Text color="dimmed" size="xs">
-          Operate First is a Red Hat initiative
+          Operate First is a<br />
+          Red Hat initiative
         </Text>
         <Group className={classes.links}>{items}</Group>
+        <a href="https://massopen.cloud/" target="_blank" rel="noreferrer">
+          <img src={mocalliancelogo} height="30" />
+        </a>
+        <a href="https://openinfralabs.org/" target="_blank" rel="noreferrer">
+          <img src={openinfralabslogo} height="30" />
+        </a>
       </Container>
     </div>
   );
