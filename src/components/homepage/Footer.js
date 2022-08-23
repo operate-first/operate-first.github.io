@@ -74,10 +74,10 @@ export function Footer() {
         </Text>
         <Group className={classes.links}>{items}</Group>
         <a href="https://massopen.cloud/" target="_blank" rel="noreferrer">
-          <img src={mocalliancelogo} height="40" />
+          <img src={mocalliancelogo} height="30" />
         </a>
         <a href="https://openinfralabs.org/" target="_blank" rel="noreferrer">
-          <img src={openinfralabslogo} height="40" />
+          <img src={openinfralabslogo} height="30" />
         </a>
       </Container>
     </div>
