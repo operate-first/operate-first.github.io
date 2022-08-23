@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
 import rhlogo from '../../assets/RHLogo.png';
-import mocalliancelogo from '../../assets/MOC-Alliance_logo_transp.png';
-import openinfralabslogo from '../../assets/OpenInfraLabs-logo_transp.png';
+import mocalliancelogo from '../../assets/MOCAlliance-logo-transp.png';
+import openinfralabslogo from '../../assets/OpenInfraLabs-logo-transp.png';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -17,7 +17,6 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
-
     [theme.fn.smallerThan('xs')]: {
       flexDirection: 'column',
     },
