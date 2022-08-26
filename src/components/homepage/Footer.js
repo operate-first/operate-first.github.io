@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
-import rhlogo from '../../assets/RHLogo.png';
+import rhlogo from '../../assets/RedHat-logo-white_transp.svg';
+import mocalliancelogo from '../../assets/MOCAlliance-logo-white_transp.png';
+import openinfralabslogo from '../../assets/OpenInfraLabs-logo-white_transp.svg';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -15,7 +17,6 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
-
     [theme.fn.smallerThan('xs')]: {
       flexDirection: 'column',
     },
@@ -64,13 +65,16 @@ export function Footer() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <a href="https://www.redhat.com/en" target="_blank" rel="noreferrer">
-          <img src={rhlogo} width="100" />
-        </a>
-        <Text color="dimmed" size="xs">
-          Operate First is a Red Hat initiative
-        </Text>
         <Group className={classes.links}>{items}</Group>
+        <a href="https://www.redhat.com/en" target="_blank" rel="noreferrer">
+          <img src={rhlogo} height="30" />
+        </a>
+        <a href="https://massopen.cloud/" target="_blank" rel="noreferrer">
+          <img src={mocalliancelogo} height="30" />
+        </a>
+        <a href="https://openinfralabs.org/" target="_blank" rel="noreferrer">
+          <img src={openinfralabslogo} height="30" />
+        </a>
       </Container>
     </div>
   );
