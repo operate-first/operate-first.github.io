@@ -172,7 +172,7 @@ const CommunityPage = () => {
       </div>
       <Center pb={40}>
         <a href="https://www.operate-first.cloud/community/README.html">
-          <Button>Open community cloud</Button>
+          <Button>Operate First community resources</Button>
         </a>
       </Center>
     </Layout>
