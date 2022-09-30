@@ -11,11 +11,11 @@ const SREPracticesPage = () => {
           SRE Practices
         </Title>
         <Text>
-          Beginning in January 2022 the Op1st community is releasing early (and
-          often) a growing set of course materials for learning SRE methods and
-          practices. These courses will be tied into the running community
-          cloud, providing a look behind the normal secrecy wall around
-          operations.
+          Beginning in January 2022 the Operate First community is releasing
+          early (and often) a growing set of course materials for learning SRE
+          methods and practices. These courses will be tied into the running
+          community cloud, providing a look behind the normal secrecy wall
+          around operations.
         </Text>
         <Text>
           Our plans for these courses is extensive and will be laid out on these
@@ -28,15 +28,15 @@ const SREPracticesPage = () => {
         </Title>
         <List>
           <List.Item>
-            <a href="https://www.operate-first.cloud/community-handbook/operations-intro.md">
-              SRE pages in the Op1st Community Handbook
+            <a href="https://old.operate-first.cloud/community-handbook/operations-intro.md">
+              SRE pages in the Operate First Community Handbook
             </a>{' '}
-            used by the Op1st Operations SIG.
+            used by the Operate First Operations SIG.
           </List.Item>
           <List.Item py="xs">
             The{' '}
             <a href="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg/playlists">
-              Op1st video playlists
+              Operate First video playlists
             </a>{' '}
             cover various aspects of how the community cloud works, and other
             aspects of the community.

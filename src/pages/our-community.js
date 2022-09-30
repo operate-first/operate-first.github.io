@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Button, Container, Text, Title, Center } from '@mantine/core';
+import { Button, Container, Text, Title, Center, Group } from '@mantine/core';
 import { createStyles, SimpleGrid, ThemeIcon, Grid, Col } from '@mantine/core';
 import {
   BuildingCommunity,
   MailFast,
   Speakerphone,
   BrandTwitter,
+  Book,
 } from 'tabler-icons-react';
 
 import { Layout } from '../components/Layout.tsx';
@@ -171,9 +172,24 @@ const CommunityPage = () => {
         </Grid>
       </div>
       <Center pb={40}>
-        <a href="https://www.operate-first.cloud/community/README.html">
-          <Button>Operate First community resources</Button>
-        </a>
+        <Group>
+          <Button
+            leftIcon={<BuildingCommunity />}
+            className={classes.button}
+            component="a"
+            href="https://www.operate-first.cloud/community/README.html"
+          >
+            Operate First community planning repository
+          </Button>
+          <Button
+            leftIcon={<Book />}
+            className={classes.button}
+            component="a"
+            href="https://github.com/operate-first/community-handbook"
+          >
+            Operate First community handbook
+          </Button>
+        </Group>
       </Center>
     </Layout>
   );

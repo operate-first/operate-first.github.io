@@ -19,13 +19,14 @@ const GettingStartedPage = () => {
         </Title>
         <Text py="sm">
           This page is to help you get started using or contributing to the
-          Operate First (Op1st) project.
+          Operate First (Operate First) project.
         </Text>
         <Text py="sm">
           <b>Users</b> are typically interested in doing work with the tools
-          available in the Op1st community cloud. This page will guide you in
-          understanding what those tools are and how to access them, along with
-          some documentation and pointers to more comprehensive materials.
+          available in the Operate First community cloud. This page will guide
+          you in understanding what those tools are and how to access them,
+          along with some documentation and pointers to more comprehensive
+          materials.
         </Text>
         <Text py="sm">
           <b>Contributors</b> may also be doing work with the tools in the

@@ -10,7 +10,7 @@ const services = [
   {
     title: 'Grafana',
     image: GrafanaLogo,
-    url: 'https://www.operate-first.cloud/apps/content/grafana/README.html',
+    url: 'https://www.operate-first.cloud/apps/content/grafana/docs/README.html#',
     description: 'Dashboard anything. Observe everything.',
   },
   {
