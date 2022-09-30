@@ -33,13 +33,21 @@ module.exports = {
         ],
       },
     },
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-178212082-1',
-        head: true,
+        trackingIds: [
+          'UA-178212082-1', // Universal Analytics (ends 2023-02)
+          'G-TNPDM9W9HY', // GA4 operate-first - GA4
+          'G-4KZBK0GHEG', // GA4 operate-first - 2022
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

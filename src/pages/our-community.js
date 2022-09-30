@@ -9,6 +9,7 @@ import {
 } from 'tabler-icons-react';
 
 import { Layout } from '../components/Layout.tsx';
+import { ListCommunities } from '../components/modules/ListOfCommunities';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -91,6 +92,20 @@ const CommunityPage = () => {
       <div className={classes.wrapper}>
         <Container>
           <Title className={classes.title} order={2}>
+            Some of our communities!
+          </Title>
+          <Text py="sm">
+            The number of communities and projects working withing the Operate
+            First framework is constantly growing. And so are the different
+            topics and usecases. You can use the idea, the platform, our
+            governance and templates, or build something completely different
+            upon the philosophy of Operate First. Contribute the way you like.
+          </Text>
+          <p>
+            <ListCommunities />
+          </p>
+
+          <Title className={classes.title} order={2}>
             Who are we?
           </Title>
           <Text py="sm">
@@ -155,7 +170,6 @@ const CommunityPage = () => {
           </Col>
         </Grid>
       </div>
-
       <Center pb={40}>
         <a href="https://www.operate-first.cloud/community/README.html">
           <Button>Operate First community resources</Button>
