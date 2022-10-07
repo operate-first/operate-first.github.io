@@ -1,7 +1,7 @@
 import * as React from 'react';
-// Component imports
-import { MeetUp } from '../components/meetup';
-import { InterestedField } from '../components/homepage/Interest';
+import Helmet from 'react-helmet';
+import { Container, Title, Button, Text } from '@mantine/core';
+import { Cloud } from 'tabler-icons-react';
 import { Layout } from '../components/Layout';
 import { Helmet } from 'react-helmet';
 
