@@ -142,7 +142,7 @@ export function MeetUp() {
             </Link>{' '}
             .
             <br />
-            Next Meeting is on Tuesday, October 4th, 2022 at 11:00 ET.
+            Next Meeting is on Tuesday, October 18th, 2022 at 11:00 ET.
           </Text>
           <List size="lg" color="dimmed" className={classes.description}>
             Ways to participate
