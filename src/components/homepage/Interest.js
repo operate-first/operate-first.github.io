@@ -25,7 +25,6 @@ const useStyles = createStyles((theme) => ({
     paddingTop: 50,
     paddingBottom: 80,
     border: 'none',
-    background: 'rgb(0,25,51)',
     background:
       'linear-gradient(359deg, rgb(50 50 50) 0%, rgb(78 78 78) 51%, rgb(100 100 100) 100%)',
     '@media (max-width: 755px)': {

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createStyles, Container, Group, Anchor, Text } from '@mantine/core';
+import { createStyles, Container, Group, Anchor } from '@mantine/core';
 import rhlogo from '../../assets/RedHat-logo-white_transp.svg';
 import mocalliancelogo from '../../assets/MOCAlliance-logo-white_transp.png';
 import openinfralabslogo from '../../assets/OpenInfraLabs-logo-white_transp.svg';
@@ -67,13 +67,13 @@ export function Footer() {
       <Container className={classes.inner}>
         <Group className={classes.links}>{items}</Group>
         <a href="https://www.redhat.com/en" target="_blank" rel="noreferrer">
-          <img src={rhlogo} height="30" />
+          <img src={rhlogo} height="30" alt="" />
         </a>
         <a href="https://massopen.cloud/" target="_blank" rel="noreferrer">
-          <img src={mocalliancelogo} height="30" />
+          <img src={mocalliancelogo} height="30" alt="" />
         </a>
         <a href="https://openinfralabs.org/" target="_blank" rel="noreferrer">
-          <img src={openinfralabslogo} height="30" />
+          <img src={openinfralabslogo} height="30" alt="" />
         </a>
       </Container>
     </div>
