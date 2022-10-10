@@ -23,7 +23,6 @@ const useStyles = createStyles((theme, _params, getRef) => {
     wrapper: {
       paddingTop: theme.spacing.xl * 2,
       minHeight: 700,
-      background: 'rgb(0,38,79)',
       background:
         'linear-gradient(180deg, rgb(52 52 52) 0%, rgb(35 35 35) 50%, rgb(10 10 10) 100%)',
       position: 'relative',
@@ -90,7 +89,7 @@ const useStyles = createStyles((theme, _params, getRef) => {
 });
 
 export function FaqSimple() {
-  const { classes, cx } = useStyles();
+  const { classes } = useStyles();
   return (
     <div className={classes.wrapper}>
       <Container size="sm">

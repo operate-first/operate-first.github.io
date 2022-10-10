@@ -105,7 +105,7 @@ export function HomePage() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <img src={Logo} width={'35%'}></img>
+        <img src={Logo} width={'35%'} alt=""></img>
         <Title className={classes.title}>
           Building an all-Open Source community cloud to learn and make{' '}
           <Link to="/about" className={classes.linkedText}>

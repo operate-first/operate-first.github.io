@@ -14,7 +14,7 @@ import {
   SimpleGrid,
   UnstyledButton,
 } from '@mantine/core';
-import { Book, Cloud } from 'tabler-icons-react';
+import { Book, Cloud, ListDetails, LayoutDashboard } from 'tabler-icons-react';
 
 const clusters = [
   {
@@ -46,21 +46,6 @@ const clusters = [
     icon: Cloud,
     color: 'orange',
     url: 'https://console-openshift-console.apps.balrog.aws.operate-first.cloud/',
-  },
-];
-
-const grafanaLinks = [
-  {
-    name: 'smaug',
-    link: 'https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=moc/smaug&var-namespace=All&theme=light&panelId=4',
-  },
-  {
-    name: 'infra',
-    link: 'https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=moc/infra&var-namespace=All&theme=light&panelId=4',
-  },
-  {
-    name: 'balrog',
-    link: 'https://grafana-public.operate-first.cloud/d-solo/opf-overview/workload-overview?orgId=1&var-datasource=default&var-cluster=emea/balrog&var-namespace=All&theme=light&panelId=4',
   },
 ];
 
@@ -119,7 +104,7 @@ const CommunityCloudPage = () => {
     <Layout>
       <Container pb={69}>
         <Title order={2} my="md">
-          Op1st Community Cloud
+          Operate First Community Cloud
         </Title>
         <Text>
           The Operate First Community Cloud is a shared environment for Open
@@ -134,11 +119,9 @@ const CommunityCloudPage = () => {
             <b>Click here to get started as a user and contributor</b>
           </a>
         </Text>
-
         <Title order={2} my="lg">
           Resources
         </Title>
-
         <Group mb={40}>
           <a href="https://www.operate-first.cloud/apps/content/README.html">
             <Button leftIcon={<Book />} color="dark">
@@ -156,25 +139,27 @@ const CommunityCloudPage = () => {
             </Button>
           </a>
         </Group>
-
+        <Group mb={40}>
+          <a href="https://service-catalog.operate-first.cloud/">
+            <Button leftIcon={<LayoutDashboard />} color="dark">
+              Our Services
+            </Button>
+          </a>
+          <a href="https://www.operate-first.cloud/apps/content/README.html">
+            <Button leftIcon={<ListDetails />} color="dark">
+              Environments
+            </Button>
+          </a>
+        </Group>
         <Title order={2} my="md">
           Clusters
         </Title>
-
         <Card withBorder radius="md" className={classes.card}>
           <SimpleGrid cols={3} mt="md">
             {items}
           </SimpleGrid>
         </Card>
-
         <ServicesBoard />
-
-        <Title order={2} my="md">
-          Workloads
-        </Title>
-        <iframe src={grafanaLinks[0].link} className={classes.frame}></iframe>
-        <iframe src={grafanaLinks[1].link} className={classes.frame}></iframe>
-        <iframe src={grafanaLinks[2].link} className={classes.frame}></iframe>
       </Container>
     </Layout>
   );
