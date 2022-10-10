@@ -125,7 +125,7 @@ export function MeetUp() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <img src={Logo} width={'35%'}></img>
+        <img src={Logo} width={'35%'} alt=""></img>
         <Title className={classes.title2}>
           Data science community &#38; community cloud
           <br />
