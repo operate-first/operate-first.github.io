@@ -163,7 +163,7 @@ export const Blog = ({ posts }: PostsProps) => {
 
   return (
     <Layout>
-      <div className={classes.wrapper} style={{ minHeight: '90vh'}}>
+      <div className={classes.wrapper} style={{ minHeight: '90vh' }}>
         <SimpleGrid
           cols={3}
           mt="md"
