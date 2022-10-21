@@ -129,20 +129,25 @@ export function MeetUp() {
         <Title className={classes.title2}>
           Data science community &#38; community cloud
           <br />
-          <span>&#62;&#62;</span>Bi-weekly meetup
+          &#62;&#62;Bi-weekly meetup
         </Title>
         <Group>
           <Text size="xl" color="dimmed" className={classes.description}>
-            Join our meetup every other Tuesday @ 11:00 ET on{' '}
-            <Link
-              to="https://meet.google.com/eyb-yegj-gji"
-              className={classes.linkedText}
-            >
-              google meet
-            </Link>{' '}
-            .
-            <br />
-            Next Meeting is on Tuesday, October 18th, 2022 at 11:00 ET.
+            <p>
+              Join our meetup every other Tuesday @ 11:00 ET on{' '}
+              <Link
+                to="https://meet.google.com/eyb-yegj-gji"
+                className={classes.linkedText}
+              >
+                google meet
+              </Link>{' '}
+              .
+            </p>
+            <p>! No meetup on Tuesday, November 1st, 2022 !</p>
+            <p>
+              &#62;&#62;Next Meeting is on Tuesday, November 15th, 2022 at 11:00
+              ET.
+            </p>
           </Text>
           <List size="lg" color="dimmed" className={classes.description}>
             Ways to participate
