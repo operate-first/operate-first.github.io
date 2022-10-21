@@ -1,0 +1,7 @@
+# manual redirects
+
+/meetup_lp /meetup 301!
+
+/community-handbook/* https://old.operate-first.cloud/community-handbook/:splat 301!
+
+/data-science/* https://old.operate-first.cloud/data-science/:splat 301!
