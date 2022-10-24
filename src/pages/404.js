@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 import {
   createStyles,
@@ -65,6 +66,13 @@ export default function NotFoundPage() {
       >
         Unfortunately, this is only a 404 page. You may have mistyped the
         address, or the page has been moved to another URL :(
+        <Helmet>
+          <script>
+            {
+              'const urlRegex = "/community-handbook/*";if (window.location.pathname.match(urlRegex) !== null){window.location.replace("https://old.operate-first.cloud/community-handbook/");}'
+            }
+          </script>
+        </Helmet>
       </Text>
       <Group position="center">
         <Link to="/">
