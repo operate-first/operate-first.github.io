@@ -1,5 +1,5 @@
 ---
-title: Journey to providing an Open Cloud: OKD and CentOS Stream CoreOS update
+title: Journey to providing an Open Cloud — OKD and CentOS Stream CoreOS update
 date: 2022-10-24
 author: Karsten Wade @quaid
 description: This post provides an overview, update, and roadmap on the efforts to build the OKD Kubernetes-distribution using CentOS Stream CoreOS as part of the Operate First community cloud environments.
