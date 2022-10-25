@@ -9,6 +9,8 @@ _This post provides an overview, update, and roadmap on the efforts to build the
 
 _By Karsten Wade, Principal Community Architect_
 
+_Update:_ The OKD project has just released a minimal viable product (MVP) build that is ready to deploy and test; you can find all the details in [this OKD community blog post by Diane Mueller](https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/).
+
 Recently in May 2022 we [quietly let out the news](https://www.operate-first.cloud/blog/kube-con-valencia-eu-2022-trip-report#okd-fedora-coreos) about a collaboration with the [OKD working group (OKD WG)](https://www.okd.io/working-groups/#okd-primary-working-group) to create an Operate First community cloud environment for building OKD images entirely in the Open.
 
 Now (and just in time for [KubeCon NA 2022](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/) and the [OpenShift Commons Gathering](https://commons.openshift.org/gatherings/kubecon-22-oct-25/) in Detroit) we have an [update below](#update) on this effort and the [roadmap from here](#roadmap).
