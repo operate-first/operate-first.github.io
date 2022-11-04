@@ -1,6 +1,17 @@
 import * as React from 'react';
-import { Button, Container, Text, Title, Center, Group } from '@mantine/core';
-import { createStyles, SimpleGrid, ThemeIcon, Grid, Col } from '@mantine/core';
+import {
+  Button,
+  Container,
+  Text,
+  Title,
+  Center,
+  Group,
+  createStyles,
+  SimpleGrid,
+  ThemeIcon,
+  Grid,
+  Col,
+} from '@mantine/core';
 import {
   BuildingCommunity,
   MailFast,
@@ -10,7 +21,7 @@ import {
 } from 'tabler-icons-react';
 
 import { Layout } from '../components/Layout.tsx';
-import { ListCommunities } from '../components/modules/ListOfCommunities';
+import { ListCommunities } from '../components/ListOfCommunities';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -93,26 +104,12 @@ const CommunityPage = () => {
       <div className={classes.wrapper}>
         <Container>
           <Title className={classes.title} order={2}>
-            Some of our communities!
-          </Title>
-          <Text py="sm">
-            The number of communities and projects working withing the Operate
-            First framework is constantly growing. And so are the different
-            topics and usecases. You can use the idea, the platform, our
-            governance and templates, or build something completely different
-            upon the philosophy of Operate First. Contribute the way you like.
-          </Text>
-          <p>
-            <ListCommunities />
-          </p>
-
-          <Title className={classes.title} order={2}>
             Who are we?
           </Title>
           <Text py="sm">
-            We are data scientists, software engineers, and DevOps professionals
-            working within the Operate First framework on Open Source software
-            with Open Operations and infrastructure.
+            We are data scientists, SREs, software engineers, and DevOps
+            professionals working within the Operate First framework on Open
+            Source software with Open Operations and infrastructure.
           </Text>
           <Text py="sm">
             We are focused on solving large scale operational issues around
@@ -129,6 +126,24 @@ const CommunityPage = () => {
             </b>
             .
           </Text>
+          <Title className={classes.title} order={2}>
+            Some of our communities!
+          </Title>
+          <Text py="sm">
+            The number of communities and projects working withing the Operate
+            First framework is constantly growing. And so are the different
+            topics and usecases. You can use the idea, the platform, our
+            governance and templates, or build something completely different
+            upon the{' '}
+            <a href="../blog/operate-first-operate-open-governance-and-hybrid">
+              philosophy of Operate First
+            </a>
+            . Contribute the way you like.
+          </Text>
+          <p>
+            <ListCommunities />
+          </p>
+
           <Title pt="md" order={2}>
             Join us!
           </Title>
