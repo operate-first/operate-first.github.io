@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="495.56577"
+   height="504.99979"
+   viewBox="0 0 131.11845 133.61453"
+   version="1.1"
+   id="svg96067"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs96064" />
+  <g
+     id="layer1"
+     transform="matrix(7.0830538,0,0,7.0830538,-600.73984,-113.66426)"
+     style="display:inline">
+    <path
+       style="font-weight:bold;font-size:12.7px;line-height:0.76;font-family:Tourney;-inkscape-font-specification:'Tourney Bold';text-align:end;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.33206;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 85.479708,16.713321 v 1.005836 5.655216 c 1.086004,0.709653 2.173908,1.416751 3.260604,2.125357 -1.086848,0.692963 -2.17361,1.38623 -3.260604,2.078966 v 6.666659 c 2.732021,-1.893565 5.463979,-3.787052 8.197359,-5.678665 v 5.678665 c 2.993349,-2.074688 5.987,-4.149508 8.982153,-6.221603 0,-1.676319 -1e-5,-3.352356 0,-5.028672 -2.993585,-2.094255 -5.988196,-4.18803 -8.982153,-6.281759 v 1.005836 4.727379 c -2.732271,-1.911252 -5.464838,-3.822313 -8.197359,-5.733215 z"
+       id="path1093" />
+    <path
+       style="font-weight:bold;font-size:12.7px;line-height:0.76;font-family:Tourney;-inkscape-font-specification:'Tourney Bold';text-align:end;text-anchor:end;display:inline;fill:#ffcc00;stroke:none;stroke-width:0.244408"
+       d="m 94.726532,18.725801 v 4.085133 l 4.139373,2.696972 -4.139373,2.640263 v 4.096776 L 101.6104,27.4766 v -3.937408 z"
+       id="path675" />
+    <path
+       style="font-weight:bold;font-size:12.7px;line-height:0.76;font-family:Tourney;-inkscape-font-specification:'Tourney Bold';text-align:end;text-anchor:end;display:inline;fill:#ffcc00;stroke:none;stroke-width:0.244408"
+       d="m 86.528822,18.725801 v 4.085133 l 4.139373,2.696972 -4.139373,2.640263 v 4.096776 l 6.88386,-4.768345 v -3.937408 z"
+       id="path673" />
+  </g>
+</svg>
