@@ -10,7 +10,6 @@ module.exports = {
         basePath: '/blog',
       },
     },
-
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-mantine',
@@ -51,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/assets/opf-logo.png`,
+        icon: `src/assets/logo_arrows.svg`,
       },
     },
   ],
