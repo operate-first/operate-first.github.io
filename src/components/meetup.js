@@ -143,10 +143,29 @@ export function MeetUp() {
               </Link>{' '}
               .
             </p>
-            <p>! No meetup on Tuesday, November 1st, 2022 !</p>
             <p>
               &#62;&#62;Next Meeting is on Tuesday, November 15th, 2022 at 11:00
               ET.
+            </p>
+            <p>
+              Kruize - Right size and optimize your containers
+              <br></br>
+              <Link
+                to="https://github.com/kruize/kruize"
+                className={classes.linkedText}
+              >
+                &#62;&#62;https://github.com/kruize/kruize
+              </Link>{' '}
+            </p>
+            <p>
+              Kruize HPO - Kruize Hyper Parameter Optimization
+              <br></br>
+              <Link
+                to="https://github.com/kruize/hpo"
+                className={classes.linkedText}
+              >
+                &#62;&#62;https://github.com/kruize/hpo
+              </Link>{' '}
             </p>
           </Text>
           <List size="lg" color="dimmed" className={classes.description}>
