@@ -26,7 +26,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingTop: theme.spacing.xl * 8,
+    paddingTop: theme.spacing.xl * 1,
     paddingBottom: theme.spacing.xl * 8,
     zIndex: 0,
     position: 'relative',
@@ -69,6 +69,26 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('xs')]: {
       fontSize: 25,
+      lineHeight: 1.3,
+    },
+  },
+
+  title3: {
+    paddingTop: theme.spacing.xl * 1,
+    paddingBottom: theme.spacing.xl * 1,
+    color: theme.white,
+    fontSize: 30,
+    fontWeight: 600,
+    lineHeight: 1.1,
+
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: 25,
+      lineHeight: 1.2,
+      marginBottom: theme.spacing.md * 1,
+    },
+
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: 20,
       lineHeight: 1.3,
     },
   },
@@ -136,44 +156,87 @@ export function MeetUp() {
             <p>
               Join our meetup every other Tuesday @ 11:00 ET on{' '}
               <Link
-                to="https://meet.google.com/eyb-yegj-gji"
+                to="https://op1.st/meetup-gmeet"
                 className={classes.linkedText}
               >
                 google meet
-              </Link>{' '}
+              </Link>
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, November 15th, 2022 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, November 29th, 2022 at 11:00
               ET.
             </p>
             <p>
-              Kruize - Right size and optimize your containers
-              <br></br>
+              Sovereign Cloud | The 5th open paradigm | devroom cfp
+              <br />
+              by{' '}
               <Link
-                to="https://github.com/kruize/kruize"
+                to="https://scs.community/fkr"
                 className={classes.linkedText}
               >
-                &#62;&#62;https://github.com/kruize/kruize
+                Felix Kronlage-Dammers
+              </Link>{' '}
+              <br />
+              <Link to="https://scs.community" className={classes.linkedText}>
+                &#62;&#62;Sovereign Cloud Stack (SCS)
+              </Link>{' '}
+              <br />
+              <Link
+                to="https://the-report.cloud/the-5th-open-paradigm"
+                className={classes.linkedText}
+              >
+                &#62;&#62;The 5th open paradigm
+              </Link>{' '}
+              <br />
+              <Link
+                to="https://fosdem.org/2023/schedule/track/sovereign_cloud/"
+                className={classes.linkedText}
+              >
+                &#62;&#62;FOSDEM 2023 EU - Sovereign Cloud devroom
               </Link>{' '}
             </p>
             <p>
-              Kruize HPO - Kruize Hyper Parameter Optimization
-              <br></br>
+              <Link to="https://www.apicur.io/" className={classes.linkedText}>
+                &#62;&#62;apicurio
+              </Link>{' '}
+              by{' '}
               <Link
-                to="https://github.com/kruize/hpo"
+                to="https://github.com/riprasad"
                 className={classes.linkedText}
               >
-                &#62;&#62;https://github.com/kruize/hpo
+                Rishab Prasad
               </Link>{' '}
+              is moved to Dec 13th
             </p>
           </Text>
+        </Group>
+        <Group>
+          <Link to="https://op1.st/mailinglist">
+            <Button size="lg" radius="xl" className={classes.control}>
+              Sign up
+            </Button>
+          </Link>
+          <Link to="https://op1.st/meetup-calendar">
+            <Button size="lg" radius="xl" className={classes.control}>
+              Add calendar
+            </Button>
+          </Link>
+          <Link to="https://op1.st/youtube">
+            <Button size="lg" radius="xl" className={classes.control}>
+              Follow us on YouTube
+            </Button>
+          </Link>
+        </Group>
+        <Group>
+          <Title className={classes.title3}>Ways to participate</Title>
+        </Group>
+        <Group>
           <List size="lg" color="dimmed" className={classes.description}>
-            Ways to participate
             <List.Item>
               Sign up for the{' '}
               <Link
-                to="https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/"
+                to="https://op1.st/mailinglist"
                 className={classes.linkedText}
               >
                 mailing list
@@ -183,7 +246,7 @@ export function MeetUp() {
             <List.Item>
               Add it to your{' '}
               <Link
-                to="https://calendar.google.com/calendar/u/2?cid=N3QyMm1ydm92amNmdTZqZm5ucDRuMmtkZTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+                to="https://op1.st/meetup-calendar"
                 className={classes.linkedText}
               >
                 calendar
@@ -193,7 +256,7 @@ export function MeetUp() {
             <List.Item>
               Join our meetup every other Tuesday @ 11:00 ET on{' '}
               <Link
-                to="https://meet.google.com/eyb-yegj-gji"
+                to="https://op1.st/meetup-gmeet"
                 className={classes.linkedText}
               >
                 google meet
@@ -209,6 +272,13 @@ export function MeetUp() {
                 slack
               </Link>{' '}
               in the{' '}
+              <Link
+                to="https://operatefirst.slack.com/archives/C01RF4SPNDD"
+                className={classes.linkedText}
+              >
+                #general
+              </Link>{' '}
+              or{' '}
               <Link
                 to="https://operatefirst.slack.com/archives/C02KY881CJE"
                 className={classes.linkedText}
@@ -240,31 +310,26 @@ export function MeetUp() {
             <List.Item>
               Watch previous sessions on{' '}
               <Link
-                to="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg"
+                to="https://op1.st/meetup-recordings"
                 className={classes.linkedText}
               >
                 YouTube
-              </Link>{' '}
+              </Link>
               !
             </List.Item>
+            <List.Item>
+              <Link
+                to="https://op1.st/meetup-recordings"
+                className={classes.linkedText}
+              >
+                Twitter
+              </Link>
+              ,{' '}
+              <Link to="https://op1.st/mastodon" className={classes.linkedText}>
+                Mastodon
+              </Link>
+            </List.Item>
           </List>
-        </Group>
-        <Group>
-          <Link to="https://lists.operate-first.cloud/admin/lists/community.lists.operate-first.cloud/">
-            <Button size="lg" radius="xl" className={classes.control}>
-              Sign up
-            </Button>
-          </Link>
-          <Link to="https://calendar.google.com/calendar/u/2?cid=N3QyMm1ydm92amNmdTZqZm5ucDRuMmtkZTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
-            <Button size="lg" radius="xl" className={classes.control}>
-              Add calendar
-            </Button>
-          </Link>
-          <Link to="https://www.youtube.com/channel/UCe87bwqlGoBQs2RvMQZ5_sg?sub_confirmation=1">
-            <Button size="lg" radius="xl" className={classes.control}>
-              Follow us on YouTube
-            </Button>
-          </Link>
         </Group>
       </Container>
     </div>
