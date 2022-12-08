@@ -164,42 +164,10 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, November 29th, 2022 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, December 13th, 2022 at 11:00
               ET.
             </p>
             <p>
-              Sovereign Cloud | The 5th open paradigm | devroom cfp
-              <br />
-              by{' '}
-              <Link
-                to="https://scs.community/fkr"
-                className={classes.linkedText}
-              >
-                Felix Kronlage-Dammers
-              </Link>{' '}
-              <br />
-              <Link to="https://scs.community" className={classes.linkedText}>
-                &#62;&#62;Sovereign Cloud Stack (SCS)
-              </Link>{' '}
-              <br />
-              <Link
-                to="https://the-report.cloud/the-5th-open-paradigm"
-                className={classes.linkedText}
-              >
-                &#62;&#62;The 5th open paradigm
-              </Link>{' '}
-              <br />
-              <Link
-                to="https://fosdem.org/2023/schedule/track/sovereign_cloud/"
-                className={classes.linkedText}
-              >
-                &#62;&#62;FOSDEM 2023 EU - Sovereign Cloud devroom
-              </Link>{' '}
-            </p>
-            <p>
-              <Link to="https://www.apicur.io/" className={classes.linkedText}>
-                &#62;&#62;apicurio
-              </Link>{' '}
               by{' '}
               <Link
                 to="https://github.com/riprasad"
@@ -207,7 +175,32 @@ export function MeetUp() {
               >
                 Rishab Prasad
               </Link>{' '}
-              is moved to Dec 13th
+              about{' '}
+              <Link to="https://www.apicur.io/" className={classes.linkedText}>
+                apicurio
+              </Link>{' '}
+              <br />
+              &#62;&#62;
+              <Link
+                to="https://github.com/apicurio"
+                className={classes.linkedText}
+              >
+                github.com/apicurio
+              </Link>{' '}
+            </p>
+            <p>
+              &#62;&#62;There will be no meetup on December 27th!
+              <br />
+              The next meeting after this is on Tuesday, January 10th, 2023.
+              <br />
+              Christian Glombek will talk about{' '}
+              <Link
+                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
+                className={classes.linkedText}
+              >
+                OKD Streams: Building the Next Generation of OKD together
+              </Link>{' '}
+              and how Operate First helps here.
             </p>
           </Text>
         </Group>
