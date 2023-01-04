@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20230110T110000
+DTEND;TZID=America/New_York:20230110T114000
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=2;BYDAY=TU
+DTSTAMP:20230103T142525Z
+ORGANIZER;CN=operate.first.community@gmail.com:mailto:operate.first.communi
+ ty@gmail.com
+UID:4vsf38e51goedr0rr4ru7qo5ko@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=operate.first.community@gmail.com;X-NUM-GUESTS=0:mailto:operate.first.c
+ ommunity@gmail.com
+X-MICROSOFT-CDO-OWNERAPPTID:323542945
+CLASS:PUBLIC
+CREATED:20230103T090209Z
+DESCRIPTION:&gt\;&gt\; 2023-01-01 - NEW Calendar Entry for 2023 &gt\;&gt\;<
+ br><br>join meeting:&nbsp\;<a href="https://op1.st/meetup-gmeet" id="ow1911
+ " __is_owner="true">https://op1.st/meetup-gmeet</a><br><span style="backgro
+ und-color: var(--textfield-surface)\; color: var(--on-surface)\;">about the
+  meetup:&nbsp\;</span><a href="https://op1.st/meetup" id="ow1925" __is_owne
+ r="true" style="background-color: var(--textfield-surface)\;"><u>https://op
+ 1.st/meetup</u></a><p>The&nbsp\;<strong>Operate First Community Meetup</str
+ ong>&nbsp\;is a biweekly event open to everyone interested in learning more
+  about how various individuals\, teams\, projects\, and online communities
+ are working towards democratizing the development of open operations under
+ the principles and ideas of Operate First (<a href="https://op1.st/principl
+ es">Operate\, Open\, Governance\, and Hybrid</a>). --&gt\;&nbsp\;<a href="h
+ ttps://op1.st/principles">https://op1.st/principles</a><br></p><p>This meet
+ up aims to embrace the multi-disciplinary nature of the current state of op
+ erations and cloud infrastructure by covering technical topics relevant to
+ DevOps\, data scientists\, software engineers\, and alike. And all in an op
+ en public forum.<br></p><p><span>Ways to Participate:</span><br></p><ol><li
+ >Join our meetup every other Tuesday @ 11:00 ET on&nbsp\;<a href="https://o
+ p1.st/meetup-gmeet"><u>google meet</u></a></li><li>Suggest topics/ present
+ talks:&nbsp\;<a href="https://op1.st/suggestAtopic">https://op1.st/suggestA
+ topic</a></li><li>Slack:&nbsp\;<a href="https://op1.st/slack">https://op1.s
+ t/slack</a></li><li>Mailing List:&nbsp\;<a href="https://op1.st/mailinglist
+ ">https://op1.st/mailinglist</a></li></ol><br>Operate First Community Meetu
+ p S02<br>Tuesday\, January 10 · 11:00 – 11:40<br>Google Meet joining info<b
+ r>Video call link: <a href="https://op1.st/meetup-gmeet">https://op1.st/mee
+ tup-gmeet</a><br><br>Archive:<br><strong>About the Meetup</strong>&nbsp\;-&
+ nbsp\;<a href="https://operate-first-data-science-community.catalog.meteor.
+ zone/docs/meetup-landing-page.html"><u><u><u>https://operate-first-data-sci
+ ence-community.catalog.meteor.zone/docs/meetup-landing-page.html</u></u></u
+ ></a><br><strong>Upcoming Session and past meetups</strong>&nbsp\;-&nbsp\;<
+ a href="https://operate-first-data-science-community.catalog.meteor.zone/do
+ cs/content.html"><u><u>https://operate-first-data-science-community.catalog
+ .meteor.zone/docs/content.html</u></u></a><br><span><b>More info on our web
+ site</b> -&nbsp\;</span><u></u><u></u><a href="https://old.operate-first.cl
+ oud/data-science/operate-first-data-science-community/docs/meetup-landing-p
+ age.md"><u><u>https://operate-first-data-science-community.catalog.meteor.z
+ one/docs/meetup-landing-page.html</u></u></a>
+LAST-MODIFIED:20230103T142522Z
+LOCATION:https://op1.st/meetup-gmeet
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Operate First Community Meetup S02
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
