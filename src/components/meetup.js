@@ -164,34 +164,43 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, January 10th, 2023 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, December 13th, 2022 at 11:00
               ET.
             </p>
             <p>
-              with{' '}
+              by{' '}
               <Link
-                to="https://github.com/LorbusChris"
+                to="https://github.com/riprasad"
                 className={classes.linkedText}
               >
-                Christian Glombeck
-                <br />
+                Rishab Prasad
               </Link>{' '}
-              talking about{' '}
-              <Link
-                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
-                className={classes.linkedText}
-              >
-                <br />
-                OKD Streams: Building the Next Generation of OKD together
+              about{' '}
+              <Link to="https://www.apicur.io/" className={classes.linkedText}>
+                apicurio
               </Link>{' '}
               <br />
               &#62;&#62;
               <Link
-                to="https://github.com/okd-project/okd"
+                to="https://github.com/apicurio"
                 className={classes.linkedText}
               >
-                github.com/okd-project/okd
+                github.com/apicurio
               </Link>{' '}
+            </p>
+            <p>
+              &#62;&#62;There will be no meetup on December 27th!
+              <br />
+              The next meeting after this is on Tuesday, January 10th, 2023.
+              <br />
+              Christian Glombek will talk about{' '}
+              <Link
+                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
+                className={classes.linkedText}
+              >
+                OKD Streams: Building the Next Generation of OKD together
+              </Link>{' '}
+              and how Operate First helps here.
             </p>
           </Text>
         </Group>
@@ -203,7 +212,7 @@ export function MeetUp() {
           </Link>
           <Link to="https://op1.st/meetup-calendar">
             <Button size="lg" radius="xl" className={classes.control}>
-              Calendar
+              Add calendar
             </Button>
           </Link>
           <Link to="https://op1.st/youtube">
@@ -224,18 +233,18 @@ export function MeetUp() {
                 className={classes.linkedText}
               >
                 mailing list
-              </Link>
+              </Link>{' '}
               .
             </List.Item>
             <List.Item>
-              Check our{' '}
+              Add it to your{' '}
               <Link
                 to="https://op1.st/meetup-calendar"
                 className={classes.linkedText}
               >
-                community calendar
-              </Link>
-              .
+                calendar
+              </Link>{' '}
+              !
             </List.Item>
             <List.Item>
               Join our meetup every other Tuesday @ 11:00 ET on{' '}
@@ -249,7 +258,10 @@ export function MeetUp() {
             </List.Item>
             <List.Item>
               Introduce yourself on{' '}
-              <Link to="https://op1.st/slack" className={classes.linkedText}>
+              <Link
+                to="https://join.slack.com/t/operatefirst/shared_invite/zt-o2gn4wn8-O39g7sthTAuPCvaCNRnLww"
+                className={classes.linkedText}
+              >
                 slack
               </Link>{' '}
               in the{' '}
@@ -271,7 +283,7 @@ export function MeetUp() {
             <List.Item>
               Present or suggest a topic by creating an{' '}
               <Link
-                to="https://op1.st/suggestAtopic"
+                to="https://github.com/operate-first/operate-first-data-science-community/issues/new?assignees=&labels=&template=topic_submission.md"
                 className={classes.linkedText}
               >
                 issue
@@ -280,7 +292,10 @@ export function MeetUp() {
             </List.Item>
             <List.Item>
               Check out our{' '}
-              <Link to="https://op1.st/github" className={classes.linkedText}>
+              <Link
+                to="https://github.com/operate-first"
+                className={classes.linkedText}
+              >
                 GitHub
               </Link>{' '}
               repos.
@@ -296,7 +311,10 @@ export function MeetUp() {
               !
             </List.Item>
             <List.Item>
-              <Link to="https://op1.st/twitter" className={classes.linkedText}>
+              <Link
+                to="https://op1.st/meetup-recordings"
+                className={classes.linkedText}
+              >
                 Twitter
               </Link>
               ,{' '}
