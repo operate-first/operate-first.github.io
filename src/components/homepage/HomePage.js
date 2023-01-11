@@ -116,7 +116,17 @@ export function HomePage() {
         <Group>
           <Link to="/getting-started">
             <Button size="lg" radius="xl" className={classes.control}>
-              Get Started
+              Get started
+            </Button>
+          </Link>
+          <Link to="/meetup">
+            <Button size="lg" radius="xl" className={classes.control}>
+              Community cloud meet up
+            </Button>
+          </Link>
+          <Link to="https://op1.st/youtube">
+            <Button size="lg" radius="xl" className={classes.control}>
+              YouTube channel
             </Button>
           </Link>
         </Group>
