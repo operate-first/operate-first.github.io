@@ -164,33 +164,40 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, January 10th, 2023 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, January 24th, 2023 at 11:00
               ET.
             </p>
             <p>
               with{' '}
               <Link
-                to="https://github.com/LorbusChris"
+                to="https://github.com/mtoslalibu"
                 className={classes.linkedText}
               >
-                Christian Glombeck
+                Mert Toslali
                 <br />
               </Link>{' '}
               talking about{' '}
               <Link
-                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
+                to="https://github.com/operate-first/support/issues/1108"
                 className={classes.linkedText}
               >
                 <br />
-                OKD Streams: Building the Next Generation of OKD together
+                Ray on MOC: Integrate Ray with ODH on the smaug cluster so that
+                people using the smaug cluster can leverage Ray to scale their
+                ml workloads. This is part of a student project with BU.
+              </Link>{' '}
+              <br />
+              &#62;&#62;
+              <Link to="https://massopen.cloud/" className={classes.linkedText}>
+                massopen.cloud
               </Link>{' '}
               <br />
               &#62;&#62;
               <Link
-                to="https://github.com/okd-project/okd"
+                to="https://github.com/operate-first/ai-for-cloud-ops/"
                 className={classes.linkedText}
               >
-                github.com/okd-project/okd
+                ai-for-cloud-ops
               </Link>{' '}
             </p>
           </Text>
