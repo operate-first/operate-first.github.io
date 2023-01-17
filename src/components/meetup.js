@@ -178,21 +178,15 @@ export function MeetUp() {
               </Link>{' '}
               talking about{' '}
               <Link
-                to="https://github.com/operate-first/support/issues/1108"
+                to="https://github.com/operate-first/support/issues/1112"
                 className={classes.linkedText}
               >
                 <br />
-                Ray on MOC: Integrate Ray with ODH on the smaug cluster so that
-                people using the smaug cluster can leverage Ray to scale their
-                ml workloads. This is part of a student project with BU.
+                Online trace analysis and his experiences on the Operate First
+                community cloud.
               </Link>{' '}
               <br />
-              &#62;&#62;
-              <Link to="https://massopen.cloud/" className={classes.linkedText}>
-                massopen.cloud
-              </Link>{' '}
-              <br />
-              &#62;&#62;
+              see also &#62;&#62;
               <Link
                 to="https://github.com/operate-first/ai-for-cloud-ops/"
                 className={classes.linkedText}
