@@ -164,34 +164,63 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, January 24th, 2023 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, February 7th, 2023 at 11:00
               ET.
             </p>
             <p>
               with{' '}
               <Link
-                to="https://github.com/mtoslalibu"
+                to="https://github.com/pulp/pulpcore"
                 className={classes.linkedText}
               >
-                Mert Toslali
+                Gerrod Ubben
                 <br />
               </Link>{' '}
               talking about{' '}
               <Link
-                to="https://github.com/operate-first/support/issues/1112"
+                to="https://pulpproject.org/"
                 className={classes.linkedText}
               >
                 <br />
-                Online trace analysis and his experiences on the Operate First
-                community cloud.
+                Pulp.
               </Link>{' '}
               <br />
               see also &#62;&#62;
               <Link
-                to="https://github.com/operate-first/ai-for-cloud-ops/"
+                to="https://developers.redhat.com/articles/2022/01/17/how-self-host-python-package-index-using-pulp#how_to_use_the_pulp_python_package_index"
                 className={classes.linkedText}
               >
-                ai-for-cloud-ops
+                How to self-host a Python package index using Pulp
+              </Link>{' '}
+            </p>
+            <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
+            <p>
+              &#62;&#62;Meeting on Tuesday, February 21th, 2023 at 11:00 ET.
+            </p>
+            <p>
+              with{' '}
+              <Link
+                to="https://github.com/LorbusChris"
+                className={classes.linkedText}
+              >
+                Christian Glombeck
+                <br />
+              </Link>{' '}
+              talking about{' '}
+              <Link
+                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
+                className={classes.linkedText}
+              >
+                <br />
+                OKD Streams: Building the Next Generation of OKD together
+              </Link>{' '}
+              <br />
+              see also &#62;&#62;
+              <Link
+                to="https://github.com/okd-project/okd"
+                className={classes.linkedText}
+              >
+                github.com/okd-project/okd
               </Link>{' '}
             </p>
           </Text>
