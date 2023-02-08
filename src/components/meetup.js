@@ -164,38 +164,8 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, February 7th, 2023 at 11:00
+              &#62;&#62;Next Meeting is on Tuesday, February 21th, 2023 at 11:00
               ET.
-            </p>
-            <p>
-              with{' '}
-              <Link
-                to="https://github.com/pulp/pulpcore"
-                className={classes.linkedText}
-              >
-                Gerrod Ubben
-                <br />
-              </Link>{' '}
-              talking about{' '}
-              <Link
-                to="https://pulpproject.org/"
-                className={classes.linkedText}
-              >
-                <br />
-                Pulp.
-              </Link>{' '}
-              <br />
-              see also &#62;&#62;
-              <Link
-                to="https://developers.redhat.com/articles/2022/01/17/how-self-host-python-package-index-using-pulp#how_to_use_the_pulp_python_package_index"
-                className={classes.linkedText}
-              >
-                How to self-host a Python package index using Pulp
-              </Link>{' '}
-            </p>
-            <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
-            <p>
-              &#62;&#62;Meeting on Tuesday, February 21th, 2023 at 11:00 ET.
             </p>
             <p>
               with{' '}
@@ -223,6 +193,34 @@ export function MeetUp() {
                 github.com/okd-project/okd
               </Link>{' '}
             </p>
+            <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
+            <p>
+              (tbd) &#62;&#62; Meeting on Tuesday, March 7th, 2023 at 11:00 ET.
+              (tbd)
+            </p>
+            <p>
+              with{' '}
+              <Link
+                to="https://github.com/tumido"
+                className={classes.linkedText}
+              >
+                Tom Coufal
+                <br />
+              </Link>{' '}
+              talking about{' '}
+              <Link
+                to="https://janus-idp.io/blog"
+                className={classes.linkedText}
+              >
+                <br />
+                Backtstage vs Janus
+              </Link>{' '}
+              <br />
+              see also &#62;&#62;
+              <Link to="https://backstage.io/" className={classes.linkedText}>
+                Backstage
+              </Link>{' '}
+            </p>
           </Text>
         </Group>
         <Group>
@@ -239,6 +237,11 @@ export function MeetUp() {
           <Link to="https://op1.st/youtube">
             <Button size="lg" radius="xl" className={classes.control}>
               Follow us on YouTube
+            </Button>
+          </Link>
+          <Link to="https://github.com/operate-first/communitycloud-meetup">
+            <Button size="lg" radius="xl" className={classes.control}>
+              Meeting Timeline
             </Button>
           </Link>
         </Group>
