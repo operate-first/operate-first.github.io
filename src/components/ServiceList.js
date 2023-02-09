@@ -16,28 +16,28 @@ const services = [
   {
     title: 'OpenDataHub',
     image: ODHLogo,
-    url: 'https://www.operate-first.cloud/apps/content/odh/README.html',
+    url: 'https://www.operate-first.cloud/apps/content/odh/docs/README.html',
     description:
       'We manage a deployment of Open Data Hub (ODH) on the Smaug cluster and OSC cluster',
   },
   {
     title: 'ArgoCD',
     image: ArgoLogo,
-    url: 'https://www.operate-first.cloud/apps/content/argocd-gitops/README.html',
+    url: 'https://www.operate-first.cloud/apps/content/argocd-gitops/docs/add_application.html',
     description:
       'Kubernetes native workflows, events, CI and CD. We manage a multi-tenant deployment of ArgoCD on the MOC Infra cluster',
   },
   {
     title: 'Observatorium',
     image: ObservatoriumLogo,
-    url: 'https://www.operate-first.cloud/apps/content/observatorium/README.html',
+    url: 'https://www.operate-first.cloud/apps/content/observatorium/docs/loki/README.html',
     description:
       'We have an instance of Observatorium currently being used to provision Thanos and Loki',
   },
   {
     title: 'OpenShift Data Foundation',
     image: RedHatLogo,
-    url: 'https://www.redhat.com/en/technologies/cloud-computing/openshift-data-foundation',
+    url: 'https://www.operate-first.cloud/apps/content/odf/docs/buckets-external-access.html',
     description:
       'ODF provides both persistent volumes and S3 compatible object storage via Rook Operator',
   },
