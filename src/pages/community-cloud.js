@@ -29,24 +29,6 @@ const clusters = [
     color: 'red',
     url: 'http://console-openshift-console.apps.smaug.na.operate-first.cloud/',
   },
-  {
-    title: 'Morty',
-    icon: Cloud,
-    color: 'blue',
-    url: 'https://console-openshift-console.apps.morty.emea.operate-first.cloud/',
-  },
-  {
-    title: 'Rick',
-    icon: Cloud,
-    color: 'blue',
-    url: 'https://console-openshift-console.apps.rick.emea.operate-first.cloud/',
-  },
-  {
-    title: 'Balrog',
-    icon: Cloud,
-    color: 'orange',
-    url: 'https://console-openshift-console.apps.balrog.aws.operate-first.cloud/',
-  },
 ];
 
 const useStyles = createStyles((theme) => ({
