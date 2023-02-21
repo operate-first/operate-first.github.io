@@ -173,7 +173,7 @@ export function MeetUp() {
                 to="https://github.com/LorbusChris"
                 className={classes.linkedText}
               >
-                Christian Glombeck
+                Christian Glombek
                 <br />
               </Link>{' '}
               talking about{' '}
