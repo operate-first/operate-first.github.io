@@ -164,39 +164,7 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, February 21th, 2023 at 11:00
-              ET.
-            </p>
-            <p>
-              with{' '}
-              <Link
-                to="https://github.com/LorbusChris"
-                className={classes.linkedText}
-              >
-                Christian Glombek
-                <br />
-              </Link>{' '}
-              talking about{' '}
-              <Link
-                to="https://www.okd.io/blog/2022-10-25-OKD-Streams-Building-the-Next-Generation-of-OKD-together/"
-                className={classes.linkedText}
-              >
-                <br />
-                OKD Streams: Building the Next Generation of OKD together
-              </Link>{' '}
-              <br />
-              see also &#62;&#62;
-              <Link
-                to="https://github.com/okd-project/okd"
-                className={classes.linkedText}
-              >
-                github.com/okd-project/okd
-              </Link>{' '}
-            </p>
-            <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
-            <p>
-              (tbd) &#62;&#62; Meeting on Tuesday, March 7th, 2023 at 11:00 ET.
-              (tbd)
+              &#62;&#62;Next Meeting is on Tuesday, March 7th, 2023 at 11:00 ET.
             </p>
             <p>
               with{' '}
@@ -213,12 +181,40 @@ export function MeetUp() {
                 className={classes.linkedText}
               >
                 <br />
-                Backtstage vs Janus
+                Backstage vs. Janus
               </Link>{' '}
               <br />
               see also &#62;&#62;
               <Link to="https://backstage.io/" className={classes.linkedText}>
                 Backstage
+              </Link>{' '}
+            </p>
+            <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
+            <p>
+              (tbd) &#62;&#62; Meeting on Tuesday, March 21st, 2023 at 11:00 ET.
+              (tbd)
+            </p>
+            <p>
+              with{' '}
+              <Link
+                to="#"
+                className={classes.linkedText}
+              >
+                (tbd)
+                <br />
+              </Link>{' '}
+              talking about{' '}
+              <Link
+                to="#"
+                className={classes.linkedText}
+              >
+                <br />
+                (tbd)
+              </Link>{' '}
+              <br />
+              see also &#62;&#62;
+              <Link to="#" className={classes.linkedText}>
+                (tbd)
               </Link>{' '}
             </p>
           </Text>
