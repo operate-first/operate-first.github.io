@@ -164,7 +164,8 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, March 7th, 2023 at 11:00 ET.
+              &#62;&#62;Next Meeting is on Tuesday, March 21st, 2023 at 11:00
+              ET.
             </p>
             <p>
               with{' '}
@@ -181,7 +182,7 @@ export function MeetUp() {
                 className={classes.linkedText}
               >
                 <br />
-                Backstage vs. Janus
+                Backstage and Janus
               </Link>{' '}
               <br />
               see also &#62;&#62;
@@ -191,23 +192,17 @@ export function MeetUp() {
             </p>
             <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
             <p>
-              (tbd) &#62;&#62; Meeting on Tuesday, March 21st, 2023 at 11:00 ET.
+              (tbd) &#62;&#62; Meeting on Tuesday, April 4th, 2023 at 11:00 ET.
               (tbd)
             </p>
             <p>
               with{' '}
-              <Link
-                to="#"
-                className={classes.linkedText}
-              >
+              <Link to="#" className={classes.linkedText}>
                 (tbd)
                 <br />
               </Link>{' '}
               talking about{' '}
-              <Link
-                to="#"
-                className={classes.linkedText}
-              >
+              <Link to="#" className={classes.linkedText}>
                 <br />
                 (tbd)
               </Link>{' '}
