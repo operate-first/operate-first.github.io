@@ -146,11 +146,7 @@ export function MeetUp() {
       />
       <Container className={classes.container}>
         <img src={Logo} width={'35%'} alt=""></img>
-        <Title className={classes.title2}>
-          Data science community &#38; community cloud
-          <br />
-          &#62;&#62;Bi-weekly meetup
-        </Title>
+        <Title className={classes.title2}>fortnightly community meetup</Title>
         <Group>
           <Text size="xl" color="dimmed" className={classes.description}>
             <p>
@@ -164,36 +160,33 @@ export function MeetUp() {
               .
             </p>
             <p>
-              &#62;&#62;Next Meeting is on Tuesday, March 21st, 2023 at 11:00
-              ET.
+              &#62;&#62;Next Meeting is on Tuesday, April 11., 2023 at 11:00 ET.
             </p>
             <p>
               with{' '}
               <Link
-                to="https://github.com/tumido"
+                to="https://github.com/quaid"
                 className={classes.linkedText}
               >
-                Tom Coufal
+                Karsten Wade
                 <br />
               </Link>{' '}
               talking about{' '}
-              <Link
-                to="https://janus-idp.io/blog"
-                className={classes.linkedText}
-              >
+              <Link to="#" className={classes.linkedText}>
                 <br />
-                Backstage and Janus
+                Wrap up season 2 &#38; Outlook season 3
               </Link>{' '}
               <br />
               see also &#62;&#62;
-              <Link to="https://backstage.io/" className={classes.linkedText}>
-                Backstage
+              <Link to="https://op1.st/youtube" className={classes.linkedText}>
+                YouTube Channel
               </Link>{' '}
             </p>
             <p>&#62;&#62; &#62;&#62; &#62;&#62; &#62;&#62;</p>
             <p>
-              (tbd) &#62;&#62; Meeting on Tuesday, April 4th, 2023 at 11:00 ET.
-              (tbd)
+              (tbd) &#62;&#62; upcoming S03
+              <br />
+              Meeting every other Tuesday, 2023 at 11:00 ET. (tbd)
             </p>
             <p>
               with{' '}
