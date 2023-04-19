@@ -107,11 +107,7 @@ export function HomePage() {
       <Container className={classes.container}>
         <img src={Logo} width={'35%'} alt=""></img>
         <Title className={classes.title}>
-          Building an all-Open Source community cloud to learn and make{' '}
-          <Link to="/about" className={classes.linkedText}>
-            things*
-          </Link>{' '}
-          better
+          Building an all-Open Source community for cloud operations
         </Title>
         <Group>
           <Link to="/getting-started">
