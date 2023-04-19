@@ -114,7 +114,7 @@ export function AboutFeatures() {
         sx={(theme) => ({ color: theme.colors.yellow[5] })}
         className={classes.txtTitle}
       >
-        Why build an all-Open Source community cloud?
+        Why build an Open Source community centered on cloud operations?
       </Title>
       <Text
         my="xl"
