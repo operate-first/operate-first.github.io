@@ -89,12 +89,15 @@ const CommunityCloudPage = () => {
           Community Cloud
         </Title>
         <Text>
-           A Community Cloud is a shared environment for Open
-          Source projects and SRE practitioners. An initial Community Cloud, which was established on bare metal hardware
-          provided by the Mass Open Cloud (MOC), is documented here. It was decommissioned in the spring of 2023 due to lack of
-          personnel to operate it. Open Source workloads have since moved to various community clusters to continue their work.
-          At the present time, there is no bare metal cloud where Open Source operations can be vetted. Commitment of resources to
-          manage such a cloud will be needed for resumption.
+          A Community Cloud is a shared environment for Open Source projects and
+          SRE practitioners. An initial Community Cloud, which was established
+          on bare metal hardware provided by the Mass Open Cloud (MOC), is
+          documented here. It was decommissioned in the spring of 2023 due to
+          lack of personnel to operate it. Open Source workloads have since
+          moved to various community clusters to continue their work. At the
+          present time, there is no bare metal cloud where Open Source
+          operations can be vetted. Commitment of resources to manage such a
+          cloud will be needed for resumption.
         </Text>
         <Text>
           It&apos;s operated under a community SLA and as open and transparent
