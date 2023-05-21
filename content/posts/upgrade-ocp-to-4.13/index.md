@@ -106,7 +106,13 @@ Before implementing the migration in a production environment, it's recommended 
 
 ### Execute the Migration
 
-Begin the migration as per the plan. Monitor the process closely to identify and address any issues promptly.
+Begin the migration as per the plan. One of the most important steps, is to acknowledge you have evaluated your cluster for any removed APIs and have migrated any removed APIs. To do so, run the following command:
+
+```shell
+oc --namespace openshift-config patch cm admin-acks \
+    --patch '{"data":{"ack-4.12-kube-1.26-api-removals-in-4.13":"true"}}' \
+    --type=merge
+```
 
 ### Post-Migration Review
 
