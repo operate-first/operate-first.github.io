@@ -2,17 +2,11 @@
 
 approvers:
   - durandom
-  - cfchase
-  - oindrillac
   - tumido
-  - HumairAK
   - quaid
   - schwesig
-  - bryanmontalvan
 reviewers:
-  - hemajv
   - durandom
-  - oindrillac
   - tumido
   - quaid
-  - bryanmontalvan
+  - schwesig
