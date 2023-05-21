@@ -1,7 +1,7 @@
 ---
 title: 'is app-of-apps the right pattern for you?'
-date: 2023-05-17 
-author: 'Christoph [GNU:] Görn' 
+date: 2023-05-17
+author: 'Christoph [GNU:] Görn'
 description: 'The app-of-apps pattern, while a useful concept, does have its pitfalls. The most significant is the complexity it introduces into application management.'
 tags:
   - OperateFirst
