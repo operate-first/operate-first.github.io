@@ -1,5 +1,5 @@
 ---
-title: Release Note: Operate First SIG/SRE Infrastructure Services
+title: "Release Note: Operate First SIG/SRE Infrastructure Services"
 date: 2023-05-24
 author: Christoph Görn 
 description: Release Note: Operate First SIG/SRE Infrastructure Services 
