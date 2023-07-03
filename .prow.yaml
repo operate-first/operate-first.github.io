@@ -3,10 +3,10 @@ presubmits:
     decorate: true
     skip_report: false
     always_run: true
-    context: aicoe-ci/prow/pre-commit
+    context: op1st/prow/pre-commit
     spec:
       containers:
-        - image: quay.io/operate-first/opf-toolbox:v0.4.2
+        - image: quay.io/operate-first/opf-toolbox:v0.12.0
           command:
             - "pre-commit"
             - "run"
