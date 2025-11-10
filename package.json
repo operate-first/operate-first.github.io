@@ -19,7 +19,7 @@
     "lint": "prettier --check 'src/**/*.{ts,js}'; eslint src --ext .ts,.js"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-minimal-blog-core": "4.1.8",
+    "@lekoarts/gatsby-theme-minimal-blog-core": "6.2.1",
     "@mantine/core": "4.2.12",
     "@mantine/hooks": "4.2.12",
     "@mantine/prism": "4.2.12",
