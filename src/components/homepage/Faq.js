@@ -208,7 +208,7 @@ export function FaqSimple() {
               onboarded to one of our namespaces, follow a gitops model to store
               your application manifests in a transparent version control hub
               like github. We also offer a public{' '}
-              <a href="https://www.operate-first.cloud/apps/content/argocd-gitops/README.html">
+              <a href="https://www.operate-first.cloud/apps/content/argocd-gitops/docs/README.html">
                 ArgoCD
               </a>{' '}
               instance that you can use to do this. Make your service available
